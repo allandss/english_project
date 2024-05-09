@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinador de vocabulário em inglês</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Word Lists</h2>
+    <ul id="word-lists">
+      <li class="word-list" onclick="selectWordList(0)">1 - 100 </li>
+      <li class="word-list" onclick="selectWordList(1)">101 - 200</li>
+      <li class="word-list" onclick="selectWordList(2)">201 - 300</li>
+      <li class="word-list" onclick="selectWordList(3)">Custom</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <h1>Treinador de vocabulário em inglês</h1>
+      <div id="word-container"></div>
+      <input type="text" id="answer-input" placeholder="Digite sua resposta">
+      <button onclick="checkAnswer()">Enviar resposta</button>
+      <div id="result"></div>
+      <div id="stats"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

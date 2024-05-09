@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar .word-list {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar .word-list:hover {
+  background-color: #555;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#word-container {
+  margin-bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+  color: royalblue;
+}
+
+#answer-input {
+  padding: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+#answer-input:focus-visible {
+  outline: #ddd auto 1px;
+}
+
+button {
+  padding: 15px 20px;
+  background-color: royalblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 300px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  animation: slideInRight 0.5s ease forwards;
+  margin: 30px;
+  font-family: 'Poppins';
+  text-align: center;
+  color: #0f8013;
+}
+
+#result b{
+  font-family: "Poetsen One";
+  font-size: 17px;
+}
+
+.correct{
+  padding: 10px;
+}
+
+.incorrect {
+  color: #C41713 !important;
+  padding: 10px;
+}
+
+#stats{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.result-correct{
+  color: #4CAF50;
+}
+
+.result-incorrect{
+  color: #C41713;
+}
+
+@keyframes slideInRight {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+  to {
+    right: 20px;
+    opacity: 1;
+  }
+}
+
+.word-list.selected {
+  background-color: #ddd;
+  color: #333;
+}
