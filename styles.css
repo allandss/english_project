@@ -155,3 +155,26 @@ button:hover {
   background-color: #ddd;
   color: #333;
 }
+
+/* Estilos para telas maiores */
+.sidebar {
+  width: 20%;
+}
+
+.content {
+  width: 80%;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+}
