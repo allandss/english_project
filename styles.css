@@ -62,6 +62,7 @@ h1 {
   font-size: 50px;
   text-align: center;
   color: royalblue;
+  width: 100%;
 }
 
 #answer-input {
@@ -79,7 +80,7 @@ h1 {
   outline: #ddd auto 1px;
 }
 
-button {
+button.send {
   padding: 15px 20px;
   background-color: royalblue;
   color: #fff;
@@ -182,4 +183,41 @@ h4{
     margin-left: 0;
     padding: 0;
   }
+}
+
+#pronounce-button {
+  background-color: #717171;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 2px;
+}
+
+#pronounce-button i {
+  margin-right: 5px;
+}
+
+#pronounce-button:hover {
+  background-color: #0056b3;
+}
+
+.word {
+  display: flex;
+  position: relative;
+}
+
+#dictionary-link{
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  color: gray;
+  font-style: italic;
 }

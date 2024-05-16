@@ -1030,31 +1030,78 @@ const words_901_1000 = [
 
 
 const custom = [
-  { word: "in", translations: ["em", "dentro"] },
-  { word: "that", translations: ["que", "aquele"] },
-  { word: "was", translations: ["era", "estava"] },
-  { word: "on", translations: ["em", "ligado", "em cima", "na"] },
-  { word: "are", translations: ["são", "estão"] },
-  { word: "his", translations: ["dele"] },
-  { word: "they", translations: ["eles"] },
-  { word: "had", translations: ["tinha"] },
   { word: "some", translations: ["algum"] },
-  { word: "were", translations: ["eram", "estavam"] },
-  { word: "up", translations: ["para cima", "no alto", "em alta"] },
-  { word: "their", translations: ["deles", "delas","seus", "suas"] },
-  { word: "then", translations: ["então"] },
-  { word: "them", translations: ["eles"] },
-  { word: "would", translations: ["iria","seria"] },
+  { word: "same", translations: ["mesmo"] },
+  { word: "come", translations: ["vir"] },
+  { word: "came", translations: ["chegado"] },
+  { word: "over", translations: ["por cima", "sobre", "acima"] },
+  { word: "under", translations: ["debaixo", "sob"] },
+  { word: "will", translations: ["vai", "irei"] },
+  { word: "could", translations: ["poderia"] },
+  { word: "would", translations: ["seria", "iria"] },
+  { word: "may", translations: ["poder"] },
+  { word: "might", translations: ["poder", "poderia"] },
+  { word: "should", translations: ["deveria"] },
+  { word: "it", translations: ["este", "isto", "isso", "o", "a", "ele", "ela"] },
+  { word: "his", translations: ["dele"] },
+  { word: "has", translations: ["tem"] },
+  { word: "had", translations: ["tinha"] },
   { word: "her", translations: ["dela"] },
   { word: "him", translations: ["ele"] },
-  { word: "has", translations: ["tem"] },
-  { word: "could", translations: ["poderia"] },
-  { word: "come", translations: ["vir"] },
-  { word: "did", translations: ["fez", "mesmo"] },
-  { word: "over", translations: ["sobre", "acima de", "por cima"] },
-  { word: "than", translations: ["que", "do que"] },
+  { word: "than", translations: ["do que"] },
+  { word: "their", translations: ["deles"] },
+  { word: "they", translations: ["eles"] },
+  { word: "then", translations: ["então"] },
+  { word: "them", translations: ["eles"] },
+  { word: "that", translations: ["aquele"] },
+  { word: "those", translations: ["aqueles"] },
+  { word: "there", translations: ["lá"] },
+  { word: "these", translations: ["estes"] },
+  { word: "were", translations: ["estavam", "eram"] },
+  { word: "where", translations: ["onde"] },
+  { word: "was", translations: ["estava", "era"] },
   { word: "who", translations: ["quem"] },
-  { word: "down", translations: ["baixo"] },
+  { word: "why", translations: ["porque"] },
+  { word: "went", translations: ["foi"] },
+  { word: "write", translations: ["escrever"] },
+  { word: "white", translations: ["branco"] },
+  { word: "every", translations: ["cada"] },
+  { word: "even", translations: ["mesmo", "até", "ainda mais"] },
+  { word: "until", translations: ["até"] },
+  { word: "still", translations: ["até", "ainda assim", "calmo"] },
+  { word: "such", translations: ["tal", "tanto"] },
+  { word: "sure", translations: ["certo"] },
+  { word: "must", translations: ["dever", "muito"] },
+  { word: "thing", translations: ["coisa"] },
+  { word: "think", translations: ["pensar"] },
+  { word: "get", translations: ["obter"] },
+  { word: "got", translations: ["obtido"] },
+  { word: "take", translations: ["pegar"] },
+  { word: "took", translations: ["pegado"] },
+  { word: "does", translations: ["faz"] },
+  { word: "move", translations: ["mover-se"] },
+  { word: "call", translations: ["chamar"] },
+  { word: "ease", translations: ["facilitar"] },
+  { word: "us", translations: ["nós"] },
+  { word: "as", translations: ["como"] },
+  { word: "port", translations: ["porto"] },
+  { word: "begin", translations: ["começar"] },
+  { word: "began", translations: ["começado"] },
+  { word: "once", translations: ["uma vez"] },
+  { word: "let", translations: ["deixar"] },
+  { word: "carry", translations: ["carregar"] },
+  { word: "care", translations: ["cuidado"] },
+  { word: "cover", translations: ["cobrir"] },
+  { word: "seem", translations: ["parecer"] },
+  { word: "start", translations: ["começar"] },
+  { word: "life", translations: ["vida"] },
+  { word: "both", translations: ["ambos"] },
+  { word: "sight", translations: ["visão", "vista"] },
+  { word: "saw", translations: ["viu", "serra"] },
+  { word: "keep", translations: ["guardar"] },
+  { word: "few", translations: ["alguns", "pouco"] },
+  { word: "far", translations: ["longe"] },
+  { word: "thought", translations: ["pensamento"] }
 ];
 
 
@@ -1139,6 +1186,12 @@ function displayRandomWord() {
   currentIndex = randomIndex;
   const wordContainer = document.getElementById('word-container');
   wordContainer.textContent = currentWords[currentIndex].word;
+
+  // Reproduzir a pronúncia da palavra selecionada
+  pronounceWord(currentWords[currentIndex].word);
+
+  // Mostrar o link para o dicionário com a palavra atual
+  showDictionaryLink(currentWords[currentIndex].word);
 }
 
 function updateStats() {
@@ -1207,3 +1260,69 @@ function showIncorrectWords() {
 window.onload = function() {
   selectWordList(0);
 };
+
+// Função para reproduzir a pronúncia de uma palavra usando a API de fala
+function pronounceWordOld(word) {
+  // Verificar se a API de fala é suportada pelo navegador
+  if ('speechSynthesis' in window) {
+    // Criar um objeto SpeechSynthesisUtterance com a palavra a ser pronunciada
+    const utterance = new SpeechSynthesisUtterance(word);
+    // Configurar o idioma da pronúncia (opcional)
+    utterance.lang = 'en-US'; // Defina o idioma de acordo com suas necessidades
+    // Falar a palavra
+    window.speechSynthesis.speak(utterance);
+  } else {
+    // Se a API de fala não for suportada, exibir uma mensagem de erro ou fornecer uma alternativa
+    alert('Speech synthesis is not supported in this browser.');
+  }
+}
+
+// Função para reproduzir a pronúncia de uma palavra usando a API de Text-to-Speech do Google Cloud
+async function pronounceWord(word) {
+  const apiKey = 'AIzaSyAJkMlsrbjBuEpt9loc65fliZVaEdTDfQE'; // Substitua pelo sua chave de API
+  const endpoint = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
+
+  const request = {
+    input: { text: word },
+    voice: { languageCode: 'en-US', ssmlGender: 'NEUTRAL' },
+    audioConfig: { audioEncoding: 'MP3' }
+  };
+
+  try {
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(request),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to retrieve audio from Text-to-Speech API');
+    }
+
+    const data = await response.json();
+    const audioContent = data.audioContent;
+
+    // Reproduzir o áudio retornado pela API
+    const audio = new Audio(`data:audio/mp3;base64,${audioContent}`);
+    audio.play();
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+
+// Função para repetir a pronúncia da palavra atual
+function repeatPronunciation() {
+  if (currentIndex !== -1) {
+    pronounceWord(currentWords[currentIndex].word);
+  }
+}
+
+// Função para mostrar um link para o dicionário com a palavra atual
+function showDictionaryLink(word) {
+  const dictionaryLink = document.getElementById('dictionary-link');
+  dictionaryLink.href = `https://www.wordreference.com/enpt/${word}`;
+  dictionaryLink.style.display = 'block'; // Mostrar o link
+}
