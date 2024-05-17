@@ -1206,7 +1206,9 @@ function displayRandomWord() {
   wordContainer.textContent = isWordVisible ? currentWords[currentIndex].word : '';
 
   // Reproduzir a pronúncia da palavra selecionada
-  pronounceWord(currentWords[currentIndex].word);
+  if (answeredWords.length) {
+    pronounceWord(currentWords[currentIndex].word);
+  }
 
   // Mostrar o link para o dicionário com a palavra atual
   showDictionaryLink(currentWords[currentIndex].word);
