@@ -414,7 +414,7 @@ const words_401_500 = [
   { word: "voice", translations: ["voz"] },
   { word: "unit", translations: ["unidade"] },
   { word: "power", translations: ["poder", "força"] },
-  { word: "town", translations: ["municipal"] },
+  { word: "town", translations: ["municipal", "cidade"] },
   { word: "fine", translations: ["bom", "excelente"] },
   { word: "certain", translations: ["certo"] },
   { word: "fly", translations: ["voar", "mosca"] },
@@ -527,8 +527,8 @@ const words_501_600 = [
   { word: "engine", translations: ["motor"] },
   { word: "position", translations: ["posição"] },
   { word: "arm", translations: ["braço"] },
-  { word: "wide", translations: ["amplo"] },
-  { word: "sail", translations: ["vela(navio)"] },
+  { word: "wide", translations: ["amplo", "largo"] },
+  { word: "sail", translations: ["vela (navio)", "vela", "ir de navio", "navegar"] },
   { word: "material", translations: ["material"] },
   { word: "size", translations: ["tamanho"] },
   { word: "vary", translations: ["variar"] },
@@ -569,7 +569,7 @@ const words_501_600 = [
   { word: "sit", translations: ["sentar"] },
   { word: "race", translations: ["raça", "corrida"] },
   { word: "window", translations: ["janela"] },
-  { word: "store", translations: ["armazém"] },
+  { word: "store", translations: ["armazém", "loja"] },
   { word: "summer", translations: ["verão"] },
   { word: "train", translations: ["trem", "treinar"] },
   { word: "sleep", translations: ["dormir"] },
@@ -578,9 +578,9 @@ const words_501_600 = [
   { word: "leg", translations: ["perna"] },
   { word: "exercise", translations: ["exercício"] },
   { word: "wall", translations: ["parede"] },
-  { word: "catch", translations: ["pegar"] },
+  { word: "catch", translations: ["pegar", "agarrar"] },
   { word: "mount", translations: ["monte", "montar"] },
-  { word: "wish", translations: ["desejo"] },
+  { word: "wish", translations: ["desejo", "desejar"] },
   { word: "sky", translations: ["céu"] },
   { word: "board", translations: ["quadro"] },
   { word: "joy", translations: ["alegria"] },
@@ -600,7 +600,7 @@ const words_501_600 = [
   { word: "past", translations: ["passado"] },
   { word: "soft", translations: ["macio"] },
   { word: "fun", translations: ["alegria"] },
-  { word: "bright", translations: ["claro"] },
+  { word: "bright", translations: ["claro", "brilhante"] },
   { word: "gas", translations: ["gás", "gasolina"] },
   { word: "weather", translations: ["tempo"] },
   { word: "month", translations: ["mês"] },
@@ -652,7 +652,7 @@ const words_601_700 = [
   { word: "copy", translations: ["copiar"] },
   { word: "phrase", translations: ["frase"] },
   { word: "silent", translations: ["silêncio"] },
-  { word: "tall", translations: ["alto (pessoa)"] },
+  { word: "tall", translations: ["alto (pessoa)", "alto"] },
   { word: "sand", translations: ["areia"] },
   { word: "soil", translations: ["solo"] },
   { word: "roll", translations: ["giro", "lista"] },
@@ -669,7 +669,7 @@ const words_601_700 = [
   { word: "sense", translations: ["sentido"] },
   { word: "ear", translations: ["orelha", "espiga"] },
   { word: "else", translations: ["outro"] },
-  { word: "quite", translations: ["muito"] },
+  { word: "quite", translations: ["muito", "consideravelmente", "positivamente", "relativamente"] },
   { word: "broke", translations: ["quebrado"] },
   { word: "case", translations: ["caso", "embalagem"] },
   { word: "middle", translations: ["meio"] },
@@ -678,7 +678,7 @@ const words_601_700 = [
   { word: "lake", translations: ["lago"] },
   { word: "moment", translations: ["momento"] },
   { word: "scale", translations: ["escada", "escala", "escama"] },
-  { word: "loud", translations: ["alto (som)"] },
+  { word: "loud", translations: ["alto (som)", "barulhento", "alto"] },
   { word: "spring", translations: ["primavera", "mola"] },
   { word: "observe", translations: ["observar"] },
   { word: "child", translations: ["criança"] },
@@ -1029,7 +1029,7 @@ const words_901_1000 = [
 ];
 
 
-const custom = [
+const custom1 = [
   { word: "some", translations: ["algum"] },
   { word: "same", translations: ["mesmo"] },
   { word: "come", translations: ["vir"] },
@@ -1104,6 +1104,19 @@ const custom = [
   { word: "thought", translations: ["pensamento"] }
 ];
 
+const custom2 = [
+  { word: "stood", translations: ["permanecido"] },
+  { word: "stead", translations: ["local"] },
+  { word: "tire", translations: ["cansar"] },
+  { word: "ever", translations: ["sempre", "já"] },
+  { word: "told", translations: ["contato"] },
+  { word: "enough", translations: ["bastante"] },
+  { word: "wild", translations: ["selvagem"] },
+  { word: "wide", translations: ["amplo", "largo"] },
+  { word: "sudden", translations: ["imprevisto"] },
+  { word: "settle", translations: ["estabelecer"] },
+  { word: "sail", translations: ["vela (navio)", "vela", "ir de navio", "navegar"] },
+];
 
 const words = [
   words_0_100, 
@@ -1116,7 +1129,8 @@ const words = [
   words_701_800,
   words_801_900,
   words_901_1000,
-  custom
+  custom1,
+  custom2
 ];
 
 let shuffledIndexes = [];
@@ -1126,7 +1140,11 @@ let wrongAnswers = 0;
 let currentWords = [];
 let answeredWords = [];
 let incorrectWords = [];
-let currentWordListIndex = -1; 
+let currentWordListIndex = -1;
+let isWordVisible = true;
+
+const successSound = new Audio('assets/sounds/success.mp3');
+const failureSound = new Audio('assets/sounds/failure.mp3');
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -1185,7 +1203,7 @@ function displayRandomWord() {
 
   currentIndex = randomIndex;
   const wordContainer = document.getElementById('word-container');
-  wordContainer.textContent = currentWords[currentIndex].word;
+  wordContainer.textContent = isWordVisible ? currentWords[currentIndex].word : '';
 
   // Reproduzir a pronúncia da palavra selecionada
   pronounceWord(currentWords[currentIndex].word);
@@ -1211,11 +1229,11 @@ function showResultAlert(message, isCorrect, correctTranslations, word) {
   
 }
 
-document.getElementById('answer-input').addEventListener('keypress', function (e) {
-  if (e.key === 'Enter') {
-    checkAnswer();
-  }
-});
+// document.getElementById('answer-input').addEventListener('keypress', function (e) {
+//   if (e.key === 'Enter') {
+//     checkAnswer();
+//   }
+// });
 
 function checkAnswer() {
   const userAnswer = document.getElementById('answer-input').value.trim().toLowerCase();
@@ -1224,7 +1242,9 @@ function checkAnswer() {
   
   if (isCorrect) {
     correctAnswers++;
+    successSound.play();
   } else {
+    failureSound.play();
     wrongAnswers++;
     incorrectWords.push({
       word: currentWords[currentIndex].word,
@@ -1243,6 +1263,9 @@ function checkAnswer() {
 
   // Dar foco ao input
   document.getElementById('answer-input').focus();
+
+  const answerInput = document.getElementById('answer-input');
+  answerInput.classList.remove('correct-input', 'incorrect-input');
 }
 
 
@@ -1277,38 +1300,29 @@ function pronounceWordOld(word) {
   }
 }
 
-// Função para reproduzir a pronúncia de uma palavra usando a API de Text-to-Speech do Google Cloud
+
 async function pronounceWord(word) {
-  const apiKey = 'AIzaSyAJkMlsrbjBuEpt9loc65fliZVaEdTDfQE'; // Substitua pelo sua chave de API
-  const endpoint = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`;
-
-  const request = {
-    input: { text: word },
-    voice: { languageCode: 'en-US', ssmlGender: 'NEUTRAL' },
-    audioConfig: { audioEncoding: 'MP3' }
-  };
-
   try {
-    const response = await fetch(endpoint, {
+    const apiKey = 'AIzaSyAJkMlsrbjBuEpt9loc65fliZVaEdTDfQE';
+    const response = await fetch(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(request),
+      body: JSON.stringify({
+        input: { text: word },
+        voice: { languageCode: 'en-US', ssmlGender: 'FEMALE' },
+        audioConfig: { audioEncoding: 'MP3' },
+      }),
     });
-
-    if (!response.ok) {
-      throw new Error('Failed to retrieve audio from Text-to-Speech API');
-    }
 
     const data = await response.json();
     const audioContent = data.audioContent;
-
-    // Reproduzir o áudio retornado pela API
-    const audio = new Audio(`data:audio/mp3;base64,${audioContent}`);
+    const audio = new Audio('data:audio/mp3;base64,' + audioContent);
     audio.play();
   } catch (error) {
-    console.error('Error:', error);
+    console.error('Error pronouncing word:', error);
+    pronounceWordOld(word);
   }
 }
 
@@ -1325,4 +1339,51 @@ function showDictionaryLink(word) {
   const dictionaryLink = document.getElementById('dictionary-link');
   dictionaryLink.href = `https://www.wordreference.com/enpt/${word}`;
   dictionaryLink.style.display = 'block'; // Mostrar o link
+}
+
+document.getElementById('answer-input').addEventListener('input', function (e) {
+  const userInput = e.target.value.trim();
+  const currentWord = currentWords[currentIndex];
+  const answerInput = document.getElementById('answer-input');
+
+  const correctTranslations = currentWord.translations.map(translation => translation.toLowerCase());
+  let isCorrect = correctTranslations.includes(userInput);
+
+  if(isCorrect) {
+    answerInput.classList.add('correct-input');
+    setTimeout(checkAnswer, 700);
+  } else {
+    answerInput.classList.remove('correct-input');
+  }
+});
+
+function displayCurrentWord() {
+  if (currentIndex >= currentWordList.length) {
+    alert('You have finished the quiz!');
+    displayFinalStats();
+    return;
+  }
+  
+  const currentWord = currentWordList[currentIndex];
+  const wordContainer = document.getElementById('word-container');
+  wordContainer.textContent = isWordVisible ? currentWord.word : '';
+
+  const dictionaryLink = document.getElementById('dictionary-link');
+  dictionaryLink.href = `https://www.wordreference.com/enpt/${currentWord.word}`;
+
+  const answerInput = document.getElementById('answer-input');
+  answerInput.value = ''; // Clear the input
+  answerInput.classList.remove('correct', 'incorrect'); // Remove previous classes
+  answerInput.focus(); // Focus the input
+}
+
+function toggleWordVisibility() {
+  isWordVisible = !isWordVisible;
+
+  const toggleButton = document.getElementById('toggle-word-visibility-btn');
+  toggleButton.textContent = isWordVisible ? 'Ocultar palavra' : 'Mostrar palavra';
+
+  const wordContainer = document.getElementById('word-container');
+  wordContainer.textContent = isWordVisible ? currentWords[currentIndex].word : '';
+
 }

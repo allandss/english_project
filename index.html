@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,8 @@
       <li class="word-list" onclick="selectWordList(7)">701 - 800</li>
       <li class="word-list" onclick="selectWordList(8)">801 - 900</li>
       <li class="word-list" onclick="selectWordList(9)">901 - 1000</li>
-      <li class="word-list" onclick="selectWordList(10)">Custom</li>
+      <li class="word-list" onclick="selectWordList(10)">Custom 0 a 300</li>
+      <li class="word-list" onclick="selectWordList(11)">Custom 301 a 600</li>
     </ul>
   </div>
 
@@ -35,9 +36,15 @@
         <div id="word-container">
         </div>
       </div>
+      <button onclick="toggleWordVisibility()" id="toggle-word-visibility-btn">Ocultar palavra</button>
       <a id="dictionary-link" href="#" target="_blank">Word Reference Dictionary</a>
-      <input type="text" id="answer-input" placeholder="Digite sua resposta">
-      <button onclick="checkAnswer()" class="send">Enviar resposta</button>
+      <div class="main">
+        <input type="text" id="answer-input" placeholder="Digite e a tradução em português">
+        <div class="buttons-container">
+          <button id="dont-know-btn" onclick="checkAnswer()">Não Sei</button>
+          <button id="submit-btn" onclick="checkAnswer()">Responder</button>
+        </div>
+      </div>
       <div id="result"></div>
       <div id="stats"></div>
     </div>

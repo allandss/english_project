@@ -58,7 +58,7 @@ h1 {
 }
 
 #word-container {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 50px;
   text-align: center;
   color: royalblue;
@@ -68,36 +68,38 @@ h1 {
 #answer-input {
   padding: 10px;
   width: calc(100% - 20px);
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 13px;
+  font-size: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
   font-family: "Poppins";
   text-align: center;
+  border-radius: 30px;
+  background: #f7f7f7;
 }
 
 #answer-input:focus-visible {
-  outline: #ddd auto 1px;
+  outline: 0px;
 }
 
-button.send {
+#dont-know-btn, #submit-btn {
   padding: 15px 20px;
-  background-color: royalblue;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   transition: background-color 0.3s ease;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 300px;
-  font-family: "Poetsen One", sans-serif;
+  font-family: Inter;
+  font-weight: 600;
+  border-radius: 30px;
 }
 
-button:hover {
-  background-color: #0056b3;
+#submit-btn{
+  background-color: #4CAF50;
+}
+
+#dont-know-btn{
+  background-color: #C41713;
 }
 
 #result {
@@ -107,7 +109,7 @@ button:hover {
   opacity: 0;
   pointer-events: none;
   animation: slideInRight 0.5s ease forwards;
-  margin: 30px;
+  margin: 15px;
   font-family: 'Poppins';
   text-align: center;
   color: #0f8013;
@@ -129,7 +131,6 @@ button:hover {
 
 #stats{
   text-align: center;
-  margin-top: 25px;
   margin-bottom: 15px;
 }
 
@@ -168,7 +169,11 @@ button:hover {
 
 h4{
   text-align: center;
-  color: royalblue;
+  color: #898989;
+  margin-bottom: 5px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* Estilos para telas menores */
@@ -220,4 +225,42 @@ h4{
   font-size: 14px;
   color: gray;
   font-style: italic;
+  margin-top: 15px;
+}
+
+#answer-input.correct-input {
+  border: 1px solid #0f8013;
+  color: #0f8013;
+  background-image: url('assets/done_outline.svg');
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+#toggle-word-visibility-btn{
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  color: #999;
+  height: 30px;
+  font-family: Inter;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons-container button {
+  flex: 1;
+}
+
+.main{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
