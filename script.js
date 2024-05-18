@@ -63,7 +63,7 @@ const words_0_100 = [
   { word: "write", translations: ["escrever"] },
   { word: "would", translations: ["iria","seria"] },
   { word: "like", translations: ["como", "gostar"] },
-  { word: "so", translations: ["assim", "tão"] },
+  { word: "so", translations: ["assim", "tão", "então"] },
   { word: "these", translations: ["estes"] },
   { word: "her", translations: ["dela"] },
   { word: "long", translations: ["longo"] },
@@ -153,7 +153,7 @@ const words_101_200 = [
   { word: "same", translations: ["mesmo"] },
   { word: "tell", translations: ["contar"] },
   { word: "does", translations: ["faz", "mesmo"] },
-  { word: "set", translations: ["conjunto", "fixar"] },
+  { word: "set", translations: ["conjunto", "fixar", "coleção", "série"] },
   { word: "three", translations: ["três"] },
   { word: "want", translations: ["querer"] },
   { word: "air", translations: ["ar"] },
@@ -1028,83 +1028,20 @@ const words_901_1000 = [
   { word: "dessert", translations: ["sobremesa"] }
 ];
 
-
-const custom1 = [
-  { word: "some", translations: ["algum"] },
-  { word: "same", translations: ["mesmo"] },
-  { word: "come", translations: ["vir"] },
-  { word: "came", translations: ["chegado"] },
-  { word: "over", translations: ["por cima", "sobre", "acima"] },
-  { word: "under", translations: ["debaixo", "sob"] },
-  { word: "will", translations: ["vai", "irei"] },
-  { word: "could", translations: ["poderia"] },
-  { word: "would", translations: ["seria", "iria"] },
-  { word: "may", translations: ["poder"] },
-  { word: "might", translations: ["poder", "poderia"] },
-  { word: "should", translations: ["deveria"] },
-  { word: "it", translations: ["este", "isto", "isso", "o", "a", "ele", "ela"] },
-  { word: "his", translations: ["dele"] },
-  { word: "has", translations: ["tem"] },
-  { word: "had", translations: ["tinha"] },
-  { word: "her", translations: ["dela"] },
-  { word: "him", translations: ["ele"] },
-  { word: "than", translations: ["do que"] },
-  { word: "their", translations: ["deles"] },
-  { word: "they", translations: ["eles"] },
-  { word: "then", translations: ["então"] },
-  { word: "them", translations: ["eles"] },
-  { word: "that", translations: ["aquele"] },
-  { word: "those", translations: ["aqueles"] },
-  { word: "there", translations: ["lá"] },
-  { word: "these", translations: ["estes"] },
-  { word: "were", translations: ["estavam", "eram"] },
-  { word: "where", translations: ["onde"] },
-  { word: "was", translations: ["estava", "era"] },
-  { word: "who", translations: ["quem"] },
-  { word: "why", translations: ["porque"] },
-  { word: "went", translations: ["foi"] },
-  { word: "write", translations: ["escrever"] },
-  { word: "white", translations: ["branco"] },
-  { word: "every", translations: ["cada"] },
+const custom = [
+  { word: "so", translations: ["assim", "tão", "então"] },
+  { word: "set", translations: ["conjunto", "fixar", "coleção", "série"] },
+  { word: "act", translations: ["ato", "agir"] },
   { word: "even", translations: ["mesmo", "até", "ainda mais"] },
-  { word: "until", translations: ["até"] },
-  { word: "still", translations: ["até", "ainda assim", "calmo"] },
-  { word: "such", translations: ["tal", "tanto"] },
-  { word: "sure", translations: ["certo"] },
-  { word: "must", translations: ["dever", "muito"] },
-  { word: "thing", translations: ["coisa"] },
-  { word: "think", translations: ["pensar"] },
-  { word: "get", translations: ["obter"] },
-  { word: "got", translations: ["obtido"] },
-  { word: "take", translations: ["pegar"] },
-  { word: "took", translations: ["pegado"] },
-  { word: "does", translations: ["faz"] },
-  { word: "move", translations: ["mover-se"] },
-  { word: "call", translations: ["chamar"] },
-  { word: "ease", translations: ["facilitar"] },
-  { word: "us", translations: ["nós"] },
-  { word: "as", translations: ["como"] },
-  { word: "port", translations: ["porto"] },
-  { word: "begin", translations: ["começar"] },
-  { word: "began", translations: ["começado"] },
-  { word: "once", translations: ["uma vez"] },
-  { word: "let", translations: ["deixar"] },
-  { word: "carry", translations: ["carregar"] },
-  { word: "care", translations: ["cuidado"] },
-  { word: "cover", translations: ["cobrir"] },
-  { word: "seem", translations: ["parecer"] },
-  { word: "start", translations: ["começar"] },
-  { word: "life", translations: ["vida"] },
-  { word: "both", translations: ["ambos"] },
-  { word: "sight", translations: ["visão", "vista"] },
-  { word: "saw", translations: ["viu", "serra"] },
-  { word: "keep", translations: ["guardar"] },
-  { word: "few", translations: ["alguns", "pouco"] },
-  { word: "far", translations: ["longe"] },
-  { word: "thought", translations: ["pensamento"] }
-];
-
-const custom2 = [
+  { word: "stand", translations: ["permanecer", "de pé", "banca"] },
+  { word: "thought", translations: ["pensamento"] },
+  { word: "through", translations: ["através de"] },
+  { word: "self", translations: ["próprio", "ego", "mesmo", "eu"] },
+  { word: "hold", translations: ["guardar"] },
+  { word: "heard", translations: ["ouvido"] },
+  { word: "ever", translations: ["sempre", "já"] },
+  { word: "heat", translations: ["calor"] },
+  { word: "bring", translations: ["trazer"] },
   { word: "stood", translations: ["permanecido"] },
   { word: "stead", translations: ["local"] },
   { word: "tire", translations: ["cansar"] },
@@ -1115,7 +1052,15 @@ const custom2 = [
   { word: "wide", translations: ["amplo", "largo"] },
   { word: "sudden", translations: ["imprevisto"] },
   { word: "settle", translations: ["estabelecer"] },
+  { word: "felt", translations: ["sentido"] },
+  { word: "sat", translations: ["sentado"] },
+  { word: "hunt", translations: ["caçar"] },
+  { word: "sit", translations: ["sentar"] },
+  { word: "weight", translations: ["peso"] },
   { word: "sail", translations: ["vela (navio)", "vela", "ir de navio", "navegar"] },
+  { word: "hill", translations: ["colina"] },
+  { word: "raise", translations: ["levantar"] },
+  { word: "ride", translations: ["passeio"] },
 ];
 
 const words = [
@@ -1129,8 +1074,7 @@ const words = [
   words_701_800,
   words_801_900,
   words_901_1000,
-  custom1,
-  custom2
+  custom
 ];
 
 let shuffledIndexes = [];
@@ -1142,6 +1086,8 @@ let answeredWords = [];
 let incorrectWords = [];
 let currentWordListIndex = -1;
 let isWordVisible = true;
+let lastAnswer = "";
+let isAnswerChecked = false;
 
 const successSound = new Audio('assets/sounds/success.mp3');
 const failureSound = new Audio('assets/sounds/failure.mp3');
@@ -1253,6 +1199,8 @@ function checkAnswer() {
       translations: correctTranslations
     });
   }
+
+  lastAnswer = userAnswer;
   
   const message = isCorrect ? 'Correto!' : 'Incorreto!';
   showResultAlert(message, isCorrect, correctTranslations, currentWords[currentIndex].word);
@@ -1268,6 +1216,8 @@ function checkAnswer() {
 
   const answerInput = document.getElementById('answer-input');
   answerInput.classList.remove('correct-input', 'incorrect-input');
+
+  isAnswerChecked = false;
 }
 
 
@@ -1344,18 +1294,27 @@ function showDictionaryLink(word) {
 }
 
 document.getElementById('answer-input').addEventListener('input', function (e) {
-  const userInput = document.getElementById('answer-input').value.trim().toLowerCase();
-  const currentWord = currentWords[currentIndex];
-  const answerInput = document.getElementById('answer-input');
+  if (!isAnswerChecked) {
+    const userInput = document.getElementById('answer-input').value.trim().toLowerCase();
+    const currentWord = currentWords[currentIndex];
+    const answerInput = document.getElementById('answer-input');
 
-  const correctTranslations = currentWord.translations.map(translation => translation.toLowerCase());
-  let isCorrect = correctTranslations.includes(userInput);
+    const correctTranslations = currentWord.translations.map(translation => translation.toLowerCase());
+    let isCorrect = correctTranslations.includes(userInput);
 
-  if(isCorrect) {
-    answerInput.classList.add('correct-input');
-    setTimeout(checkAnswer, 700);
-  } else {
-    answerInput.classList.remove('correct-input');
+    console.log(isCorrect);
+
+    if(lastAnswer === userInput){
+      document.getElementById('answer-input').value = "";
+    }
+
+    if(isCorrect) {
+      isAnswerChecked = true; // Marcar que a resposta foi verificada
+      answerInput.classList.add('correct-input');
+      setTimeout(checkAnswer, 700);
+    } else {
+      answerInput.classList.remove('correct-input');
+    }
   }
 });
 
