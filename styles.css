@@ -89,8 +89,8 @@ h1 {
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s ease;
-  font-family: "Inter";
-  font-weight: 600;
+  font-family: "Poppins";
+  font-weight: 500;
   border-radius: 30px;
 }
 
@@ -171,7 +171,7 @@ h4{
   text-align: center;
   color: #898989;
   margin-bottom: 5px;
-  font-family: "Inter";
+  font-family: "Poppins";
   font-weight: 400;
   font-size: 14px;
 }
@@ -221,7 +221,7 @@ h4{
 #dictionary-link{
   margin-bottom: 20px;
   text-align: center;
-  font-family: "Inter";
+  font-family: "Poppins";
   font-size: 14px;
   color: gray;
   font-style: italic;
@@ -238,16 +238,16 @@ h4{
 }
 
 #toggle-word-visibility-btn{
-  width: 120px;
   margin: 0 auto;
   display: block;
   border: 1px solid #ddd;
   border-radius: 30px;
   color: #999;
   height: 30px;
-  font-family: "Inter";
+  font-family: "Poppins";
   font-size: 12px;
   cursor: pointer;
+  padding: 0 20px;
 }
 
 .buttons-container {

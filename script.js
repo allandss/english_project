@@ -1344,7 +1344,7 @@ function showDictionaryLink(word) {
 }
 
 document.getElementById('answer-input').addEventListener('input', function (e) {
-  const userInput = e.target.value.trim();
+  const userInput = document.getElementById('answer-input').value.trim().toLowerCase();
   const currentWord = currentWords[currentIndex];
   const answerInput = document.getElementById('answer-input');
 
@@ -1359,25 +1359,6 @@ document.getElementById('answer-input').addEventListener('input', function (e) {
   }
 });
 
-function displayCurrentWord() {
-  if (currentIndex >= currentWordList.length) {
-    alert('You have finished the quiz!');
-    displayFinalStats();
-    return;
-  }
-  
-  const currentWord = currentWordList[currentIndex];
-  const wordContainer = document.getElementById('word-container');
-  wordContainer.textContent = isWordVisible ? currentWord.word : '';
-
-  const dictionaryLink = document.getElementById('dictionary-link');
-  dictionaryLink.href = `https://www.wordreference.com/enpt/${currentWord.word}`;
-
-  const answerInput = document.getElementById('answer-input');
-  answerInput.value = ''; // Clear the input
-  answerInput.classList.remove('correct', 'incorrect'); // Remove previous classes
-  answerInput.focus(); // Focus the input
-}
 
 function toggleWordVisibility() {
   isWordVisible = !isWordVisible;
