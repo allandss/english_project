@@ -39,6 +39,7 @@ body {
 .main-content {
   flex: 1;
   padding: 20px;
+  position: relative;  /* Adicionado para posicionamento relativo */
 }
 
 #word-container {
@@ -67,8 +68,26 @@ button {
 }
 
 #result {
-  margin-top: 20px;
+  position: fixed;  /* Adicionado para posicionamento fixo */
+  bottom: 20px;  /* Distância do fundo */
+  right: 20px;  /* Distância da direita */
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
   font-size: 1.2em;
+  z-index: 1000;  /* Certifique-se de que esteja acima de outros elementos */
+  display: none;  /* Inicialmente escondido */
+}
+
+#result .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .correct {
@@ -89,8 +108,15 @@ button {
 }
 
 #stats {
-  margin-top: 20px;
+  position: absolute;  /* Adicionado para posicionamento absoluto */
+  top: 20px;  /* Distância do topo */
+  right: 20px;  /* Distância da direita */
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
   font-size: 1.2em;
+  z-index: 1000;  /* Certifique-se de que esteja acima de outros elementos */
 }
 
 .result-correct {
@@ -106,6 +132,15 @@ button {
   font-size: 1.1em;
 }
 
+#exemplos{
+  margin-top: 20px;
+}
+
 .blank {
   border-bottom: 1px dashed #000;
+}
+
+#dictionary-link{
+  display: block;
+  margin-top: 20px;
 }

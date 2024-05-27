@@ -24,12 +24,16 @@
             </select>
         </div>
         <div id="word-container"></div>
-        <div id="classification-container"></div> <!-- Novo contêiner para a classificação -->
+        <div id="classification-container"></div>
         <input type="text" id="answer-input" placeholder="Digite sua resposta">
         <button onclick="checkAnswer()">Checar Resposta</button>
         <button id="toggle-word-visibility-btn" onclick="toggleWordVisibility()">Ocultar palavra</button>
-        <button id="toggle-examples-visibility-btn" onclick="toggleExamplesVisibility()">Ocultar exemplos</button>
-        <div id="result"></div>
+        <button id="toggle-examples-visibility-btn" onclick="toggleExamplesVisibility()">Ocultar ajuda</button>
+        <button id="repeat-pronunciation-btn" style="display: none;" onclick="repeatPronunciation()">Repetir Pronúncia</button>
+        <div id="result">
+            <button class="close-btn" onclick="closeResult()">×</button>
+            <div id="result-message"></div>
+        </div>
         <div id="stats"></div>
         <a id="dictionary-link" target="_blank">Dicionário</a>
         <div id="exemplos"></div>
