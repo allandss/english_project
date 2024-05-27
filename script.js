@@ -238,7 +238,6 @@ const wordsList2 = [
     }
 ];
 
-
 let words = wordsList1;
 let shuffledIndexes = [];
 let currentIndex = -1;
@@ -283,7 +282,7 @@ function displayRandomWord() {
         initializeIndexes();
         displayRandomWord();
         updateStats();
-        showIncorrectWords();
+        showIncorrectWordsTable();
         return;
     }
 
@@ -358,6 +357,7 @@ function checkAnswer() {
             wordData: currentWords[currentIndex].ingles, // Sempre armazenando a palavra em inglês
             userAnswer: userAnswer
         });
+        addIncorrectWordToTable(currentWords[currentIndex].ingles, userAnswer);
     }
 
     const message = isCorrect ? 'Correto!' : 'Incorreto!';
@@ -530,6 +530,48 @@ function loadWords(listName) {
     initializeIndexes();
     displayRandomWord();
     updateStats();
+    updateIncorrectWordsTable(); // Atualiza a tabela ao carregar nova lista
+}
+
+function updateIncorrectWordsTable() {
+    const tableBody = document.getElementById('incorrect-words-table').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = '';
+    incorrectWords.slice().reverse().forEach(incorrectWord => {
+        const { wordData, userAnswer } = incorrectWord;
+        const dictionaryLink = `https://www.linguee.com.br/ingles-portugues/search?source=auto&query=${wordData.palavra}`;
+        const row = tableBody.insertRow(0); // Adiciona a linha no topo
+        row.innerHTML = `
+            <td>${wordData.palavra}</td>
+            <td>${wordData.traducoes.join(', ')}</td>
+            <td>${wordData.exemplos.join('<br>')}</td>
+            <td><button onclick="pronounceWord('${wordData.palavra}', '${wordData.audio}')">Ouvir</button></td>
+            <td><a href="${dictionaryLink}" target="_blank">Dicionário</a></td>
+            <td>${userAnswer}</td>
+        `;
+    });
+
+    document.getElementById('incorrect-words-section').style.display = incorrectWords.length > 0 ? 'block' : 'none';
+}
+
+function addIncorrectWordToTable(wordData, userAnswer) {
+    const tableBody = document.getElementById('incorrect-words-table').getElementsByTagName('tbody')[0];
+    const dictionaryLink = `https://www.linguee.com.br/ingles-portugues/search?source=auto&query=${wordData.palavra}`;
+    const row = tableBody.insertRow(0); // Adiciona a linha no topo
+    row.innerHTML = `
+        <td>${wordData.palavra}</td>
+        <td>${wordData.traducoes.join(', ')}</td>
+        <td>${wordData.exemplos.join('<br>')}</td>
+        <td><button onclick="pronounceWord('${wordData.palavra}', '${wordData.audio}')">Ouvir</button></td>
+        <td><a href="${dictionaryLink}" target="_blank">Dicionário</a></td>
+        <td>${userAnswer}</td>
+    `;
+
+    document.getElementById('incorrect-words-section').style.display = 'block';
+}
+
+function clearIncorrectWords() {
+    incorrectWords = [];
+    updateIncorrectWordsTable();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

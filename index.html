@@ -38,6 +38,24 @@
         <a id="dictionary-link" target="_blank">Dicionário</a>
         <div id="exemplos"></div>
         <div id="descricao"></div>
+        <!-- Seção de palavras incorretas -->
+        <div id="incorrect-words-section" style="display: none;">
+            <h3>Palavras Respondidas Incorretamente</h3>
+            <button onclick="clearIncorrectWords()">Limpar</button>
+            <table id="incorrect-words-table">
+                <thead>
+                    <tr>
+                        <th>Palavra</th>
+                        <th>Tradução</th>
+                        <th>Exemplos</th>
+                        <th>Pronúncia</th>
+                        <th>Dicionário</th>
+                        <th>Resposta Informada</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
     </div>
 
     <script src="script.js"></script>
