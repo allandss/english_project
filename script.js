@@ -238,7 +238,6 @@ const wordsList2 = [
     }
 ];
 
-
 let words = wordsList1;
 let shuffledIndexes = [];
 let currentIndex = -1;
@@ -311,7 +310,6 @@ function displayRandomWord() {
     displayWordDetails(wordData);
 }
 
-
 function updateStats() {
     const statsContainer = document.getElementById('stats');
     statsContainer.innerHTML = `Acertos: <span class="result-correct">${correctAnswers}</span> | Erros: <span class="result-incorrect">${wrongAnswers}</span>`;
@@ -370,9 +368,6 @@ function showIncorrectWords() {
 }
 
 async function pronounceWord(word, audioPath) {
-    if (selectedLanguage !== 'ingles') {
-        return; // Não fazer nada se o idioma não for inglês
-    }
     try {
         const audio = new Audio(audioPath);
         audio.onerror = async () => {
@@ -418,6 +413,15 @@ function repeatPronunciation() {
 function changeLanguage() {
     const languageSelect = document.getElementById('language-select');
     selectedLanguage = languageSelect.value;
+
+    // Mostrar/ocultar o botão "Ouvir Resposta em Inglês" baseado no idioma selecionado
+    const listenAnswerBtn = document.getElementById('listen-answer-btn');
+    if (selectedLanguage === 'portugues') {
+        listenAnswerBtn.style.display = 'inline-block';
+    } else {
+        listenAnswerBtn.style.display = 'none';
+    }
+
     displayRandomWord();
 }
 
@@ -434,7 +438,6 @@ function toggleWordVisibility() {
     wordContainer.textContent = isWordVisible ? wordData.palavra : '';
     classificationContainer.textContent = isWordVisible ? wordData.classificacao : ''; 
 }
-
 
 function showDictionaryLink(word) {
     const dictionaryLink = document.getElementById('dictionary-link');
@@ -468,23 +471,22 @@ function displayWordDetails(wordData) {
     dicaContainer.innerHTML = `<b>Dica:</b><br>${dicaText}`;
 }
 
-
 function toggleExamplesVisibility() {
     areExamplesVisible = !areExamplesVisible;
     const toggleButton = document.getElementById('toggle-examples-visibility-btn');
     toggleButton.textContent = areExamplesVisible ? 'Ocultar ajuda' : 'Mostrar ajuda';
     
     const exemplosContainer = document.getElementById('exemplos');
-    const descricaoContainer = document.getElementById('descricao');
+    const dicaContainer = document.getElementById('descricao');
     const dictionaryLink = document.getElementById('dictionary-link');
 
     if (areExamplesVisible) {
         exemplosContainer.style.display = 'block';
-        descricaoContainer.style.display = 'block';
+        dicaContainer.style.display = 'block';
         dictionaryLink.style.display = 'block';
     } else {
         exemplosContainer.style.display = 'none';
-        descricaoContainer.style.display = 'none';
+        dicaContainer.style.display = 'none';
         dictionaryLink.style.display = 'none';
     }
 
@@ -511,20 +513,24 @@ function loadWords(listName) {
     updateStats();
 }
 
+function listenAnswerInEnglish() {
+    const wordData = currentWords[currentIndex].ingles; // Palavra em inglês
+    pronounceWord(wordData.palavra, wordData.audio);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initializeIndexes();
     displayRandomWord();
     updateStats();
     document.getElementById('language-select').value = 'ingles';
-    changeLanguage(); 
+    changeLanguage(); // Adicionado para garantir que o idioma inicial seja inglês
     document.getElementById('answer-input').focus();
 
+    // Adicionar evento de tecla Enter para enviar a resposta
     document.getElementById('answer-input').addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            event.preventDefault(); 
+            event.preventDefault(); // Evitar a ação padrão
             checkAnswer();
         }
     });
 });
-
-
