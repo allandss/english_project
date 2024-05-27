@@ -238,6 +238,7 @@ const wordsList2 = [
     }
 ];
 
+
 let words = wordsList1;
 let shuffledIndexes = [];
 let currentIndex = -1;
@@ -318,12 +319,22 @@ function updateStats() {
 function showResultAlert(message, isCorrect, correctTranslations, word) {
     const resultAlert = document.getElementById('result');
     const resultMessage = document.getElementById('result-message');
-    
-    resultMessage.innerHTML = `<span>${message}</span><br><b>${word} = ${correctTranslations.join(', ')}</b>`;
+
+    const englishWordData = currentWords[currentIndex].ingles; // Sempre usando a palavra em inglês
+    const dictionaryLink = `https://www.linguee.com.br/ingles-portugues/search?source=auto&query=${englishWordData.palavra}`;
+
+    resultMessage.innerHTML = `
+        <span>${message}</span><br>
+        <b>${word} = ${correctTranslations.join(', ')}</b><br>
+        ${!isCorrect ? `
+            <button onclick="listenIncorrectWordPronunciation()">Ouvir Pronúncia</button>
+            <a href="${dictionaryLink}" target="_blank">Dicionário</a>
+        ` : ''}
+    `;
     resultAlert.classList.toggle('correct', isCorrect);
     resultAlert.classList.toggle('incorrect', !isCorrect);
     resultAlert.classList.add('fade-in');
-    resultAlert.style.display = 'block';  // Mostrar o resultado
+    resultAlert.style.display = 'block';
 }
 
 function closeResult() {
@@ -343,7 +354,10 @@ function checkAnswer() {
     } else {
         failureSound.play();
         wrongAnswers++;
-        incorrectWords.push(wordData);
+        incorrectWords.push({
+            wordData: currentWords[currentIndex].ingles, // Sempre armazenando a palavra em inglês
+            userAnswer: userAnswer
+        });
     }
 
     const message = isCorrect ? 'Correto!' : 'Incorreto!';
@@ -360,7 +374,7 @@ function checkAnswer() {
 function showIncorrectWords() {
     let incorrectWordsMessage = "Palavras incorretas:\n";
     incorrectWords.forEach(word => {
-        incorrectWordsMessage += `${word.palavra} - Traduções: ${word.traducoes.join(', ')}\n`;
+        incorrectWordsMessage += `${word.wordData.palavra} - Traduções: ${word.wordData.traducoes.join(', ')}\n`;
     });
     if (incorrectWords.length) {
         alert(incorrectWordsMessage);
@@ -410,11 +424,20 @@ function repeatPronunciation() {
     pronounceWord(wordData.palavra, wordData.audio);
 }
 
+function listenIncorrectWordPronunciation() {
+    const englishWordData = incorrectWords[incorrectWords.length - 1].wordData; // Palavra em inglês
+    pronounceWord(englishWordData.palavra, englishWordData.audio);
+}
+
+function listenAnswerInEnglish() {
+    const wordData = currentWords[currentIndex].ingles; // Palavra em inglês
+    pronounceWord(wordData.palavra, wordData.audio);
+}
+
 function changeLanguage() {
     const languageSelect = document.getElementById('language-select');
     selectedLanguage = languageSelect.value;
 
-    // Mostrar/ocultar o botão "Ouvir Resposta em Inglês" baseado no idioma selecionado
     const listenAnswerBtn = document.getElementById('listen-answer-btn');
     if (selectedLanguage === 'portugues') {
         listenAnswerBtn.style.display = 'inline-block';
@@ -430,7 +453,6 @@ function toggleWordVisibility() {
     const toggleButton = document.getElementById('toggle-word-visibility-btn');
     toggleButton.textContent = isWordVisible ? 'Ocultar palavra' : 'Mostrar palavra';
 
-    // Atualizar a visibilidade da palavra e da classificação da palavra atual
     const wordData = currentWords[currentIndex][selectedLanguage];
     const wordContainer = document.getElementById('word-container');
     const classificationContainer = document.getElementById('classification-container'); 
@@ -442,7 +464,7 @@ function toggleWordVisibility() {
 function showDictionaryLink(word) {
     const dictionaryLink = document.getElementById('dictionary-link');
     const targetLanguage = selectedLanguage === 'portugues' ? 'ingles-portugues' : 'portugues-ingles';
-    const wordToTranslate = selectedLanguage === 'portugues' ? currentWords[currentIndex].ingles.palavra : currentWords[currentIndex].portugues.palavra;
+    const wordToTranslate = currentWords[currentIndex].ingles.palavra;
     dictionaryLink.href = `https://www.linguee.com.br/${targetLanguage}/search?source=auto&query=${wordToTranslate}`;
 }
 
@@ -456,7 +478,6 @@ function displayWordDetails(wordData) {
             let exemploOriginal = wordData.exemplos[i];
             let exemploTraduzido = currentWords[currentIndex][selectedLanguage === 'portugues' ? 'ingles' : 'portugues'].exemplos[i];
             
-            // Ocultar a palavra na tradução
             exemploTraduzido = exemploTraduzido.replace(new RegExp(wordData.traducoes.join('|'), 'gi'), '___');
             
             exemplosHTML += `${exemploOriginal}<br>${exemploTraduzido}<br><br>`;
@@ -466,7 +487,6 @@ function displayWordDetails(wordData) {
         exemplosContainer.innerHTML = '';
     }
     
-    // Mostrar a dica no idioma oposto ao selecionado
     const dicaText = selectedLanguage === 'portugues' ? currentWords[currentIndex].ingles.descricao : currentWords[currentIndex].portugues.descricao;
     dicaContainer.innerHTML = `<b>Dica:</b><br>${dicaText}`;
 }
@@ -501,7 +521,6 @@ function loadWords(listName) {
         case 'lista2':
             words = wordsList2;
             break;
-        // Adicione mais listas conforme necessário
     }
     currentWords = words;
     answeredWords = [];
@@ -513,23 +532,17 @@ function loadWords(listName) {
     updateStats();
 }
 
-function listenAnswerInEnglish() {
-    const wordData = currentWords[currentIndex].ingles; // Palavra em inglês
-    pronounceWord(wordData.palavra, wordData.audio);
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     initializeIndexes();
     displayRandomWord();
     updateStats();
     document.getElementById('language-select').value = 'ingles';
-    changeLanguage(); // Adicionado para garantir que o idioma inicial seja inglês
+    changeLanguage();
     document.getElementById('answer-input').focus();
 
-    // Adicionar evento de tecla Enter para enviar a resposta
     document.getElementById('answer-input').addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            event.preventDefault(); // Evitar a ação padrão
+            event.preventDefault();
             checkAnswer();
         }
     });
