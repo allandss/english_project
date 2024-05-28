@@ -3,61 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprenda Palavras</title>
+    <title>Vocabulary Training</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Listas de Palavras</h2>
-        <ul>
-            <li><a href="#" onclick="loadWords('lista1')">Lista 1</a></li>
-            <li><a href="#" onclick="loadWords('lista2')">Lista 2</a></li>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2><span>VOCABULARY</span> TRAINING</h2>
+            <button class="close-btn" id="close-btn"><img src="./assets/chevron_left.svg" alt=""></button>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="menu-item">Início</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="menu-item dropdown-btn">1000 palavras mais comuns <span class="dropdown-arrow"><img src="./assets/keyboard_arrow_down.svg" alt=""></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="loadWords('lista1')">0 a 100</a></li>
+                    <li><a href="#" onclick="loadWords('lista2')">101 a 200</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     <div class="main-content">
-        <div>
-            <label for="language-select">Selecione o idioma:</label>
-            <select id="language-select" onchange="changeLanguage()">
-                <option value="portugues">Português</option>
-                <option value="ingles">Inglês</option>
-            </select>
+        <div class="header">
+            <button class="open-btn" id="open-btn">☰</button>
+            <div class="right">
+                <div id="stats"></div>
+            </div>
         </div>
-        <div id="word-container"></div>
-        <div id="classification-container"></div>
-        <input type="text" id="answer-input" placeholder="Digite sua resposta">
-        <button onclick="checkAnswer()">Checar Resposta</button>
-        <button id="toggle-word-visibility-btn" onclick="toggleWordVisibility()">Ocultar palavra</button>
-        <button id="toggle-examples-visibility-btn" onclick="toggleExamplesVisibility()">Ocultar ajuda</button>
-        <button id="repeat-pronunciation-btn" style="display: none;" onclick="repeatPronunciation()">Repetir Pronúncia</button>
-        <button id="listen-answer-btn" style="display: none;" onclick="listenAnswerInEnglish()">Ouvir Resposta em Inglês</button>
-        <div id="result">
-            <button class="close-btn" onclick="closeResult()">×</button>
-            <div id="result-message"></div>
-        </div>
-        <div id="stats"></div>
-        <a id="dictionary-link" target="_blank">Dicionário</a>
-        <div id="exemplos"></div>
-        <div id="descricao"></div>
-        <!-- Seção de palavras incorretas -->
-        <div id="incorrect-words-section" style="display: none;">
-            <h3>Palavras Respondidas Incorretamente</h3>
-            <button onclick="clearIncorrectWords()">Limpar</button>
-            <table id="incorrect-words-table">
-                <thead>
-                    <tr>
-                        <th>Palavra</th>
-                        <th>Tradução</th>
-                        <th>Exemplos</th>
-                        <th>Pronúncia</th>
-                        <th>Dicionário</th>
-                        <th>Resposta Informada</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+        
+        <div class="content">
+            <div class="topo">
+                <div class="word">
+                    <div id="word-container"></div><button id="repeat-pronunciation-btn" style="display: none;" onclick="repeatPronunciation()"><img src="./assets/volume_up.svg" alt=""></button>
+                    <div id="classification-container"></div>
+                </div>
+                <div class="options">
+                    <div class="change-language" onclick="toggleLanguage()">
+                        <span id="toggle-language-btn">Inglês - Português</span>
+                        <img src="./assets/swap_horiz.svg" alt="">
+                    </div>
+                    <span id="toggle-word-visibility-btn" onclick="toggleWordVisibility()">Ocultar palavra</span>
+                </div>
+            </div>
+
+            <input type="text" id="answer-input" placeholder="Digite sua resposta">
+            <button onclick="checkAnswer()">Checar Resposta</button>
+            <button id="toggle-examples-visibility-btn" onclick="toggleExamplesVisibility()">Ocultar ajuda</button>
+            
+            <button id="listen-answer-btn" style="display: none;" onclick="listenAnswerInEnglish()">Ouvir Resposta em Inglês</button>
+            <div id="result">
+                <button class="close-btn" onclick="closeResult()">×</button>
+                <div id="result-message"></div>
+            </div>
+            <div id="exemplos"></div>
+            <div id="descricao"></div>
+            <a id="dictionary-link" target="_blank">Ver dicionário</a>
+
+            <!-- Seção de palavras incorretas -->
+            <div id="incorrect-words-section" style="display: none;">
+                <h3>Palavras Respondidas Incorretamente</h3>
+                <button onclick="clearIncorrectWords()">Limpar</button>
+                <table id="incorrect-words-table">
+                    <thead>
+                        <tr>
+                            <th>Palavra</th>
+                            <th>Tradução</th>
+                            <th>Exemplos</th>
+                            <th>Pronúncia</th>
+                            <th>Dicionário</th>
+                            <th>Resposta Informada</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

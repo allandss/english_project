@@ -371,16 +371,6 @@ function checkAnswer() {
     document.getElementById('answer-input').focus();
 }
 
-function showIncorrectWords() {
-    let incorrectWordsMessage = "Palavras incorretas:\n";
-    incorrectWords.forEach(word => {
-        incorrectWordsMessage += `${word.wordData.palavra} - Traduções: ${word.wordData.traducoes.join(', ')}\n`;
-    });
-    if (incorrectWords.length) {
-        alert(incorrectWordsMessage);
-    }
-}
-
 async function pronounceWord(word, audioPath) {
     try {
         const audio = new Audio(audioPath);
@@ -434,10 +424,18 @@ function listenAnswerInEnglish() {
     pronounceWord(wordData.palavra, wordData.audio);
 }
 
-function changeLanguage() {
-    const languageSelect = document.getElementById('language-select');
-    selectedLanguage = languageSelect.value;
+function toggleLanguage() {
+    selectedLanguage = selectedLanguage === 'portugues' ? 'ingles' : 'portugues';
+    changeLanguage();
+    updateLanguageButton();
+}
 
+function updateLanguageButton() {
+    const toggleLanguageBtn = document.getElementById('toggle-language-btn');
+    toggleLanguageBtn.textContent = selectedLanguage === 'portugues' ? 'Português - Inglês' : 'Inglês - Português';
+}
+
+function changeLanguage() {
     const listenAnswerBtn = document.getElementById('listen-answer-btn');
     if (selectedLanguage === 'portugues') {
         listenAnswerBtn.style.display = 'inline-block';
@@ -473,7 +471,7 @@ function displayWordDetails(wordData) {
     const dicaContainer = document.getElementById('descricao'); // Renomear para dicaContainer
     
     if (areExamplesVisible) {
-        let exemplosHTML = '<b>Exemplos:</b><br>';
+        let exemplosHTML = '<b>Exemplos </b><br><br>';
         for (let i = 0; i < wordData.exemplos.length; i++) {
             let exemploOriginal = wordData.exemplos[i];
             let exemploTraduzido = currentWords[currentIndex][selectedLanguage === 'portugues' ? 'ingles' : 'portugues'].exemplos[i];
@@ -488,7 +486,7 @@ function displayWordDetails(wordData) {
     }
     
     const dicaText = selectedLanguage === 'portugues' ? currentWords[currentIndex].ingles.descricao : currentWords[currentIndex].portugues.descricao;
-    dicaContainer.innerHTML = `<b>Dica:</b><br>${dicaText}`;
+    dicaContainer.innerHTML = `<b>Dica</b><br>${dicaText}`;
 }
 
 function toggleExamplesVisibility() {
@@ -578,7 +576,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeIndexes();
     displayRandomWord();
     updateStats();
-    document.getElementById('language-select').value = 'ingles';
     changeLanguage();
     document.getElementById('answer-input').focus();
 
@@ -589,3 +586,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('sidebar');
+    const openBtn = document.getElementById('open-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+
+    function checkWindowSize() {
+        if (window.innerWidth > 768) {
+            sidebar.classList.add('open');
+            document.querySelector('.main-content').style.marginLeft = '250px';
+        } else {
+            sidebar.classList.remove('open');
+            document.querySelector('.main-content').style.marginLeft = '0';
+        }
+    }
+
+    window.addEventListener('resize', checkWindowSize);
+    checkWindowSize(); // Verifica o tamanho da janela no carregamento
+
+    openBtn.addEventListener('click', function() {
+        if (sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+            document.querySelector('.main-content').style.marginLeft = '0';
+        } else {
+            sidebar.classList.add('open');
+            document.querySelector('.main-content').style.marginLeft = '250px';
+        }
+    });
+
+    closeBtn.addEventListener('click', function() {
+        sidebar.classList.remove('open');
+        document.querySelector('.main-content').style.marginLeft = '0';
+    });
+
+    dropdownButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const dropdown = btn.parentElement;
+            dropdown.classList.toggle('open');
+        });
+    });
+});
+
