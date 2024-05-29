@@ -323,12 +323,14 @@ function showResultAlert(message, isCorrect, correctTranslations, word) {
     const dictionaryLink = `https://www.linguee.com.br/ingles-portugues/search?source=auto&query=${englishWordData.palavra}`;
 
     resultMessage.innerHTML = `
-        <span>${message}</span><br>
-        <b>${word} = ${correctTranslations.join(', ')}</b><br>
-        ${!isCorrect ? `
-            <button onclick="listenIncorrectWordPronunciation()">Ouvir Pronúncia</button>
-            <a href="${dictionaryLink}" target="_blank">Dicionário</a>
-        ` : ''}
+        <span>${message}
+        <b>${word}</b> 
+        = 
+        <b>${correctTranslations.join(', ')} </b>
+        ${!isCorrect ? `<a href="${dictionaryLink}" target="_blank"><img src="./assets/menu_book-white.svg" /></a>` : '' }
+        ${!isCorrect ? `<img src="./assets/brand_awareness-white.svg" onclick="listenIncorrectWordPronunciation()">` : '' }
+        </span>
+        
     `;
     resultAlert.classList.toggle('correct', isCorrect);
     resultAlert.classList.toggle('incorrect', !isCorrect);
@@ -432,7 +434,7 @@ function toggleLanguage() {
 
 function updateLanguageButton() {
     const toggleLanguageBtn = document.getElementById('toggle-language-btn');
-    toggleLanguageBtn.textContent = selectedLanguage === 'portugues' ? 'Português - Inglês' : 'Inglês - Português';
+    toggleLanguageBtn.innerHTML = selectedLanguage === 'portugues' ? 'Português <img src="./assets/swap_horiz.svg" alt=""> Inglês' : 'Inglês <img src="./assets/swap_horiz.svg" alt=""> Português';
 }
 
 function changeLanguage() {
@@ -471,14 +473,14 @@ function displayWordDetails(wordData) {
     const dicaContainer = document.getElementById('descricao'); // Renomear para dicaContainer
     
     if (areExamplesVisible) {
-        let exemplosHTML = '<b>Exemplos </b><br><br>';
+        let exemplosHTML = '<h4>Frases de exemplo </h4>';
         for (let i = 0; i < wordData.exemplos.length; i++) {
             let exemploOriginal = wordData.exemplos[i];
             let exemploTraduzido = currentWords[currentIndex][selectedLanguage === 'portugues' ? 'ingles' : 'portugues'].exemplos[i];
             
             exemploTraduzido = exemploTraduzido.replace(new RegExp(wordData.traducoes.join('|'), 'gi'), '___');
             
-            exemplosHTML += `${exemploOriginal}<br>${exemploTraduzido}<br><br>`;
+            exemplosHTML += `<p>${exemploOriginal}<br>${exemploTraduzido}</p>`;
         }
         exemplosContainer.innerHTML = exemplosHTML;
     } else {
@@ -486,13 +488,13 @@ function displayWordDetails(wordData) {
     }
     
     const dicaText = selectedLanguage === 'portugues' ? currentWords[currentIndex].ingles.descricao : currentWords[currentIndex].portugues.descricao;
-    dicaContainer.innerHTML = `<b>Dica</b><br>${dicaText}`;
+    dicaContainer.innerHTML = `<h4>Dica</h4><p>${dicaText}</p>`;
 }
 
 function toggleExamplesVisibility() {
     areExamplesVisible = !areExamplesVisible;
     const toggleButton = document.getElementById('toggle-examples-visibility-btn');
-    toggleButton.textContent = areExamplesVisible ? 'Ocultar ajuda' : 'Mostrar ajuda';
+    toggleButton.textContent = areExamplesVisible ? 'Não mostrar ajuda' : 'Mostrar ajuda';
     
     const exemplosContainer = document.getElementById('exemplos');
     const dicaContainer = document.getElementById('descricao');
@@ -501,7 +503,7 @@ function toggleExamplesVisibility() {
     if (areExamplesVisible) {
         exemplosContainer.style.display = 'block';
         dicaContainer.style.display = 'block';
-        dictionaryLink.style.display = 'block';
+        dictionaryLink.style.display = 'inline-block';
     } else {
         exemplosContainer.style.display = 'none';
         dicaContainer.style.display = 'none';
@@ -556,11 +558,9 @@ function addIncorrectWordToTable(wordData, userAnswer) {
     const dictionaryLink = `https://www.linguee.com.br/ingles-portugues/search?source=auto&query=${wordData.palavra}`;
     const row = tableBody.insertRow(0); // Adiciona a linha no topo
     row.innerHTML = `
-        <td>${wordData.palavra}</td>
+        <td><h5 class="incorrect-word"><p>${wordData.palavra}</p> <span onclick="pronounceWord('${wordData.palavra}', '${wordData.audio}')"><img src="./assets/brand_awareness.svg"></span> <a href="${dictionaryLink}" target="_blank"><img src="./assets/menu_book.svg" /></a> </h5></td>
         <td>${wordData.traducoes.join(', ')}</td>
         <td>${wordData.exemplos.join('<br>')}</td>
-        <td><button onclick="pronounceWord('${wordData.palavra}', '${wordData.audio}')">Ouvir</button></td>
-        <td><a href="${dictionaryLink}" target="_blank">Dicionário</a></td>
         <td>${userAnswer}</td>
     `;
 

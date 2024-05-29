@@ -30,56 +30,59 @@
         <div class="header">
             <button class="open-btn" id="open-btn">☰</button>
             <div class="right">
-                <div id="stats"></div>
+                <div class="change-language" onclick="toggleLanguage()">
+                    <span id="toggle-language-btn">Inglês <img src="./assets/swap_horiz.svg" alt=""> Português</span>
+                </div>
             </div>
         </div>
         
         <div class="content">
+            <div id="stats"></div>
             <div class="topo">
                 <div class="word">
                     <div id="word-container"></div><button id="repeat-pronunciation-btn" style="display: none;" onclick="repeatPronunciation()"><img src="./assets/volume_up.svg" alt=""></button>
                     <div id="classification-container"></div>
                 </div>
                 <div class="options">
-                    <div class="change-language" onclick="toggleLanguage()">
-                        <span id="toggle-language-btn">Inglês - Português</span>
-                        <img src="./assets/swap_horiz.svg" alt="">
-                    </div>
                     <span id="toggle-word-visibility-btn" onclick="toggleWordVisibility()">Ocultar palavra</span>
                 </div>
             </div>
 
-            <input type="text" id="answer-input" placeholder="Digite sua resposta">
-            <button onclick="checkAnswer()">Checar Resposta</button>
-            <button id="toggle-examples-visibility-btn" onclick="toggleExamplesVisibility()">Ocultar ajuda</button>
-            
-            <button id="listen-answer-btn" style="display: none;" onclick="listenAnswerInEnglish()">Ouvir Resposta em Inglês</button>
-            <div id="result">
-                <button class="close-btn" onclick="closeResult()">×</button>
-                <div id="result-message"></div>
+            <div class="content-answer">
+                <input type="text" id="answer-input" placeholder="Responda a tradução aqui">
+                <button onclick="checkAnswer()">Responder</button>
             </div>
-            <div id="exemplos"></div>
-            <div id="descricao"></div>
-            <a id="dictionary-link" target="_blank">Ver dicionário</a>
 
-            <!-- Seção de palavras incorretas -->
+            <div class="answer-options">
+                <p><img src="./assets/info.svg" class="icon-help"> <span id="toggle-examples-visibility-btn" onclick="toggleExamplesVisibility()"> Não mostrar ajuda</span></p>
+                <p><img src="./assets/close.svg"> <span>Não sei responder</span></p>   
+            </div>
+
+            <p id="listen-answer-btn" style="display: none;" onclick="listenAnswerInEnglish()"><img src="./assets/brand_awareness.svg"> Ouvir resposta</p>
+            <div id="descricao"></div>
+            <div id="exemplos"></div>
+            <a id="dictionary-link" target="_blank"> <img src="./assets/menu_book.svg">Acessar dicionário</a>
+
             <div id="incorrect-words-section" style="display: none;">
-                <h3>Palavras Respondidas Incorretamente</h3>
-                <button onclick="clearIncorrectWords()">Limpar</button>
+                <h3>Respostas incorretas <button onclick="clearIncorrectWords()" class="clear-incorrect-word">Limpar</button></h3>
                 <table id="incorrect-words-table">
                     <thead>
                         <tr>
                             <th>Palavra</th>
                             <th>Tradução</th>
-                            <th>Exemplos</th>
-                            <th>Pronúncia</th>
-                            <th>Dicionário</th>
-                            <th>Resposta Informada</th>
+                            <th>Frases de exemplo</th>
+                            <th>Sua resposta</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
                 </table>
             </div>
+
+            <div id="result">
+                <span class="close-btn" onclick="closeResult()">×</span>
+                <div id="result-message"></div>
+            </div>
+
         </div>
     </div>
 </body>

@@ -19,6 +19,7 @@ body {
   .sidebar.open + .main-content {
       margin-left: 250px;
   }
+
 }
 
 .sidebar {
@@ -157,7 +158,7 @@ body {
 }
 
 .main-content .content {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 #word-container {
@@ -191,13 +192,6 @@ body {
   font-weight: 300;
 }
 
-#answer-input {
-  padding: 10px;
-  font-size: 1em;
-  width: calc(100% - 22px);
-  margin-bottom: 10px;
-}
-
 button {
   padding: 10px;
   font-size: 1em;
@@ -206,11 +200,11 @@ button {
 }
 
 #result {
-  position: fixed;  
-  bottom: 20px;  
-  right: 20px;  
-  background-color: #fff;
-  padding: 15px;
+  top: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  padding: 10px 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 5px;
   font-size: 1.2em;
@@ -220,20 +214,44 @@ button {
 
 #result .close-btn {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 8px;
+  right: 15px;
   background: none;
   border: none;
   font-size: 1em;
   cursor: pointer;
+  color: #fff;
+}
+
+#result-message{
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+#result-message span b{
+  margin: 0px 5px;
+  text-transform: capitalize;
+}
+
+#result-message img{
+  height: 20px;
+  float: right;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+#result-message a{
+  float: right;
 }
 
 .correct {
-  color: green;
+  background-color: #8bc34a;
+  color: #fff;
 }
 
 .incorrect {
-  color: red;
+  color: #fff;
+  background-color: #F44336;
 }
 
 .fade-in {
@@ -246,9 +264,10 @@ button {
 }
 
 #stats {
-  padding: 16px;
+  padding: 10px 0px 0px 0px;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 16px;
+  text-align: right;
 }
 
 .result-correct {
@@ -272,30 +291,180 @@ button {
   border-bottom: 1px dashed #000;
 }
 
-#dictionary-link{
-  display: block;
-  margin-top: 20px;
+#dictionary-link, #listen-answer-btn{
+  line-height: 22px;
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+  display: inline-block;
+  margin: 12px 0px;
+  text-decoration: none;
+  background: #f4f4f4;
+  padding: 6px 15px;
+  border-radius: 4px;
+  border: 1px solid #e3e3e3;
+}
+
+#dictionary-link img, #listen-answer-btn img{
+  float: left;
+  height: 20px;
+  margin-right: 6px;
+  margin-top: 1px;
 }
 
 .change-language{
   margin: 0;
-  background-color: #ebebeb;
   cursor: pointer;
-  font-size: 13px;
-  display: flex;
-  line-height: 24px;
-  padding: 5px 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  color: #5b5b5b;
+  font-size: 14px;
+  padding: 3px 15px;
+  border-radius: 4px;
+  color: #373737;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 16px;
 }
 
 .change-language img{
   width: 15px;
-  margin-left: 5px;
+  margin: -2px 5px;
 }
 
 .topo{
   display: flex;
   justify-content: space-between;
+}
+
+#toggle-word-visibility-btn{
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  text-decoration: underline;
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+.content-answer{
+  display: flex;
+}
+
+.content-answer input{
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #aaa;
+  border-right: 0px;
+  padding: 10px 15px;
+  font-family: 'Roboto Condensed';
+  height: 28px;
+  font-size: 15px;
+}
+
+.content-answer button{
+  margin-left: -1px;
+  margin-right: 0;
+  padding: 0px 25px;
+  font-family: 'Roboto Condensed';
+  background: #0a4997;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  border: 1px solid #0a4997;
+  font-size: 15px;
+}
+
+.answer-options{
+  text-align: center;
+}
+
+.answer-options p{
+  line-height: 20px;
+  font-size: 14px;
+  color: #757575;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  margin: 5px 0px;
+}
+
+.answer-options img{
+  float: left;
+  height: 20px;
+}
+
+.answer-options .icon-help{
+  height: 18px;
+  margin-top: 1px;
+  margin-right: 4px;
+}
+
+input {
+  outline: 0px;
+}
+
+#descricao h4, #exemplos h4{
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 2px;
+}
+
+#descricao p, #exemplos p{
+  margin-top: 0;
+  color: #777;
+  margin-left: 2px;
+}
+
+#incorrect-words-table td{
+  padding-right: 20px;
+  padding: 5px 20px 5px 0px;
+}
+
+#incorrect-words-table th{
+  text-align: left;
+  padding-right: 20px;
+}
+
+#incorrect-words-table .incorrect-word {
+  display: flex;
+  font-weight: 500;
+  margin: 0;
+  justify-content: space-between;
+}
+
+#incorrect-words-table .incorrect-word p{
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f3e7b;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+#incorrect-words-table .incorrect-word img{
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.clear-incorrect-word{
+  padding: 6px 15px;
+  font-size: 14px;
+  font-family: 'Roboto Condensed';
+  margin-left: 10px;
+  background: #f4f4f4;
+  color: #777;
+  border-radius: 4px;
+  border: 1px solid #e3e3e3;
+}
+
+#incorrect-words-section{
+  margin-top: 70px;
+}
+
+@media (max-width: 768px){
+  #result {
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    transform: none;
+    top: auto;
+  }
 }
