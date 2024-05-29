@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Vocabulary Training</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -20,15 +20,14 @@
             <li class="dropdown">
                 <a href="#" class="menu-item dropdown-btn">1000 palavras mais comuns <span class="dropdown-arrow"><img src="./assets/keyboard_arrow_down.svg" alt=""></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" onclick="loadWords('lista1')">0 a 100</a></li>
-                    <li><a href="#" onclick="loadWords('lista2')">101 a 200</a></li>
+                    <li><a href="#" onclick="loadWords('lista1')">900 a 1000</a></li>
                 </ul>
             </li>
         </ul>
     </div>
     <div class="main-content">
         <div class="header">
-            <button class="open-btn" id="open-btn">☰</button>
+            <button class="open-btn" id="open-btn"><img src="./assets/menu.svg" alt=""></button>
             <div class="right">
                 <div class="settings">
                     <span class="settings-dropdown-link" onclick="toggleSettingsDropdown()">Configurações <img src="./assets/arrow_drop_down.svg" /></span>
@@ -36,10 +35,14 @@
                         <a href="#" id="toggle-language-btn" onclick="toggleLanguage()"><span class="language"><img src="./assets/estados-unidos.png" class="flag"> Inglês <img src="./assets/swap_horiz.svg" class="icon"> Português <img src="./assets/brasil.png" class="flag"></span></a>
                         <a href="#" id="toggle-word-visibility-btn" onclick="toggleWordVisibility()">Ocultar palavra</a>
                         <a href="#" id="toggle-incorrect-answers-btn" onclick="toggleIncorrectAnswersVisibility()">Mostrar respostas incorretas</a>
+                        <a href="#" id="toggle-sound-btn" onclick="toggleSound()">Desabilitar avisos sonoros</a>
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>                      
         
         <div class="content">
             <div id="stats"></div>
@@ -65,6 +68,11 @@
             <div id="exemplos"></div>
             <a id="dictionary-link" target="_blank"> <img src="./assets/menu_book.svg">Acessar dicionário</a>
 
+            <div id="result">
+                <span class="close-btn" onclick="closeResult()">×</span>
+                <div id="result-message"></div>
+            </div>
+            
             <div id="incorrect-words-section" style="display: none;">
                 <h3>Respostas incorretas <button onclick="clearIncorrectWords()" class="clear-incorrect-word">Limpar</button></h3>
                 <table id="incorrect-words-table">
@@ -72,17 +80,12 @@
                         <tr>
                             <th>Palavra</th>
                             <th>Tradução</th>
-                            <th>Frases de exemplo</th>
+                            <th class="exemplos">Frases de exemplo</th>
                             <th>Sua resposta</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
                 </table>
-            </div>
-
-            <div id="result">
-                <span class="close-btn" onclick="closeResult()">×</span>
-                <div id="result-message"></div>
             </div>
 
         </div>
