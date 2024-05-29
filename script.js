@@ -1865,7 +1865,9 @@ function displayRandomWord() {
     wordContainer.className = isWordVisible ? '' : 'hidden-word';
     classificationContainer.textContent = isWordVisible ? wordData.classificacao : ''; 
 
-    if (selectedLanguage === 'ingles') {
+    if (!isWordVisible && selectedLanguage === 'portugues') {
+        pronounceWord(currentWords[currentIndex].ingles.palavra, currentWords[currentIndex].ingles.audio);
+    } else if (selectedLanguage === 'ingles') {
         pronounceWord(wordData.palavra, wordData.audio);
         document.getElementById('repeat-pronunciation-btn').style.display = 'inline-block';
     } else {
@@ -1947,12 +1949,16 @@ function checkAnswer() {
 
 async function pronounceWord(word, audioPath) {
     try {
-        const audio = new Audio(audioPath);
-        audio.onerror = async () => {
-            console.log(`Arquivo de áudio não encontrado: ${audioPath}. Usando a API de texto para fala.`);
-            await pronounceWordWithAPI(word);
-        };
-        audio.play();
+        // Comentado temporariamente o uso do áudio local
+        // const audio = new Audio(audioPath);
+        // audio.onerror = async () => {
+        //     console.log(`Arquivo de áudio não encontrado: ${audioPath}. Usando a API de texto para fala.`);
+        //     await pronounceWordWithAPI(word);
+        // };
+        // audio.play();
+        
+        // Usar apenas a API de texto para fala
+        await pronounceWordWithAPI(word);
     } catch (error) {
         console.error('Error pronouncing word:', error);
         await pronounceWordWithAPI(word);
@@ -2027,6 +2033,10 @@ function toggleWordVisibility() {
     wordContainer.textContent = isWordVisible ? wordData.palavra : 'Palavra ocultada';
     wordContainer.className = isWordVisible ? '' : 'hidden-word';
     classificationContainer.textContent = isWordVisible ? wordData.classificacao : ''; 
+
+    if (!isWordVisible && selectedLanguage === 'portugues') {
+        pronounceWord(currentWords[currentIndex].ingles.palavra, currentWords[currentIndex].ingles.audio);
+    }
 }
 
 function showDictionaryLink(word) {
@@ -2208,12 +2218,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const openBtn = document.getElementById('open-btn');
     const closeBtn = document.getElementById('close-btn');
     const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+    const dropdownItems = document.querySelectorAll('.dropdown-menu a');
 
     function checkWindowSize() {
         if (window.innerWidth > 768) {
             sidebar.classList.add('open');
             document.querySelector('.main-content').style.marginLeft = '250px';
         } else {
+            sidebar.classList.remove('open');
+            document.querySelector('.main-content').style.marginLeft = '0';
+        }
+    }
+
+    function closeSidebarOnSmallScreens() {
+        if (window.innerWidth < 768) {
             sidebar.classList.remove('open');
             document.querySelector('.main-content').style.marginLeft = '0';
         }
@@ -2241,6 +2259,12 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             const dropdown = btn.parentElement;
             dropdown.classList.toggle('open');
+        });
+    });
+
+    dropdownItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            closeSidebarOnSmallScreens();
         });
     });
 });
