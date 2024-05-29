@@ -439,7 +439,7 @@ function toggleLanguage() {
 
 function updateLanguageButton() {
     const toggleLanguageBtn = document.getElementById('toggle-language-btn');
-    toggleLanguageBtn.innerHTML = selectedLanguage === 'portugues' ? 'Português <img src="./assets/swap_horiz.svg" alt=""> Inglês' : 'Inglês <img src="./assets/swap_horiz.svg" alt=""> Português';
+    toggleLanguageBtn.innerHTML = selectedLanguage === 'portugues' ? '<span class="language"><img src="./assets/brasil.png" class="flag"> Português <img src="./assets/swap_horiz.svg" class="icon"> Inglês <img src="./assets/estados-unidos.png" class="flag"></span>' : '<span class="language"><img src="./assets/estados-unidos.png" class="flag"> Inglês <img src="./assets/swap_horiz.svg" class="icon"> Português <img src="./assets/brasil.png" class="flag"></span>';
 }
 
 function changeLanguage() {
@@ -669,3 +669,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function toggleSettingsDropdown() {
+    const dropdown = document.getElementById('settings-dropdown');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+// Fechar o dropdown se o usuário clicar fora dele
+window.onclick = function(event) {
+    if (!event.target.matches('.settings .settings-dropdown-link')) {
+        const dropdowns = document.getElementsByClassName('settings-dropdown');
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.style.display === 'block') {
+                openDropdown.style.display = 'none';
+            }
+        }
+    }
+}
+
+function toggleIncorrectAnswersVisibility() {
+    const incorrectWordsSection = document.getElementById('incorrect-words-section');
+    const toggleButton = document.getElementById('toggle-incorrect-answers-btn');
+
+    if (incorrectWordsSection.style.display === 'none' || incorrectWordsSection.style.display === '') {
+        incorrectWordsSection.style.display = 'block';
+        toggleButton.textContent = 'Ocultar respostas incorretas';
+    } else {
+        incorrectWordsSection.style.display = 'none';
+        toggleButton.textContent = 'Mostrar respostas incorretas';
+    }
+}

@@ -266,7 +266,7 @@ button {
 #stats {
   padding: 10px 0px 0px 0px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   text-align: right;
 }
 
@@ -332,17 +332,6 @@ button {
 .topo{
   display: flex;
   justify-content: space-between;
-}
-
-#toggle-word-visibility-btn{
-  margin-top: 10px;
-  text-align: center;
-  width: 100%;
-  display: block;
-  text-decoration: underline;
-  font-size: 13px;
-  margin-bottom: 15px;
-  color: #333333;
 }
 
 .content-answer{
@@ -457,6 +446,63 @@ input {
 
 #incorrect-words-section{
   margin-top: 70px;
+}
+
+.settings {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.settings-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 210px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.settings-dropdown a {
+  color: #333333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  font-size: 15px;
+}
+
+.settings-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.settings-dropdown-link{
+  margin-top: 15px;
+  display: block;
+  line-height: 25px;
+}
+
+.settings-dropdown-link img{
+  float: right;
+}
+
+#toggle-language-btn img.icon{
+  height: 20px;
+  width: 15px;
+}
+
+.settings-dropdown .language {
+  display: flex;
+  gap: 5px;
+}
+
+.settings-dropdown .language .flag{
+  width: 20px;
 }
 
 @media (max-width: 768px){

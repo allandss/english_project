@@ -30,11 +30,16 @@
         <div class="header">
             <button class="open-btn" id="open-btn">☰</button>
             <div class="right">
-                <div class="change-language" onclick="toggleLanguage()">
-                    <span id="toggle-language-btn">Inglês <img src="./assets/swap_horiz.svg" alt=""> Português</span>
+                <div class="settings">
+                    <span class="settings-dropdown-link" onclick="toggleSettingsDropdown()">Configurações <img src="./assets/arrow_drop_down.svg" /></span>
+                    <div class="settings-dropdown" id="settings-dropdown">
+                        <a href="#" id="toggle-language-btn" onclick="toggleLanguage()"><span class="language"><img src="./assets/estados-unidos.png" class="flag"> Inglês <img src="./assets/swap_horiz.svg" class="icon"> Português <img src="./assets/brasil.png" class="flag"></span></a>
+                        <a href="#" id="toggle-word-visibility-btn" onclick="toggleWordVisibility()">Ocultar palavra</a>
+                        <a href="#" id="toggle-incorrect-answers-btn" onclick="toggleIncorrectAnswersVisibility()">Mostrar respostas incorretas</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>        
         
         <div class="content">
             <div id="stats"></div>
@@ -42,9 +47,6 @@
                 <div class="word">
                     <div id="word-container"></div><button id="repeat-pronunciation-btn" style="display: none;" onclick="repeatPronunciation()"><img src="./assets/volume_up.svg" alt=""></button>
                     <div id="classification-container"></div>
-                </div>
-                <div class="options">
-                    <span id="toggle-word-visibility-btn" onclick="toggleWordVisibility()">Ocultar palavra</span>
                 </div>
             </div>
 
