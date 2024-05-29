@@ -371,7 +371,12 @@ function checkAnswer() {
     updateStats();
     document.getElementById('answer-input').value = '';
     document.getElementById('answer-input').focus();
+
+    if (areExamplesVisible) {
+        toggleExamplesVisibility(false);
+    }
 }
+
 
 async function pronounceWord(word, audioPath) {
     try {
@@ -438,13 +443,8 @@ function updateLanguageButton() {
 }
 
 function changeLanguage() {
-    const listenAnswerBtn = document.getElementById('listen-answer-btn');
-    if (selectedLanguage === 'portugues') {
-        listenAnswerBtn.style.display = 'inline-block';
-    } else {
-        listenAnswerBtn.style.display = 'none';
-    }
-
+    areExamplesVisible = false;
+    toggleExamplesVisibility(false);
     displayRandomWord();
 }
 
@@ -491,27 +491,38 @@ function displayWordDetails(wordData) {
     dicaContainer.innerHTML = `<h4>Dica</h4><p>${dicaText}</p>`;
 }
 
-function toggleExamplesVisibility() {
-    areExamplesVisible = !areExamplesVisible;
+function toggleExamplesVisibility(forceState = null) {
+    if (forceState !== null) {
+        areExamplesVisible = forceState;
+    } else {
+        areExamplesVisible = !areExamplesVisible;
+    }
+
     const toggleButton = document.getElementById('toggle-examples-visibility-btn');
     toggleButton.textContent = areExamplesVisible ? 'Não mostrar ajuda' : 'Mostrar ajuda';
     
     const exemplosContainer = document.getElementById('exemplos');
     const dicaContainer = document.getElementById('descricao');
     const dictionaryLink = document.getElementById('dictionary-link');
+    const listenAnswerBtn = document.getElementById('listen-answer-btn');
 
     if (areExamplesVisible) {
         exemplosContainer.style.display = 'block';
         dicaContainer.style.display = 'block';
         dictionaryLink.style.display = 'inline-block';
+        if(selectedLanguage === 'portugues'){
+            listenAnswerBtn.style.display = 'inline-block';
+        }
     } else {
         exemplosContainer.style.display = 'none';
         dicaContainer.style.display = 'none';
         dictionaryLink.style.display = 'none';
+        listenAnswerBtn.style.display = 'none'; 
     }
 
     displayWordDetails(currentWords[currentIndex][selectedLanguage]);
 }
+
 
 function loadWords(listName) {
     switch (listName) {
@@ -572,12 +583,40 @@ function clearIncorrectWords() {
     updateIncorrectWordsTable();
 }
 
+function skipAnswer() {
+    const wordData = currentWords[currentIndex][selectedLanguage];
+    const correctTranslations = wordData.traducoes.map(translation => translation.toLowerCase());
+
+    wrongAnswers++;
+    failureSound.play();
+    incorrectWords.push({
+        wordData: currentWords[currentIndex].ingles, // Sempre armazenando a palavra em inglês
+        userAnswer: "Não sei"
+    });
+    addIncorrectWordToTable(currentWords[currentIndex].ingles, "Não sei");
+
+    const message = 'Incorreto!';
+    showResultAlert(message, false, correctTranslations, wordData.palavra);
+
+    answeredWords.push(currentIndex);
+
+    displayRandomWord();
+    updateStats();
+
+    if (areExamplesVisible) {
+        toggleExamplesVisibility(false);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initializeIndexes();
     displayRandomWord();
     updateStats();
     changeLanguage();
     document.getElementById('answer-input').focus();
+
+    areExamplesVisible = false;
+    toggleExamplesVisibility(false);
 
     document.getElementById('answer-input').addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
@@ -586,6 +625,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.getElementById('sidebar');
