@@ -1,6 +1,24 @@
 const verbsPresentSimple100 = [
     {
         portugues: {
+            palavra: "acordar, despertar",
+            traducoes: ["awake"],
+            exemplos: ["Eu acordo cedo todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de acordar de um sono.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "awake",
+            traducoes: ["acordar", "despertar"],
+            exemplos: ["I awake early every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of waking up from sleep.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
             palavra: "ser, estar",
             traducoes: ["be"],
             exemplos: ["Eu estou feliz."],
@@ -19,775 +37,91 @@ const verbsPresentSimple100 = [
     },
     {
         portugues: {
-            palavra: "ter",
-            traducoes: ["have"],
-            exemplos: ["Ela tem um gato."],
+            palavra: "bater, pulsar",
+            traducoes: ["beat"],
+            exemplos: ["Meu coração bate rápido quando estou nervoso."],
             classificacao: "verbo",
-            descricao: "Indica posse ou necessidade.",
+            descricao: "Usado para descrever a ação de bater repetidamente ou pulsar.",
             audio: ""
         },
         ingles: {
-            palavra: "have",
-            traducoes: ["ter"],
-            exemplos: ["She has a cat."],
+            palavra: "beat",
+            traducoes: ["bater", "pulsar"],
+            exemplos: ["My heart beats fast when I'm nervous."],
             classificacao: "verb",
-            descricao: "Indicates possession or necessity.",
+            descricao: "Used to describe the action of hitting repeatedly or pulsating.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "fazer",
-            traducoes: ["do"],
-            exemplos: ["Ele faz o dever de casa."],
-            classificacao: "verbo",
-            descricao: "Indica a realização de uma ação.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "do",
-            traducoes: ["fazer"],
-            exemplos: ["He does his homework."],
-            classificacao: "verb",
-            descricao: "Indicates the performance of an action.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dizer",
-            traducoes: ["say"],
-            exemplos: ["Eles dizem que é um bom filme."],
-            classificacao: "verbo",
-            descricao: "Indica a expressão verbal de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "say",
-            traducoes: ["dizer"],
-            exemplos: ["They say it’s a good movie."],
-            classificacao: "verb",
-            descricao: "Indicates the verbal expression of something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ir",
-            traducoes: ["go"],
-            exemplos: ["Nós vamos à escola."],
-            classificacao: "verbo",
-            descricao: "Indica movimento de um lugar para outro.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "go",
-            traducoes: ["ir"],
-            exemplos: ["We go to school."],
-            classificacao: "verb",
-            descricao: "Indicates movement from one place to another.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "obter, conseguir",
-            traducoes: ["get"],
-            exemplos: ["Eu me levanto às 7 da manhã."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de receber ou alcançar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "get",
-            traducoes: ["obter", "conseguir"],
-            exemplos: ["I get up at 7 AM."],
-            classificacao: "verb",
-            descricao: "Indicates the action of receiving or achieving something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "fazer",
-            traducoes: ["make"],
-            exemplos: ["Ela faz o jantar toda noite."],
-            classificacao: "verbo",
-            descricao: "Indica a criação ou produção de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "make",
-            traducoes: ["fazer"],
-            exemplos: ["She makes dinner every night."],
-            classificacao: "verb",
-            descricao: "Indicates the creation or production of something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "saber, conhecer",
-            traducoes: ["know"],
-            exemplos: ["Ele sabe a resposta."],
-            classificacao: "verbo",
-            descricao: "Indica o conhecimento ou familiaridade com algo ou alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "know",
-            traducoes: ["saber", "conhecer"],
-            exemplos: ["He knows the answer."],
-            classificacao: "verb",
-            descricao: "Indicates knowledge or familiarity with something or someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pensar",
-            traducoes: ["think"],
-            exemplos: ["Eu acho que você está certo."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de considerar ou refletir sobre algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "think",
-            traducoes: ["pensar"],
-            exemplos: ["I think you are right."],
-            classificacao: "verb",
-            descricao: "Indicates the action of considering or reflecting on something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tomar, levar",
-            traducoes: ["take"],
-            exemplos: ["Eles pegam o ônibus."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de pegar ou segurar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "take",
-            traducoes: ["tomar", "levar"],
-            exemplos: ["They take the bus."],
-            classificacao: "verb",
-            descricao: "Indicates the action of picking up or holding something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ver",
-            traducoes: ["see"],
-            exemplos: ["Eu vejo um pássaro."],
-            classificacao: "verbo",
-            descricao: "Indica a percepção visual de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "see",
-            traducoes: ["ver"],
-            exemplos: ["I see a bird."],
-            classificacao: "verb",
-            descricao: "Indicates the visual perception of something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "vir",
-            traducoes: ["come"],
-            exemplos: ["Ela vem visitar."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de mover-se em direção a alguém ou algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "come",
-            traducoes: ["vir"],
-            exemplos: ["She comes to visit."],
-            classificacao: "verb",
-            descricao: "Indicates the action of moving towards someone or something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "querer",
-            traducoes: ["want"],
-            exemplos: ["Eu quero um carro novo."],
-            classificacao: "verbo",
-            descricao: "Indica desejo ou intenção de ter algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "want",
-            traducoes: ["querer"],
-            exemplos: ["I want a new car."],
-            classificacao: "verb",
-            descricao: "Indicates a desire or intention to have something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "olhar",
-            traducoes: ["look"],
-            exemplos: ["Ele olha para as estrelas."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de direcionar a visão para algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "look",
-            traducoes: ["olhar"],
-            exemplos: ["He looks at the stars."],
-            classificacao: "verb",
-            descricao: "Indicates the action of directing vision towards something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "usar",
-            traducoes: ["use"],
-            exemplos: ["Ela usa um computador."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de empregar algo para um propósito.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "use",
-            traducoes: ["usar"],
-            exemplos: ["She uses a computer."],
-            classificacao: "verb",
-            descricao: "Indicates the action of employing something for a purpose.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "encontrar",
-            traducoes: ["find"],
-            exemplos: ["Eu encontro minhas chaves."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de localizar algo que estava perdido.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "find",
-            traducoes: ["encontrar"],
-            exemplos: ["I find my keys."],
-            classificacao: "verb",
-            descricao: "Indicates the action of locating something that was lost.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dar",
-            traducoes: ["give"],
-            exemplos: ["Ele dá um presente."],
-            classificacao: "verbo",
-            descricao: "Indica a transferência de posse de algo para alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "give",
-            traducoes: ["dar"],
-            exemplos: ["He gives a gift."],
-            classificacao: "verb",
-            descricao: "Indicates the transfer of possession of something to someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "contar, dizer",
-            traducoes: ["tell"],
-            exemplos: ["Ela conta uma história."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de relatar ou narrar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "tell",
-            traducoes: ["contar", "dizer"],
-            exemplos: ["She tells a story."],
-            classificacao: "verb",
-            descricao: "Indicates the action of relating or narrating something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "trabalhar",
-            traducoes: ["work"],
-            exemplos: ["Eu trabalho todos os dias."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de realizar tarefas ou atividades profissionais.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "work",
-            traducoes: ["trabalhar"],
-            exemplos: ["I work every day."],
-            classificacao: "verb",
-            descricao: "Indicates the action of performing tasks or professional activities.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "chamar, ligar",
-            traducoes: ["call"],
-            exemplos: ["Ele liga para o amigo."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de fazer uma chamada telefônica ou chamar alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "call",
-            traducoes: ["chamar", "ligar"],
-            exemplos: ["He calls his friend."],
-            classificacao: "verb",
-            descricao: "Indicates the action of making a phone call or calling someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tentar",
-            traducoes: ["try"],
-            exemplos: ["Ela tenta ajudar."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de fazer um esforço para realizar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "try",
-            traducoes: ["tentar"],
-            exemplos: ["She tries to help."],
-            classificacao: "verb",
-            descricao: "Indicates the action of making an effort to do something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "perguntar, pedir",
-            traducoes: ["ask"],
-            exemplos: ["Eu faço uma pergunta."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de solicitar uma informação ou favor.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "ask",
-            traducoes: ["perguntar", "pedir"],
-            exemplos: ["I ask a question."],
-            classificacao: "verb",
-            descricao: "Indicates the action of requesting information or a favor.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "precisar",
-            traducoes: ["need"],
-            exemplos: ["Eles precisam de água."],
-            classificacao: "verbo",
-            descricao: "Indica uma necessidade ou exigência.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "need",
-            traducoes: ["precisar"],
-            exemplos: ["They need water."],
-            classificacao: "verb",
-            descricao: "Indicates a necessity or requirement.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sentir",
-            traducoes: ["feel"],
-            exemplos: ["Eu me sinto feliz."],
-            classificacao: "verbo",
-            descricao: "Indica a percepção de emoções ou sensações.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "feel",
-            traducoes: ["sentir"],
-            exemplos: ["I feel happy."],
-            classificacao: "verb",
-            descricao: "Indicates the perception of emotions or sensations.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tornar-se",
-            traducoes: ["become"],
-            exemplos: ["Ele se torna um médico."],
-            classificacao: "verbo",
-            descricao: "Indica a transformação ou mudança de estado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "become",
-            traducoes: ["tornar-se"],
-            exemplos: ["He becomes a doctor."],
-            classificacao: "verb",
-            descricao: "Indicates the transformation or change of state.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "deixar, partir",
-            traducoes: ["leave"],
-            exemplos: ["Ela sai de casa."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de ir embora ou abandonar um lugar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "leave",
-            traducoes: ["deixar", "partir"],
-            exemplos: ["She leaves the house."],
-            classificacao: "verb",
-            descricao: "Indicates the action of going away or leaving a place.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "colocar",
-            traducoes: ["put"],
-            exemplos: ["Eu coloco o livro na mesa."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de mover algo para um determinado lugar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "put",
-            traducoes: ["colocar"],
-            exemplos: ["I put the book on the table."],
-            classificacao: "verb",
-            descricao: "Indicates the action of moving something to a specific place.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "significar",
-            traducoes: ["mean"],
-            exemplos: ["O que esta palavra significa?"],
-            classificacao: "verbo",
-            descricao: "Indica a definição ou interpretação de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "mean",
-            traducoes: ["significar"],
-            exemplos: ["What does this word mean?"],
-            classificacao: "verb",
-            descricao: "Indicates the definition or interpretation of something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "manter",
-            traducoes: ["keep"],
-            exemplos: ["Ele mantém a promessa."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de conservar ou continuar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "keep",
-            traducoes: ["manter"],
-            exemplos: ["He keeps his promise."],
-            classificacao: "verb",
-            descricao: "Indicates the action of preserving or continuing something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "deixar, permitir",
-            traducoes: ["let"],
-            exemplos: ["Ela o deixa ir."],
-            classificacao: "verbo",
-            descricao: "Indica a permissão para alguém fazer algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "let",
-            traducoes: ["deixar", "permitir"],
-            exemplos: ["She lets him go."],
-            classificacao: "verb",
-            descricao: "Indicates the permission for someone to do something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "começar",
+            palavra: "começar, iniciar",
             traducoes: ["begin"],
-            exemplos: ["Eles começam a reunião."],
+            exemplos: ["Eu começo meu dia com um café."],
             classificacao: "verbo",
-            descricao: "Indica o início de uma ação ou evento.",
+            descricao: "Usado para descrever a ação de iniciar algo.",
             audio: ""
         },
         ingles: {
             palavra: "begin",
-            traducoes: ["começar"],
-            exemplos: ["They begin the meeting."],
+            traducoes: ["começar", "iniciar"],
+            exemplos: ["I begin my day with a coffee."],
             classificacao: "verb",
-            descricao: "Indicates the start of an action or event.",
+            descricao: "Used to describe the action of starting something.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "ajudar",
-            traducoes: ["help"],
-            exemplos: ["Eu ajudo meu amigo."],
+            palavra: "morder",
+            traducoes: ["bite"],
+            exemplos: ["O cachorro mordeu o osso."],
             classificacao: "verbo",
-            descricao: "Indica a ação de prestar assistência a alguém.",
+            descricao: "Usado para descrever a ação de usar os dentes para cortar algo.",
             audio: ""
         },
         ingles: {
-            palavra: "help",
-            traducoes: ["ajudar"],
-            exemplos: ["I help my friend."],
+            palavra: "bite",
+            traducoes: ["morder"],
+            exemplos: ["The dog bit the bone."],
             classificacao: "verb",
-            descricao: "Indicates the action of providing assistance to someone.",
+            descricao: "Used to describe the action of using teeth to cut something.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "falar",
-            traducoes: ["talk"],
-            exemplos: ["Ele fala com o professor."],
+            palavra: "soprar",
+            traducoes: ["blow"],
+            exemplos: ["O vento sopra forte hoje."],
             classificacao: "verbo",
-            descricao: "Indica a ação de conversar ou comunicar-se verbalmente.",
+            descricao: "Usado para descrever a ação de mover o ar com força.",
             audio: ""
         },
         ingles: {
-            palavra: "talk",
-            traducoes: ["falar"],
-            exemplos: ["He talks to his teacher."],
+            palavra: "blow",
+            traducoes: ["soprar"],
+            exemplos: ["The wind blows hard today."],
             classificacao: "verb",
-            descricao: "Indicates the action of conversing or communicating verbally.",
+            descricao: "Used to describe the action of moving air with force.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "virar, transformar",
-            traducoes: ["turn"],
-            exemplos: ["Ela acende a luz."],
+            palavra: "quebrar",
+            traducoes: ["break"],
+            exemplos: ["Ele quebrou o vaso acidentalmente."],
             classificacao: "verbo",
-            descricao: "Indica a ação de mudar a direção ou estado de algo.",
+            descricao: "Usado para descrever a ação de separar algo em partes.",
             audio: ""
         },
         ingles: {
-            palavra: "turn",
-            traducoes: ["virar", "transformar"],
-            exemplos: ["She turns on the light."],
+            palavra: "break",
+            traducoes: ["quebrar"],
+            exemplos: ["He broke the vase accidentally."],
             classificacao: "verb",
-            descricao: "Indicates the action of changing the direction or state of something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "começar",
-            traducoes: ["start"],
-            exemplos: ["Eu começo meu dever de casa."],
-            classificacao: "verbo",
-            descricao: "Indica o início de uma atividade.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "start",
-            traducoes: ["começar"],
-            exemplos: ["I start my homework."],
-            classificacao: "verb",
-            descricao: "Indicates the beginning of an activity.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "mostrar",
-            traducoes: ["show"],
-            exemplos: ["Ele me mostra o caminho."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de exibir ou apresentar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "show",
-            traducoes: ["mostrar"],
-            exemplos: ["He shows me the way."],
-            classificacao: "verb",
-            descricao: "Indicates the action of displaying or presenting something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ouvir",
-            traducoes: ["hear"],
-            exemplos: ["Eu ouço um barulho."],
-            classificacao: "verbo",
-            descricao: "Indica a percepção auditiva de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "hear",
-            traducoes: ["ouvir"],
-            exemplos: ["I hear a noise."],
-            classificacao: "verb",
-            descricao: "Indicates the auditory perception of something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "jogar, brincar, tocar",
-            traducoes: ["play"],
-            exemplos: ["Ela toca piano."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de participar de um jogo ou atividade recreativa.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "play",
-            traducoes: ["jogar", "brincar", "tocar"],
-            exemplos: ["She plays the piano."],
-            classificacao: "verb",
-            descricao: "Indicates the action of participating in a game or recreational activity.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "correr",
-            traducoes: ["run"],
-            exemplos: ["Ele corre todas as manhãs."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de mover-se rapidamente usando as pernas.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "run",
-            traducoes: ["correr"],
-            exemplos: ["He runs every morning."],
-            classificacao: "verb",
-            descricao: "Indicates the action of moving quickly using the legs.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "mover, mudar",
-            traducoes: ["move"],
-            exemplos: ["Eles se mudam para uma nova casa."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de mudar de lugar ou posição.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "move",
-            traducoes: ["mover", "mudar"],
-            exemplos: ["They move to a new house."],
-            classificacao: "verb",
-            descricao: "Indicates the action of changing location or position.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "gostar",
-            traducoes: ["like"],
-            exemplos: ["Eu gosto de sorvete."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de ter prazer ou interesse em algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "like",
-            traducoes: ["gostar"],
-            exemplos: ["I like ice cream."],
-            classificacao: "verb",
-            descricao: "Indicates the action of having pleasure or interest in something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "viver, morar",
-            traducoes: ["live"],
-            exemplos: ["Ela mora em Nova York."],
-            classificacao: "verbo",
-            descricao: "Indica o ato de residir em um lugar ou estar vivo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "live",
-            traducoes: ["viver", "morar"],
-            exemplos: ["She lives in New York."],
-            classificacao: "verb",
-            descricao: "Indicates the act of residing in a place or being alive.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "acreditar",
-            traducoes: ["believe"],
-            exemplos: ["Ele acredita em fantasmas."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de aceitar algo como verdadeiro.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "believe",
-            traducoes: ["acreditar"],
-            exemplos: ["He believes in ghosts."],
-            classificacao: "verb",
-            descricao: "Indicates the action of accepting something as true.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "segurar, manter",
-            traducoes: ["hold"],
-            exemplos: ["Eu seguro o bebê."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de agarrar ou sustentar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "hold",
-            traducoes: ["segurar", "manter"],
-            exemplos: ["I hold the baby."],
-            classificacao: "verb",
-            descricao: "Indicates the action of grabbing or sustaining something.",
+            descricao: "Used to describe the action of separating something into parts.",
             audio: ""
         }
     },
@@ -795,35 +129,1151 @@ const verbsPresentSimple100 = [
         portugues: {
             palavra: "trazer",
             traducoes: ["bring"],
-            exemplos: ["Ela traz um presente."],
+            exemplos: ["Ela traz flores para a mãe."],
             classificacao: "verbo",
-            descricao: "Indica a ação de transportar algo para um lugar.",
+            descricao: "Usado para descrever a ação de transportar algo ou alguém para um lugar.",
             audio: ""
         },
         ingles: {
             palavra: "bring",
             traducoes: ["trazer"],
-            exemplos: ["She brings a gift."],
+            exemplos: ["She brings flowers to her mother."],
             classificacao: "verb",
-            descricao: "Indicates the action of carrying something to a place.",
+            descricao: "Used to describe the action of transporting something or someone to a place.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "escrever",
-            traducoes: ["write"],
-            exemplos: ["Ele escreve uma carta."],
+            palavra: "construir",
+            traducoes: ["build"],
+            exemplos: ["Eles constroem uma casa nova."],
             classificacao: "verbo",
-            descricao: "Indica a ação de compor texto.",
+            descricao: "Usado para descrever a ação de fazer algo combinando materiais e partes.",
             audio: ""
         },
         ingles: {
-            palavra: "write",
-            traducoes: ["escrever"],
-            exemplos: ["He writes a letter."],
+            palavra: "build",
+            traducoes: ["construir"],
+            exemplos: ["They build a new house."],
             classificacao: "verb",
-            descricao: "Indicates the action of composing text.",
+            descricao: "Used to describe the action of making something by combining materials and parts.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "comprar",
+            traducoes: ["buy"],
+            exemplos: ["Eu compro frutas no mercado."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de adquirir algo em troca de dinheiro.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "buy",
+            traducoes: ["comprar"],
+            exemplos: ["I buy fruits at the market."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of acquiring something in exchange for money.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "pegar, apanhar",
+            traducoes: ["catch"],
+            exemplos: ["Eu pego o ônibus todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de capturar ou segurar algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "catch",
+            traducoes: ["pegar", "apanhar"],
+            exemplos: ["I catch the bus every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of capturing or holding something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "escolher",
+            traducoes: ["choose"],
+            exemplos: ["Eu escolho um livro para ler."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de selecionar entre várias opções.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "choose",
+            traducoes: ["escolher"],
+            exemplos: ["I choose a book to read."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of selecting from several options.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "vir",
+            traducoes: ["come"],
+            exemplos: ["Ela vem para a festa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se em direção a algo ou alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "come",
+            traducoes: ["vir"],
+            exemplos: ["She comes to the party."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving towards something or someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "custar",
+            traducoes: ["cost"],
+            exemplos: ["O carro custa muito dinheiro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever o preço ou valor de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "cost",
+            traducoes: ["custar"],
+            exemplos: ["The car costs a lot of money."],
+            classificacao: "verb",
+            descricao: "Used to describe the price or value of something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cortar",
+            traducoes: ["cut"],
+            exemplos: ["Eu corto o papel com a tesoura."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de dividir algo com um objeto afiado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "cut",
+            traducoes: ["cortar"],
+            exemplos: ["I cut the paper with scissors."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of dividing something with a sharp object.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "fazer",
+            traducoes: ["do"],
+            exemplos: ["Eu faço minha lição de casa todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a realização de uma ação ou tarefa.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "do",
+            traducoes: ["fazer"],
+            exemplos: ["I do my homework every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the performance of an action or task.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "negociar, lidar",
+            traducoes: ["deal"],
+            exemplos: ["Eu lido com situações difíceis no trabalho."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de gerenciar ou negociar com algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "deal",
+            traducoes: ["negociar", "lidar"],
+            exemplos: ["I deal with difficult situations at work."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of managing or negotiating with something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cavar",
+            traducoes: ["dig"],
+            exemplos: ["O cachorro cava um buraco no jardim."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover terra ou outros materiais com uma ferramenta, mãos ou patas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dig",
+            traducoes: ["cavar"],
+            exemplos: ["The dog digs a hole in the garden."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving soil or other materials with a tool, hands, or paws.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sonhar",
+            traducoes: ["dream"],
+            exemplos: ["Eu sonho todas as noites."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a experiência de imaginar enquanto dorme.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dream",
+            traducoes: ["sonhar"],
+            exemplos: ["I dream every night."],
+            classificacao: "verb",
+            descricao: "Used to describe the experience of imagining while sleeping.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "desenhar",
+            traducoes: ["draw"],
+            exemplos: ["Ela desenha um lindo retrato."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de criar uma imagem com uma ferramenta.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "draw",
+            traducoes: ["desenhar"],
+            exemplos: ["She draws a beautiful portrait."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of creating a picture with a tool.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "beber",
+            traducoes: ["drink"],
+            exemplos: ["Eu bebo água todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de consumir líquidos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "drink",
+            traducoes: ["beber"],
+            exemplos: ["I drink water every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of consuming liquids.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dirigir",
+            traducoes: ["drive"],
+            exemplos: ["Eu dirijo para o trabalho todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de controlar um veículo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "drive",
+            traducoes: ["dirigir"],
+            exemplos: ["I drive to work every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of controlling a vehicle.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "comer",
+            traducoes: ["eat"],
+            exemplos: ["Eu como frutas todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de consumir alimentos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "eat",
+            traducoes: ["comer"],
+            exemplos: ["I eat fruits every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of consuming food.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cair",
+            traducoes: ["fall"],
+            exemplos: ["Ele cai da bicicleta."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se para baixo rapidamente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fall",
+            traducoes: ["cair"],
+            exemplos: ["He falls off the bike."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving downwards quickly.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "alimentar",
+            traducoes: ["feed"],
+            exemplos: ["Ela alimenta os pássaros todas as manhãs."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de dar comida a alguém ou algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "feed",
+            traducoes: ["alimentar"],
+            exemplos: ["She feeds the birds every morning."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of giving food to someone or something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sentir",
+            traducoes: ["feel"],
+            exemplos: ["Eu sinto frio no inverno."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a experiência de sensações físicas ou emocionais.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "feel",
+            traducoes: ["sentir"],
+            exemplos: ["I feel cold in the winter."],
+            classificacao: "verb",
+            descricao: "Used to describe the experience of physical or emotional sensations.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "lutar",
+            traducoes: ["fight"],
+            exemplos: ["Eles lutam por seus direitos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de engajar-se em um conflito físico ou verbal.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fight",
+            traducoes: ["lutar"],
+            exemplos: ["They fight for their rights."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of engaging in physical or verbal conflict.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "encontrar",
+            traducoes: ["find"],
+            exemplos: ["Eu encontro as chaves na mesa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de descobrir algo que estava perdido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "find",
+            traducoes: ["encontrar"],
+            exemplos: ["I find the keys on the table."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of discovering something that was lost.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "voar",
+            traducoes: ["fly"],
+            exemplos: ["Os pássaros voam alto no céu."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de se mover pelo ar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fly",
+            traducoes: ["voar"],
+            exemplos: ["The birds fly high in the sky."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving through the air.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "esquecer",
+            traducoes: ["forget"],
+            exemplos: ["Eu esqueço o nome dele."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de não se lembrar de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forget",
+            traducoes: ["esquecer"],
+            exemplos: ["I forget his name."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of not remembering something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "perdoar",
+            traducoes: ["forgive"],
+            exemplos: ["Eu perdoo meu amigo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de deixar de lado a mágoa ou ressentimento.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forgive",
+            traducoes: ["perdoar"],
+            exemplos: ["I forgive my friend."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of letting go of hurt or resentment.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "congelar",
+            traducoes: ["freeze"],
+            exemplos: ["A água congela a zero graus."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de tornar-se sólido devido à baixa temperatura.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "freeze",
+            traducoes: ["congelar"],
+            exemplos: ["Water freezes at zero degrees."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of becoming solid due to low temperature.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "obter, conseguir",
+            traducoes: ["get"],
+            exemplos: ["Eu consigo um emprego novo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de adquirir ou receber algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "get",
+            traducoes: ["obter", "conseguir"],
+            exemplos: ["I get a new job."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of acquiring or receiving something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dar",
+            traducoes: ["give"],
+            exemplos: ["Eu dou um presente para ela."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de entregar algo a alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "give",
+            traducoes: ["dar"],
+            exemplos: ["I give her a gift."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of handing something to someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ir",
+            traducoes: ["go"],
+            exemplos: ["Eu vou à escola todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de se mover ou viajar para um lugar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "go",
+            traducoes: ["ir"],
+            exemplos: ["I go to school every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving or traveling to a place.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "crescer",
+            traducoes: ["grow"],
+            exemplos: ["As plantas crescem rápido na primavera."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de aumentar em tamanho ou desenvolvimento.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "grow",
+            traducoes: ["crescer"],
+            exemplos: ["Plants grow quickly in the spring."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of increasing in size or development.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "pendurar, enforcar",
+            traducoes: ["hang"],
+            exemplos: ["Eu penduro o quadro na parede."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de suspender algo de forma que fique fixo em um ponto e solto em outros.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hang",
+            traducoes: ["pendurar", "enforcar"],
+            exemplos: ["I hang the picture on the wall."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of suspending something so that it is fixed at one point and free at others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ter",
+            traducoes: ["have"],
+            exemplos: ["Eu tenho um carro novo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a posse de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "have",
+            traducoes: ["ter"],
+            exemplos: ["I have a new car."],
+            classificacao: "verb",
+            descricao: "Used to describe the possession of something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ouvir",
+            traducoes: ["hear"],
+            exemplos: ["Eu ouço música todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de perceber sons.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hear",
+            traducoes: ["ouvir"],
+            exemplos: ["I hear music every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of perceiving sounds.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "esconder",
+            traducoes: ["hide"],
+            exemplos: ["Ela esconde o presente no armário."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de colocar algo fora de vista.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hide",
+            traducoes: ["esconder"],
+            exemplos: ["She hides the present in the closet."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of putting something out of sight.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "bater",
+            traducoes: ["hit"],
+            exemplos: ["Ele bate na bola com o taco."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de golpear algo com força.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hit",
+            traducoes: ["bater"],
+            exemplos: ["He hits the ball with the bat."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of striking something with force.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "segurar",
+            traducoes: ["hold"],
+            exemplos: ["Eu seguro o bebê no colo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de manter algo ou alguém em suas mãos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hold",
+            traducoes: ["segurar"],
+            exemplos: ["I hold the baby in my arms."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of keeping something or someone in your hands.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "machucar, ferir",
+            traducoes: ["hurt"],
+            exemplos: ["Eu machuco meu dedo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de causar dor ou dano.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hurt",
+            traducoes: ["machucar", "ferir"],
+            exemplos: ["I hurt my finger."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of causing pain or injury.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "manter, guardar",
+            traducoes: ["keep"],
+            exemplos: ["Eu mantenho meus documentos organizados."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de continuar a ter algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "keep",
+            traducoes: ["manter", "guardar"],
+            exemplos: ["I keep my documents organized."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of continuing to have something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "saber, conhecer",
+            traducoes: ["know"],
+            exemplos: ["Eu sei a resposta."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a posse de conhecimento ou informação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "know",
+            traducoes: ["saber", "conhecer"],
+            exemplos: ["I know the answer."],
+            classificacao: "verb",
+            descricao: "Used to describe the possession of knowledge or information.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "liderar, conduzir",
+            traducoes: ["lead"],
+            exemplos: ["Ele lidera a equipe com confiança."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de guiar ou comandar um grupo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lead",
+            traducoes: ["liderar", "conduzir"],
+            exemplos: ["He leads the team with confidence."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of guiding or commanding a group.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "partir, ir embora",
+            traducoes: ["leave"],
+            exemplos: ["Eu deixo o trabalho às 5 horas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de partir de um lugar ou permitir algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "leave",
+            traducoes: ["partir", "ir embora", "sair"],
+            exemplos: ["I leave work at 5 o'clock."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of departing from a place or allowing something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "emprestar",
+            traducoes: ["lend"],
+            exemplos: ["Eu empresto dinheiro ao meu amigo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de dar algo a alguém com a expectativa de retorno.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lend",
+            traducoes: ["emprestar"],
+            exemplos: ["I lend money to my friend."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of giving something to someone with the expectation of it being returned.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "deixar, permitir",
+            traducoes: ["let"],
+            exemplos: ["Eu deixo meu irmão usar meu computador."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de permitir que algo aconteça.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "let",
+            traducoes: ["deixar", "permitir"],
+            exemplos: ["I let my brother use my computer."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of allowing something to happen.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "deitar, mentir",
+            traducoes: ["lie"],
+            exemplos: ["Eu deito na cama à noite."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de se posicionar de forma horizontal ou de não dizer a verdade.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lie",
+            traducoes: ["deitar", "mentir"],
+            exemplos: ["I lie in bed at night."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of positioning oneself horizontally or not telling the truth.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "perder",
+            traducoes: ["lose"],
+            exemplos: ["Eu perco minhas chaves com frequência."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de não conseguir manter a posse de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lose",
+            traducoes: ["perder"],
+            exemplos: ["I lose my keys frequently."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of failing to keep possession of something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "fazer, criar",
+            traducoes: ["make"],
+            exemplos: ["Eu faço um bolo para a festa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de criar ou produzir algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "make",
+            traducoes: ["fazer", "criar"],
+            exemplos: ["I make a cake for the party."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of creating or producing something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "significar, querer dizer",
+            traducoes: ["mean"],
+            exemplos: ["O que você quer dizer com isso?"],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a intenção ou significado de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "mean",
+            traducoes: ["significar", "querer dizer"],
+            exemplos: ["What do you mean by that?"],
+            classificacao: "verb",
+            descricao: "Used to describe the intention or significance of something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "encontrar, conhecer",
+            traducoes: ["meet"],
+            exemplos: ["Eu encontro meus amigos no café."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de se reunir com alguém ou conhecer alguém pela primeira vez.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "meet",
+            traducoes: ["encontrar", "conhecer"],
+            exemplos: ["I meet my friends at the café."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of gathering with someone or meeting someone for the first time.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "desistir, largar",
+            traducoes: ["quit"],
+            exemplos: ["Eu desisto de fumar."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de parar de fazer algo ou abandonar uma atividade.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "quit",
+            traducoes: ["desistir", "abandonar", "largar"],
+            exemplos: ["I quit smoking."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of stopping doing something or abandoning an activity.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ler",
+            traducoes: ["read"],
+            exemplos: ["Eu leio um livro todos os meses."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de interpretar palavras escritas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "read",
+            traducoes: ["ler"],
+            exemplos: ["I read a book every month."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of interpreting written words.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "montar, andar de, cavalgar",
+            traducoes: ["ride"],
+            exemplos: ["Eu ando de bicicleta todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de viajar em ou sobre um veículo ou animal.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "ride",
+            traducoes: ["andar de", "cavalgar", "montar"],
+            exemplos: ["I ride my bike every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of traveling on or in a vehicle or animal.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "tocar, soar",
+            traducoes: ["ring"],
+            exemplos: ["O telefone toca."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de emitir um som, geralmente de um telefone ou campainha.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "ring",
+            traducoes: ["tocar", "soar"],
+            exemplos: ["The phone rings."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of emitting a sound, usually from a phone or bell.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "erguer, surgir",
+            traducoes: ["rise"],
+            exemplos: ["O sol se levanta todas as manhãs."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se para cima.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "rise",
+            traducoes: ["subir", "levantar", "erguer", "surgir"],
+            exemplos: ["The sun rises every morning."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving upwards.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "correr",
+            traducoes: ["run"],
+            exemplos: ["Eu corro no parque todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se rapidamente usando as pernas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "run",
+            traducoes: ["correr"],
+            exemplos: ["I run in the park every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving quickly using your legs.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dizer",
+            traducoes: ["say"],
+            exemplos: ["Eu digo a verdade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de falar algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "say",
+            traducoes: ["dizer"],
+            exemplos: ["I say the truth."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of speaking something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ver",
+            traducoes: ["see"],
+            exemplos: ["Eu vejo as estrelas à noite."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de perceber algo com os olhos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "see",
+            traducoes: ["ver"],
+            exemplos: ["I see the stars at night."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of perceiving something with your eyes.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "procurar",
+            traducoes: ["seek"],
+            exemplos: ["Eu procuro novas oportunidades."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de buscar ou tentar encontrar algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "seek",
+            traducoes: ["procurar", "buscar"],
+            exemplos: ["I seek new opportunities."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of looking for or trying to find something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "vender",
+            traducoes: ["sell"],
+            exemplos: ["Eu vendo meu carro antigo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de trocar algo por dinheiro.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "sell",
+            traducoes: ["vender"],
+            exemplos: ["I sell my old car."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of exchanging something for money.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "enviar",
+            traducoes: ["send"],
+            exemplos: ["Eu envio uma carta para minha amiga."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de fazer algo ir a um lugar ou para alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "send",
+            traducoes: ["enviar"],
+            exemplos: ["I send a letter to my friend."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of making something go to a place or to someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ajustar, definir",
+            traducoes: ["set"],
+            exemplos: ["Eu ajusto o alarme para 6 horas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de colocar algo em uma posição específica.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "set",
+            traducoes: ["ajustar", "definir", "por"],
+            exemplos: ["I set the alarm for 6 o'clock."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of putting something in a specific position.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sacudir, chacoalhar",
+            traducoes: ["shake"],
+            exemplos: ["Eu sacudo a garrafa antes de abrir."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover algo rapidamente para frente e para trás.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "shake",
+            traducoes: ["sacudir", "chacoalhar"],
+            exemplos: ["I shake the bottle before opening."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving something quickly back and forth.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "brilhar",
+            traducoes: ["shine"],
+            exemplos: ["O sol brilha no céu."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de emitir luz.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "shine",
+            traducoes: ["brilhar"],
+            exemplos: ["The sun shines in the sky."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of emitting light.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "atirar, disparar",
+            traducoes: ["shoot"],
+            exemplos: ["Eu atiro a bola no gol."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de lançar algo rapidamente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "shoot",
+            traducoes: ["atirar", "disparar"],
+            exemplos: ["I shoot the ball into the goal."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of launching something quickly.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cantar",
+            traducoes: ["sing"],
+            exemplos: ["Eu canto no chuveiro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de produzir música com a voz.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "sing",
+            traducoes: ["cantar"],
+            exemplos: ["I sing in the shower."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of producing music with your voice.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "afundar",
+            traducoes: ["sink"],
+            exemplos: ["O barco afunda no lago."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de descer abaixo da superfície da água.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "sink",
+            traducoes: ["afundar"],
+            exemplos: ["The boat sinks in the lake."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of going below the surface of water.",
             audio: ""
         }
     },
@@ -833,7 +1283,7 @@ const verbsPresentSimple100 = [
             traducoes: ["sit"],
             exemplos: ["Eu sento na cadeira."],
             classificacao: "verbo",
-            descricao: "Indica a ação de se posicionar em uma cadeira ou assento.",
+            descricao: "Usado para descrever a ação de estar em uma posição apoiada sobre suas nádegas.",
             audio: ""
         },
         ingles: {
@@ -841,277 +1291,43 @@ const verbsPresentSimple100 = [
             traducoes: ["sentar"],
             exemplos: ["I sit on the chair."],
             classificacao: "verb",
-            descricao: "Indicates the action of positioning oneself on a chair or seat.",
+            descricao: "Used to describe the action of being in a position supported by your buttocks.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "ficar de pé",
-            traducoes: ["stand"],
-            exemplos: ["Ela fica de pé na janela."],
+            palavra: "dormir",
+            traducoes: ["sleep"],
+            exemplos: ["Eu durmo oito horas por noite."],
             classificacao: "verbo",
-            descricao: "Indica a ação de permanecer em pé.",
+            descricao: "Usado para descrever a ação de descansar o corpo e a mente fechando os olhos e ficando inconsciente.",
             audio: ""
         },
         ingles: {
-            palavra: "stand",
-            traducoes: ["ficar de pé"],
-            exemplos: ["She stands by the window."],
+            palavra: "sleep",
+            traducoes: ["dormir"],
+            exemplos: ["I sleep eight hours a night."],
             classificacao: "verb",
-            descricao: "Indicates the action of remaining upright.",
+            descricao: "Used to describe the action of resting the body and mind by closing the eyes and becoming unconscious.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "perder",
-            traducoes: ["lose"],
-            exemplos: ["Ele perde suas chaves."],
+            palavra: "deslizar, escorregar",
+            traducoes: ["slide"],
+            exemplos: ["Eu deslizo no gelo."],
             classificacao: "verbo",
-            descricao: "Indica a ação de deixar de ter algo.",
+            descricao: "Usado para descrever a ação de mover-se suavemente sobre uma superfície.",
             audio: ""
         },
         ingles: {
-            palavra: "lose",
-            traducoes: ["perder"],
-            exemplos: ["He loses his keys."],
+            palavra: "slide",
+            traducoes: ["deslizar", "escorregar"],
+            exemplos: ["I slide on the ice."],
             classificacao: "verb",
-            descricao: "Indicates the action of no longer having something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pagar",
-            traducoes: ["pay"],
-            exemplos: ["Eu pago a conta."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de dar dinheiro em troca de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "pay",
-            traducoes: ["pagar"],
-            exemplos: ["I pay the bill."],
-            classificacao: "verb",
-            descricao: "Indicates the action of giving money in exchange for something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "encontrar, conhecer",
-            traducoes: ["meet"],
-            exemplos: ["Ela encontra os amigos."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de se reunir com alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "meet",
-            traducoes: ["encontrar", "conhecer"],
-            exemplos: ["She meets her friends."],
-            classificacao: "verb",
-            descricao: "Indicates the action of gathering with someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "incluir",
-            traducoes: ["include"],
-            exemplos: ["Ele inclui todos."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de incorporar algo em um grupo ou conjunto.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "include",
-            traducoes: ["incluir"],
-            exemplos: ["He includes everyone."],
-            classificacao: "verb",
-            descricao: "Indicates the action of incorporating something into a group or set.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "continuar",
-            traducoes: ["continue"],
-            exemplos: ["Eles continuam o projeto."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de seguir em frente com algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "continue",
-            traducoes: ["continuar"],
-            exemplos: ["They continue the project."],
-            classificacao: "verb",
-            descricao: "Indicates the action of moving forward with something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "definir, estabelecer",
-            traducoes: ["set"],
-            exemplos: ["Eu arrumo a mesa."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de preparar ou organizar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "set",
-            traducoes: ["definir", "estabelecer"],
-            exemplos: ["I set the table."],
-            classificacao: "verb",
-            descricao: "Indicates the action of preparing or organizing something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "aprender",
-            traducoes: ["learn"],
-            exemplos: ["Ela aprende inglês."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de adquirir conhecimento ou habilidade.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "learn",
-            traducoes: ["aprender"],
-            exemplos: ["She learns English."],
-            classificacao: "verb",
-            descricao: "Indicates the action of acquiring knowledge or skill.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "mudar",
-            traducoes: ["change"],
-            exemplos: ["Ele troca de roupa."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de fazer algo diferente.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "change",
-            traducoes: ["mudar"],
-            exemplos: ["He changes his clothes."],
-            classificacao: "verb",
-            descricao: "Indicates the action of making something different.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "liderar, conduzir",
-            traducoes: ["lead"],
-            exemplos: ["Eu lidero a equipe."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de guiar ou dirigir um grupo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "lead",
-            traducoes: ["liderar", "conduzir"],
-            exemplos: ["I lead the team."],
-            classificacao: "verb",
-            descricao: "Indicates the action of guiding or directing a group.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "entender",
-            traducoes: ["understand"],
-            exemplos: ["Ela entende o problema."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de compreender algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "understand",
-            traducoes: ["entender"],
-            exemplos: ["She understands the problem."],
-            classificacao: "verb",
-            descricao: "Indicates the action of comprehending something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "assistir",
-            traducoes: ["watch"],
-            exemplos: ["Ele assiste TV."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de observar ou ver algo com atenção.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "watch",
-            traducoes: ["assistir"],
-            exemplos: ["He watches TV."],
-            classificacao: "verb",
-            descricao: "Indicates the action of observing or seeing something attentively.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "seguir",
-            traducoes: ["follow"],
-            exemplos: ["Eu sigo as instruções."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de acompanhar ou aderir a algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "follow",
-            traducoes: ["seguir"],
-            exemplos: ["I follow the instructions."],
-            classificacao: "verb",
-            descricao: "Indicates the action of accompanying or adhering to something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "parar",
-            traducoes: ["stop"],
-            exemplos: ["Ela para o carro."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de interromper ou finalizar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stop",
-            traducoes: ["parar"],
-            exemplos: ["She stops the car."],
-            classificacao: "verb",
-            descricao: "Indicates the action of interrupting or ending something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "criar",
-            traducoes: ["create"],
-            exemplos: ["Ele cria arte."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de produzir algo novo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "create",
-            traducoes: ["criar"],
-            exemplos: ["He creates art."],
-            classificacao: "verb",
-            descricao: "Indicates the action of producing something new.",
+            descricao: "Used to describe the action of moving smoothly over a surface.",
             audio: ""
         }
     },
@@ -1119,143 +1335,341 @@ const verbsPresentSimple100 = [
         portugues: {
             palavra: "falar",
             traducoes: ["speak"],
-            exemplos: ["Eu falo inglês."],
+            exemplos: ["Eu falo inglês e português."],
             classificacao: "verbo",
-            descricao: "Indica a ação de comunicar-se verbalmente.",
+            descricao: "Usado para descrever a ação de comunicar-se verbalmente.",
             audio: ""
         },
         ingles: {
             palavra: "speak",
             traducoes: ["falar"],
-            exemplos: ["I speak English."],
+            exemplos: ["I speak English and Portuguese."],
             classificacao: "verb",
-            descricao: "Indicates the action of communicating verbally.",
+            descricao: "Used to describe the action of communicating verbally.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "ler",
-            traducoes: ["read"],
-            exemplos: ["Ela lê um livro."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de interpretar texto escrito.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "read",
-            traducoes: ["ler"],
-            exemplos: ["She reads a book."],
-            classificacao: "verb",
-            descricao: "Indicates the action of interpreting written text.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "permitir",
-            traducoes: ["allow"],
-            exemplos: ["Ele permite isso."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de dar permissão para algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "allow",
-            traducoes: ["permitir"],
-            exemplos: ["He allows it."],
-            classificacao: "verb",
-            descricao: "Indicates the action of giving permission for something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "adicionar",
-            traducoes: ["add"],
-            exemplos: ["Eu adiciono açúcar ao meu café."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de incluir algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "add",
-            traducoes: ["adicionar"],
-            exemplos: ["I add sugar to my coffee."],
-            classificacao: "verb",
-            descricao: "Indicates the action of including something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "gastar, passar (tempo)",
+            palavra: "gastar, passar tempo",
             traducoes: ["spend"],
-            exemplos: ["Ela gasta dinheiro."],
+            exemplos: ["Eu gasto dinheiro com livros."],
             classificacao: "verbo",
-            descricao: "Indica a ação de usar dinheiro ou tempo.",
+            descricao: "Usado para descrever a ação de usar tempo ou dinheiro.",
             audio: ""
         },
         ingles: {
             palavra: "spend",
-            traducoes: ["gastar", "passar (tempo)"],
-            exemplos: ["She spends money."],
+            traducoes: ["gastar", "passar"],
+            exemplos: ["I spend money on books."],
             classificacao: "verb",
-            descricao: "Indicates the action of using money or time.",
+            descricao: "Used to describe the action of using time or money.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "crescer",
-            traducoes: ["grow"],
-            exemplos: ["Ele cultiva vegetais."],
+            palavra: "espalhar",
+            traducoes: ["spread"],
+            exemplos: ["Eu espalho manteiga no pão."],
             classificacao: "verbo",
-            descricao: "Indica a ação de aumentar em tamanho ou desenvolvimento.",
+            descricao: "Usado para descrever a ação de distribuir algo sobre uma superfície.",
             audio: ""
         },
         ingles: {
-            palavra: "grow",
-            traducoes: ["crescer"],
-            exemplos: ["He grows vegetables."],
+            palavra: "spread",
+            traducoes: ["espalhar"],
+            exemplos: ["I spread butter on the bread."],
             classificacao: "verb",
-            descricao: "Indicates the action of increasing in size or development.",
+            descricao: "Used to describe the action of distributing something over a surface.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "abrir",
-            traducoes: ["open"],
-            exemplos: ["Eu abro a porta."],
+            palavra: "ficar de pé, levantar-se",
+            traducoes: ["stand"],
+            exemplos: ["Eu fico de pé no ônibus."],
             classificacao: "verbo",
-            descricao: "Indica a ação de mover algo para permitir acesso.",
+            descricao: "Usado para descrever a ação de estar ereto sobre os pés.",
             audio: ""
         },
         ingles: {
-            palavra: "open",
-            traducoes: ["abrir"],
-            exemplos: ["I open the door."],
+            palavra: "stand",
+            traducoes: ["ficar de pé", "levantar-se", "ficar em pé"],
+            exemplos: ["I stand on the bus."],
             classificacao: "verb",
-            descricao: "Indicates the action of moving something to allow access.",
+            descricao: "Used to describe the action of being upright on your feet.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "caminhar",
-            traducoes: ["walk"],
-            exemplos: ["Ela caminha para o trabalho."],
+            palavra: "roubar",
+            traducoes: ["steal"],
+            exemplos: ["Alguém roubou minha carteira."],
             classificacao: "verbo",
-            descricao: "Indica a ação de mover-se a pé.",
+            descricao: "Usado para descrever a ação de tomar algo de alguém sem permissão.",
             audio: ""
         },
         ingles: {
-            palavra: "walk",
-            traducoes: ["caminhar"],
-            exemplos: ["She walks to work."],
+            palavra: "steal",
+            traducoes: ["roubar"],
+            exemplos: ["Someone stole my wallet."],
             classificacao: "verb",
-            descricao: "Indicates the action of moving on foot.",
+            descricao: "Used to describe the action of taking something from someone without permission.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "colar, grudar",
+            traducoes: ["stick"],
+            exemplos: ["Eu grudo o adesivo na parede."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de aderir algo a uma superfície.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "stick",
+            traducoes: ["colar", "grudar"],
+            exemplos: ["I stick the sticker on the wall."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of attaching something to a surface.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "golpear, atingir",
+            traducoes: ["strike"],
+            exemplos: ["Ele golpeia a bola com força."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de bater em algo com força.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "strike",
+            traducoes: ["golpear", "atingir"],
+            exemplos: ["He strikes the ball hard."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of hitting something with force.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "jurar",
+            traducoes: ["swear"],
+            exemplos: ["Eu juro dizer a verdade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de fazer uma promessa solene.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "swear",
+            traducoes: ["jurar"],
+            exemplos: ["I swear to tell the truth."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of making a solemn promise.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "varrer",
+            traducoes: ["sweep"],
+            exemplos: ["Eu varro o chão da cozinha."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de limpar uma superfície usando uma vassoura.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "sweep",
+            traducoes: ["varrer"],
+            exemplos: ["I sweep the kitchen floor."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of cleaning a surface using a broom.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "inchar",
+            traducoes: ["swell"],
+            exemplos: ["Meu tornozelo incha depois do acidente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de aumentar de tamanho devido a um acúmulo de líquido ou inflamação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "swell",
+            traducoes: ["inchar"],
+            exemplos: ["My ankle swells after the accident."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of increasing in size due to an accumulation of fluid or inflammation.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "nadar",
+            traducoes: ["swim"],
+            exemplos: ["Eu nado no lago durante o verão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se através da água usando os braços e as pernas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "swim",
+            traducoes: ["nadar"],
+            exemplos: ["I swim in the lake during the summer."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving through water using your arms and legs.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "balançar",
+            traducoes: ["swing"],
+            exemplos: ["Eu balanço no parque."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se para frente e para trás em um arco.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "swing",
+            traducoes: ["balançar"],
+            exemplos: ["I swing in the park."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving back and forth in an arc.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "pegar, levar",
+            traducoes: ["take"],
+            exemplos: ["Eu levo meu cachorro para passear."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de pegar ou transportar algo de um lugar para outro.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "take",
+            traducoes: ["pegar", "levar", "tomar"],
+            exemplos: ["I take my dog for a walk."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of picking up or transporting something from one place to another.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ensinar",
+            traducoes: ["teach"],
+            exemplos: ["Eu ensino matemática na escola."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de transmitir conhecimento ou habilidades para alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "teach",
+            traducoes: ["ensinar"],
+            exemplos: ["I teach math at school."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of imparting knowledge or skills to someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "rasgar",
+            traducoes: ["tear"],
+            exemplos: ["Eu rasgo o papel ao meio."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de dividir algo em pedaços usando força.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "tear",
+            traducoes: ["rasgar"],
+            exemplos: ["I tear the paper in half."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of splitting something into pieces using force.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "contar, narrar",
+            traducoes: ["tell"],
+            exemplos: ["Eu conto uma história para minha irmã."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de comunicar algo a alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "tell",
+            traducoes: ["dizer", "contar", "narrar"],
+            exemplos: ["I tell a story to my sister."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of communicating something to someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "pensar",
+            traducoes: ["think"],
+            exemplos: ["Eu penso que vai chover hoje."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de usar a mente para considerar ou refletir sobre algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "think",
+            traducoes: ["pensar"],
+            exemplos: ["I think it will rain today."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of using your mind to consider or reflect on something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "vestir, usar",
+            traducoes: ["wear"],
+            exemplos: ["Eu uso um casaco no inverno."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de ter algo sobre o corpo, como roupas ou acessórios.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "wear",
+            traducoes: ["vestir", "usar"],
+            exemplos: ["I wear a coat in winter."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of having something on your body, such as clothes or accessories.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "Lamentar, choramingar",
+            traducoes: ["weep"],
+            exemplos: ["Eu choro de alegria."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de derramar lágrimas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "weep",
+            traducoes: ["lamentar", "choramingar", "chorar"],
+            exemplos: ["I weep with joy."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of shedding tears.",
             audio: ""
         }
     },
@@ -1263,558 +1677,72 @@ const verbsPresentSimple100 = [
         portugues: {
             palavra: "ganhar, vencer",
             traducoes: ["win"],
-            exemplos: ["Ele vence o jogo."],
+            exemplos: ["Eu ganho o jogo."],
             classificacao: "verbo",
-            descricao: "Indica a ação de alcançar a vitória em algo.",
+            descricao: "Usado para descrever a ação de ser bem-sucedido em uma competição ou conseguir algo.",
             audio: ""
         },
         ingles: {
             palavra: "win",
             traducoes: ["ganhar", "vencer"],
-            exemplos: ["He wins the game."],
+            exemplos: ["I win the game."],
             classificacao: "verb",
-            descricao: "Indicates the action of achieving victory in something.",
+            descricao: "Used to describe the action of being successful in a competition or achieving something.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "oferecer",
-            traducoes: ["offer"],
-            exemplos: ["Eu ofereço ajuda."],
+            palavra: "escrever",
+            traducoes: ["write"],
+            exemplos: ["Eu escrevo uma carta para meu amigo."],
             classificacao: "verbo",
-            descricao: "Indica a ação de apresentar algo a alguém.",
+            descricao: "Usado para descrever a ação de formar letras ou palavras em uma superfície.",
             audio: ""
         },
         ingles: {
-            palavra: "offer",
-            traducoes: ["oferecer"],
-            exemplos: ["I offer help."],
+            palavra: "write",
+            traducoes: ["escrever"],
+            exemplos: ["I write a letter to my friend."],
             classificacao: "verb",
-            descricao: "Indicates the action of presenting something to someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "lembrar",
-            traducoes: ["remember"],
-            exemplos: ["Ela lembra o nome dele."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de trazer algo à memória.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "remember",
-            traducoes: ["lembrar"],
-            exemplos: ["She remembers his name."],
-            classificacao: "verb",
-            descricao: "Indicates the action of bringing something to mind.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "amar",
-            traducoes: ["love"],
-            exemplos: ["Ele ama música."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de sentir afeição profunda por algo ou alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "love",
-            traducoes: ["amar"],
-            exemplos: ["He loves music."],
-            classificacao: "verb",
-            descricao: "Indicates the action of feeling deep affection for something or someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "considerar",
-            traducoes: ["consider"],
-            exemplos: ["Eu considero isso uma boa ideia."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de pensar cuidadosamente sobre algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "consider",
-            traducoes: ["considerar"],
-            exemplos: ["I consider it a good idea."],
-            classificacao: "verb",
-            descricao: "Indicates the action of thinking carefully about something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "aparecer",
-            traducoes: ["appear"],
-            exemplos: ["Ela parece feliz."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de se tornar visível ou perceptível.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "appear",
-            traducoes: ["aparecer"],
-            exemplos: ["She appears happy."],
-            classificacao: "verb",
-            descricao: "Indicates the action of becoming visible or noticeable.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "comprar",
-            traducoes: ["buy"],
-            exemplos: ["Ele compra um carro."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de adquirir algo em troca de dinheiro.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "buy",
-            traducoes: ["comprar"],
-            exemplos: ["He buys a car."],
-            classificacao: "verb",
-            descricao: "Indicates the action of acquiring something in exchange for money.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "esperar",
-            traducoes: ["wait"],
-            exemplos: ["Eu espero pelo ônibus."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de permanecer em um lugar até que algo aconteça.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "wait",
-            traducoes: ["esperar"],
-            exemplos: ["I wait for the bus."],
-            classificacao: "verb",
-            descricao: "Indicates the action of staying in a place until something happens.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "servir",
-            traducoes: ["serve"],
-            exemplos: ["Ela serve a comida."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de oferecer ou apresentar algo a alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "serve",
-            traducoes: ["servir"],
-            exemplos: ["She serves the food."],
-            classificacao: "verb",
-            descricao: "Indicates the action of offering or presenting something to someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "morrer",
-            traducoes: ["die"],
-            exemplos: ["Ele morre na história."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de cessar a vida.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "die",
-            traducoes: ["morrer"],
-            exemplos: ["He dies in the story."],
-            classificacao: "verb",
-            descricao: "Indicates the action of ceasing to live.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "enviar",
-            traducoes: ["send"],
-            exemplos: ["Eu envio um e-mail."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de fazer algo chegar a outro lugar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "send",
-            traducoes: ["enviar"],
-            exemplos: ["I send an email."],
-            classificacao: "verb",
-            descricao: "Indicates the action of making something arrive at another place.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "esperar, aguardar",
-            traducoes: ["expect"],
-            exemplos: ["Ela espera boas notícias."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de acreditar que algo vai acontecer.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "expect",
-            traducoes: ["esperar", "aguardar"],
-            exemplos: ["She expects good news."],
-            classificacao: "verb",
-            descricao: "Indicates the action of believing that something will happen.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "construir",
-            traducoes: ["build"],
-            exemplos: ["Ele constrói uma casa."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de fazer algo estrutural.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "build",
-            traducoes: ["construir"],
-            exemplos: ["He builds a house."],
-            classificacao: "verb",
-            descricao: "Indicates the action of making something structural.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ficar, permanecer",
-            traducoes: ["stay"],
-            exemplos: ["Eu fico em casa."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de continuar em um lugar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stay",
-            traducoes: ["ficar", "permanecer"],
-            exemplos: ["I stay at home."],
-            classificacao: "verb",
-            descricao: "Indicates the action of continuing in a place.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "cair",
-            traducoes: ["fall"],
-            exemplos: ["Ela cai."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de mover-se para baixo involuntariamente.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "fall",
-            traducoes: ["cair"],
-            exemplos: ["She falls down."],
-            classificacao: "verb",
-            descricao: "Indicates the action of moving downward involuntarily.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "cortar",
-            traducoes: ["cut"],
-            exemplos: ["Ele corta o papel."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de dividir algo com uma ferramenta afiada.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "cut",
-            traducoes: ["cortar"],
-            exemplos: ["He cuts the paper."],
-            classificacao: "verb",
-            descricao: "Indicates the action of dividing something with a sharp tool.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "alcançar",
-            traducoes: ["reach"],
-            exemplos: ["Eu alcanço a prateleira de cima."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de estender-se para tocar algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "reach",
-            traducoes: ["alcançar"],
-            exemplos: ["I reach the top shelf."],
-            classificacao: "verb",
-            descricao: "Indicates the action of extending to touch something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "matar",
-            traducoes: ["kill"],
-            exemplos: ["Ele mata um inseto."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de tirar a vida de algo ou alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "kill",
-            traducoes: ["matar"],
-            exemplos: ["He kills a bug."],
-            classificacao: "verb",
-            descricao: "Indicates the action of taking the life of something or someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "permanecer",
-            traducoes: ["remain"],
-            exemplos: ["Ela permanece calma."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de continuar em um estado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "remain",
-            traducoes: ["permanecer"],
-            exemplos: ["She remains calm."],
-            classificacao: "verb",
-            descricao: "Indicates the action of continuing in a state.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sugerir",
-            traducoes: ["suggest"],
-            exemplos: ["Eu sugiro uma solução."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de propor uma ideia ou plano.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "suggest",
-            traducoes: ["sugerir"],
-            exemplos: ["I suggest a solution."],
-            classificacao: "verb",
-            descricao: "Indicates the action of proposing an idea or plan.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "levantar, aumentar",
-            traducoes: ["raise"],
-            exemplos: ["Ele levanta a mão."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de mover algo para cima.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "raise",
-            traducoes: ["levantar", "aumentar"],
-            exemplos: ["He raises his hand."],
-            classificacao: "verb",
-            descricao: "Indicates the action of moving something upward.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "passar",
-            traducoes: ["pass"],
-            exemplos: ["Eu passo o sal."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de mover algo de uma pessoa para outra.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "pass",
-            traducoes: ["passar"],
-            exemplos: ["I pass the salt."],
-            classificacao: "verb",
-            descricao: "Indicates the action of moving something from one person to another.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "vender",
-            traducoes: ["sell"],
-            exemplos: ["Ela vende flores."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de trocar algo por dinheiro.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sell",
-            traducoes: ["vender"],
-            exemplos: ["She sells flowers."],
-            classificacao: "verb",
-            descricao: "Indicates the action of exchanging something for money.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "exigir",
-            traducoes: ["require"],
-            exemplos: ["Ele requer assistência."],
-            classificacao: "verbo",
-            descricao: "Indica a necessidade ou obrigação de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "require",
-            traducoes: ["exigir"],
-            exemplos: ["He requires assistance."],
-            classificacao: "verb",
-            descricao: "Indicates the need or obligation for something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "relatar, reportar",
-            traducoes: ["report"],
-            exemplos: ["Eu reporto as notícias."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de fornecer informações sobre algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "report",
-            traducoes: ["relatar", "reportar"],
-            exemplos: ["I report the news."],
-            classificacao: "verb",
-            descricao: "Indicates the action of providing information about something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "decidir",
-            traducoes: ["decide"],
-            exemplos: ["Ela decide ir."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de fazer uma escolha ou tomar uma decisão.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "decide",
-            traducoes: ["decidir"],
-            exemplos: ["She decides to go."],
-            classificacao: "verb",
-            descricao: "Indicates the action of making a choice or decision.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "puxar",
-            traducoes: ["pull"],
-            exemplos: ["Ele puxa a porta."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de mover algo em sua direção.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "pull",
-            traducoes: ["puxar"],
-            exemplos: ["He pulls the door."],
-            classificacao: "verb",
-            descricao: "Indicates the action of moving something towards oneself.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "quebrar",
-            traducoes: ["break"],
-            exemplos: ["Eu quebro um copo."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de separar algo em partes por força.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "break",
-            traducoes: ["quebrar"],
-            exemplos: ["I break a glass."],
-            classificacao: "verb",
-            descricao: "Indicates the action of separating something into parts by force.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "explicar",
-            traducoes: ["explain"],
-            exemplos: ["Ela explica as regras."],
-            classificacao: "verbo",
-            descricao: "Indica a ação de tornar algo claro ou compreensível.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "explain",
-            traducoes: ["explicar"],
-            exemplos: ["She explains the rules."],
-            classificacao: "verb",
-            descricao: "Indicates the action of making something clear or understandable.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "esperar, ter esperança",
-            traducoes: ["hope"],
-            exemplos: ["Eu espero pelo melhor."],
-            classificacao: "verbo",
-            descricao: "Indica a expectativa de que algo desejado aconteça.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "hope",
-            traducoes: ["esperar", "ter esperança"],
-            exemplos: ["I hope for the best."],
-            classificacao: "verb",
-            descricao: "Indicates the expectation that something desired will happen.",
+            descricao: "Used to describe the action of forming letters or words on a surface.",
             audio: ""
         }
     }
-];
+]; 
 
 const verbsPastSimple100 = [
     {
         portugues: {
-            palavra: "era, estava",
-            traducoes: ["was", "were"],
-            exemplos: ["Ele estava feliz.", "Eles estavam cansados."],
+            palavra: "acordou, despertou",
+            traducoes: ["awoke"],
+            exemplos: ["Você acordou cedo todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de acordar de um sono.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "awoke",
+            traducoes: ["acordou", "despertou"],
+            exemplos: ["You awoke early every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of waking up from sleep.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "foi, era, estava",
+            traducoes: ["was, were"],
+            exemplos: ["Você estava feliz."],
             classificacao: "verbo",
             descricao: "Usado para descrever o estado ou identidade de alguém.",
             audio: ""
         },
         ingles: {
             palavra: "was, were",
-            traducoes: ["era, estava"],
-            exemplos: ["He was happy.", "They were tired."],
+            traducoes: ["foi", "era", "estava"],
+            exemplos: ["You were happy."],
             classificacao: "verb",
             descricao: "Used to describe the state or identity of someone.",
             audio: ""
@@ -1822,1477 +1750,55 @@ const verbsPastSimple100 = [
     },
     {
         portugues: {
-            palavra: "tinha, teve",
-            traducoes: ["had"],
-            exemplos: ["Ela tinha um gato."],
+            palavra: "bateu, pulsou",
+            traducoes: ["beat"],
+            exemplos: ["Seu coração bateu rápido quando estava nervoso."],
             classificacao: "verbo",
-            descricao: "Usado para indicar posse ou ação passada.",
+            descricao: "Usado para descrever a ação de bater repetidamente ou pulsar.",
             audio: ""
         },
         ingles: {
-            palavra: "had",
-            traducoes: ["tinha", "teve"],
-            exemplos: ["She had a cat."],
+            palavra: "beat",
+            traducoes: ["bateu", "pulsou"],
+            exemplos: ["Your heart beat fast when you were nervous."],
             classificacao: "verb",
-            descricao: "Used to indicate possession or a past action.",
+            descricao: "Used to describe the action of hitting repeatedly or pulsating.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "fez",
-            traducoes: ["did"],
-            exemplos: ["Ele fez sua lição de casa."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar uma ação completada no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "did",
-            traducoes: ["fez"],
-            exemplos: ["He did his homework."],
-            classificacao: "verb",
-            descricao: "Used to indicate a completed action in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "disse",
-            traducoes: ["said"],
-            exemplos: ["Ela disse olá."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo falado no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "said",
-            traducoes: ["disse"],
-            exemplos: ["She said hello."],
-            classificacao: "verb",
-            descricao: "Used to indicate something spoken in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "foi",
-            traducoes: ["went"],
-            exemplos: ["Eles foram ao parque."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar movimento de um lugar para outro no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "went",
-            traducoes: ["foi"],
-            exemplos: ["They went to the park."],
-            classificacao: "verb",
-            descricao: "Used to indicate movement from one place to another in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "recebeu, obteve",
-            traducoes: ["got"],
-            exemplos: ["Ele recebeu um presente."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar obtenção de algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "got",
-            traducoes: ["recebeu", "obteve"],
-            exemplos: ["He got a gift."],
-            classificacao: "verb",
-            descricao: "Used to indicate obtaining something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "fez",
-            traducoes: ["made"],
-            exemplos: ["Ela fez um bolo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a criação ou produção de algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "made",
-            traducoes: ["fez"],
-            exemplos: ["She made a cake."],
-            classificacao: "verb",
-            descricao: "Used to indicate the creation or production of something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sabia",
-            traducoes: ["knew"],
-            exemplos: ["Ele sabia a resposta."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar conhecimento de algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "knew",
-            traducoes: ["sabia"],
-            exemplos: ["He knew the answer."],
-            classificacao: "verb",
-            descricao: "Used to indicate knowledge of something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pensou",
-            traducoes: ["thought"],
-            exemplos: ["Ela pensou sobre isso."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar um processo mental no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "thought",
-            traducoes: ["pensou"],
-            exemplos: ["She thought about it."],
-            classificacao: "verb",
-            descricao: "Used to indicate a mental process in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "veio",
-            traducoes: ["came"],
-            exemplos: ["Ele veio para casa."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar movimento para um lugar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "came",
-            traducoes: ["veio"],
-            exemplos: ["He came home."],
-            classificacao: "verb",
-            descricao: "Used to indicate movement to a place in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "viu",
-            traducoes: ["saw"],
-            exemplos: ["Ela viu um filme."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a percepção visual no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "saw",
-            traducoes: ["viu"],
-            exemplos: ["She saw a movie."],
-            classificacao: "verb",
-            descricao: "Used to indicate visual perception in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "saiu, deixou",
-            traducoes: ["left"],
-            exemplos: ["Eles saíram cedo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar partida ou abandono no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "left",
-            traducoes: ["saiu", "deixou"],
-            exemplos: ["They left early."],
-            classificacao: "verb",
-            descricao: "Used to indicate departure or abandonment in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pegou, levou",
-            traducoes: ["took"],
-            exemplos: ["Ele pegou o ônibus."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar captura ou transporte de algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "took",
-            traducoes: ["pegou", "levou"],
-            exemplos: ["He took the bus."],
-            classificacao: "verb",
-            descricao: "Used to indicate capturing or transporting something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "encontrou",
-            traducoes: ["found"],
-            exemplos: ["Ela encontrou suas chaves."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a descoberta de algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "found",
-            traducoes: ["encontrou"],
-            exemplos: ["She found her keys."],
-            classificacao: "verb",
-            descricao: "Used to indicate the discovery of something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sentiu",
-            traducoes: ["felt"],
-            exemplos: ["Ele se sentiu feliz."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar uma emoção ou sensação no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "felt",
-            traducoes: ["sentiu"],
-            exemplos: ["He felt happy."],
-            classificacao: "verb",
-            descricao: "Used to indicate an emotion or sensation in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "colocou",
-            traducoes: ["put"],
-            exemplos: ["Ela colocou na mesa."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de colocar algo em algum lugar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "put",
-            traducoes: ["colocou"],
-            exemplos: ["She put it on the table."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of placing something somewhere in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "trouxe",
-            traducoes: ["brought"],
-            exemplos: ["Ele trouxe um amigo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de trazer algo ou alguém no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "brought",
-            traducoes: ["trouxe"],
-            exemplos: ["He brought a friend."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of bringing something or someone in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "começou",
+            palavra: "começou, iniciou",
             traducoes: ["began"],
-            exemplos: ["Ela começou a cantar."],
+            exemplos: ["Você começou seu dia com um café."],
             classificacao: "verbo",
-            descricao: "Usado para indicar o início de uma ação no passado.",
+            descricao: "Usado para descrever a ação de iniciar algo.",
             audio: ""
         },
         ingles: {
             palavra: "began",
-            traducoes: ["começou"],
-            exemplos: ["She began to sing."],
+            traducoes: ["começou", "iniciou"],
+            exemplos: ["You began your day with a coffee."],
             classificacao: "verb",
-            descricao: "Used to indicate the start of an action in the past.",
+            descricao: "Used to describe the action of starting something.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "manteve",
-            traducoes: ["kept"],
-            exemplos: ["Ele manteve sua promessa."],
+            palavra: "mordeu",
+            traducoes: ["bit"],
+            exemplos: ["O cachorro mordeu o osso."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a continuidade de uma ação ou estado no passado.",
+            descricao: "Usado para descrever a ação de usar os dentes para cortar algo.",
             audio: ""
         },
         ingles: {
-            palavra: "kept",
-            traducoes: ["manteve"],
-            exemplos: ["He kept his promise."],
+            palavra: "bit",
+            traducoes: ["mordeu"],
+            exemplos: ["The dog bit the bone."],
             classificacao: "verb",
-            descricao: "Used to indicate the continuity of an action or state in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "segurou",
-            traducoes: ["held"],
-            exemplos: ["Ela segurou o bebê."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de segurar algo ou alguém no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "held",
-            traducoes: ["segurou"],
-            exemplos: ["She held the baby."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of holding something or someone in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "escreveu",
-            traducoes: ["wrote"],
-            exemplos: ["Ele escreveu uma carta."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de escrever no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "wrote",
-            traducoes: ["escreveu"],
-            exemplos: ["He wrote a letter."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of writing in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ficou de pé",
-            traducoes: ["stood"],
-            exemplos: ["Ela ficou de pé."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de ficar de pé no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stood",
-            traducoes: ["ficou de pé"],
-            exemplos: ["She stood up."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of standing up in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ouviu",
-            traducoes: ["heard"],
-            exemplos: ["Ele ouviu um barulho."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a percepção auditiva no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "heard",
-            traducoes: ["ouviu"],
-            exemplos: ["He heard a noise."],
-            classificacao: "verb",
-            descricao: "Used to indicate auditory perception in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "correu",
-            traducoes: ["ran"],
-            exemplos: ["Ela correu rápido."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de correr no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "ran",
-            traducoes: ["correu"],
-            exemplos: ["She ran fast."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of running in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pagou",
-            traducoes: ["paid"],
-            exemplos: ["Ele pagou a conta."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de pagar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "paid",
-            traducoes: ["pagou"],
-            exemplos: ["He paid the bill."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of paying something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sentou",
-            traducoes: ["sat"],
-            exemplos: ["Ela se sentou."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de sentar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sat",
-            traducoes: ["sentou"],
-            exemplos: ["She sat down."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of sitting in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "conheceu, encontrou",
-            traducoes: ["met"],
-            exemplos: ["Ele encontrou seus amigos."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar um encontro ou apresentação no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "met",
-            traducoes: ["conheceu", "encontrou"],
-            exemplos: ["He met his friends."],
-            classificacao: "verb",
-            descricao: "Used to indicate a meeting or introduction in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "leu",
-            traducoes: ["read"],
-            exemplos: ["Ela leu um livro."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de ler no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "read",
-            traducoes: ["leu"],
-            exemplos: ["She read a book."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of reading in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "perdeu",
-            traducoes: ["lost"],
-            exemplos: ["Ele perdeu sua carteira."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a perda de algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "lost",
-            traducoes: ["perdeu"],
-            exemplos: ["He lost his wallet."],
-            classificacao: "verb",
-            descricao: "Used to indicate the loss of something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "construiu",
-            traducoes: ["built"],
-            exemplos: ["Ela construiu uma casa."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de construir algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "built",
-            traducoes: ["construiu"],
-            exemplos: ["She built a house."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of building something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "deu",
-            traducoes: ["gave"],
-            exemplos: ["Ele deu um presente."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de dar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "gave",
-            traducoes: ["deu"],
-            exemplos: ["He gave a gift."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of giving something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "falou",
-            traducoes: ["spoke"],
-            exemplos: ["Ela falou claramente."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de falar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "spoke",
-            traducoes: ["falou"],
-            exemplos: ["She spoke clearly."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of speaking in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ensinou",
-            traducoes: ["taught"],
-            exemplos: ["Ele ensinou matemática."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de ensinar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "taught",
-            traducoes: ["ensinou"],
-            exemplos: ["He taught math."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of teaching in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dormiu",
-            traducoes: ["slept"],
-            exemplos: ["Ela dormiu bem."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de dormir no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "slept",
-            traducoes: ["dormiu"],
-            exemplos: ["She slept well."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of sleeping in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "comprou",
-            traducoes: ["bought"],
-            exemplos: ["Ela comprou mantimentos."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de comprar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "bought",
-            traducoes: ["comprou"],
-            exemplos: ["She bought groceries."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of buying something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "bebeu",
-            traducoes: ["drank"],
-            exemplos: ["Ele bebeu água."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de beber algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "drank",
-            traducoes: ["bebeu"],
-            exemplos: ["He drank water."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of drinking something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dirigiu",
-            traducoes: ["drove"],
-            exemplos: ["Ela dirigiu para o trabalho."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de dirigir no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "drove",
-            traducoes: ["dirigiu"],
-            exemplos: ["She drove to work."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of driving in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "comeu",
-            traducoes: ["ate"],
-            exemplos: ["Ele comeu o café da manhã."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de comer algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "ate",
-            traducoes: ["comeu"],
-            exemplos: ["He ate breakfast."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of eating something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "voou",
-            traducoes: ["flew"],
-            exemplos: ["Ela voou para Paris."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de voar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "flew",
-            traducoes: ["voou"],
-            exemplos: ["She flew to Paris."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of flying in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "cresceu",
-            traducoes: ["grew"],
-            exemplos: ["Ele cresceu."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar o crescimento de algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "grew",
-            traducoes: ["cresceu"],
-            exemplos: ["He grew up."],
-            classificacao: "verb",
-            descricao: "Used to indicate the growth of something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "deitou",
-            traducoes: ["lay"],
-            exemplos: ["Ele deitou na cama."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de deitar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "lay",
-            traducoes: ["deitou"],
-            exemplos: ["He lay on the bed."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of lying down in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "liderou",
-            traducoes: ["led"],
-            exemplos: ["Ela liderou a equipe."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de liderar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "led",
-            traducoes: ["liderou"],
-            exemplos: ["She led the team."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of leading in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "levantou, subiu",
-            traducoes: ["rose"],
-            exemplos: ["Ele levantou cedo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de levantar ou subir no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "rose",
-            traducoes: ["levantou", "subiu"],
-            exemplos: ["He rose early."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of rising or ascending in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "enviou",
-            traducoes: ["sent"],
-            exemplos: ["Ela enviou uma carta."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de enviar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sent",
-            traducoes: ["enviou"],
-            exemplos: ["She sent a letter."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of sending something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sacudiu",
-            traducoes: ["shook"],
-            exemplos: ["Ele sacudiu a garrafa."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de sacudir algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "shook",
-            traducoes: ["sacudiu"],
-            exemplos: ["He shook the bottle."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of shaking something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "mostrou",
-            traducoes: ["showed"],
-            exemplos: ["Ela mostrou o caminho."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de mostrar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "showed",
-            traducoes: ["mostrou"],
-            exemplos: ["She showed the way."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of showing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "fechou",
-            traducoes: ["shut"],
-            exemplos: ["Ele fechou a porta."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de fechar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "shut",
-            traducoes: ["fechou"],
-            exemplos: ["He shut the door."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of closing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "cantou",
-            traducoes: ["sang"],
-            exemplos: ["Ela cantou uma música."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de cantar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sang",
-            traducoes: ["cantou"],
-            exemplos: ["She sang a song."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of singing in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "afundou",
-            traducoes: ["sank"],
-            exemplos: ["Ele afundou o barco."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de afundar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sank",
-            traducoes: ["afundou"],
-            exemplos: ["He sank the boat."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of sinking something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "gastou",
-            traducoes: ["spent"],
-            exemplos: ["Ela gastou dinheiro."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de gastar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "spent",
-            traducoes: ["gastou"],
-            exemplos: ["She spent money."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of spending something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "roubou",
-            traducoes: ["stole"],
-            exemplos: ["Ele roubou uma bicicleta."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de roubar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stole",
-            traducoes: ["roubou"],
-            exemplos: ["He stole a bike."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of stealing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "varreu",
-            traducoes: ["swept"],
-            exemplos: ["Ela varreu o chão."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de varrer algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "swept",
-            traducoes: ["varreu"],
-            exemplos: ["She swept the floor."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of sweeping something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "nadou",
-            traducoes: ["swam"],
-            exemplos: ["Ele nadou na piscina."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de nadar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "swam",
-            traducoes: ["nadou"],
-            exemplos: ["He swam in the pool."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of swimming in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tomou",
-            traducoes: ["took"],
-            exemplos: ["Ela tomou um banho."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de tomar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "took",
-            traducoes: ["tomou"],
-            exemplos: ["She took a shower."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of taking something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "contou",
-            traducoes: ["told"],
-            exemplos: ["Ele contou uma história."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de contar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "told",
-            traducoes: ["contou"],
-            exemplos: ["He told a story."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of telling something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "jogou, lançou",
-            traducoes: ["threw"],
-            exemplos: ["Ela jogou a bola."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de lançar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "threw",
-            traducoes: ["jogou", "lançou"],
-            exemplos: ["She threw the ball."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of throwing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "usava, vestia",
-            traducoes: ["wore"],
-            exemplos: ["Ele usava um chapéu."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de vestir algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "wore",
-            traducoes: ["usava", "vestia"],
-            exemplos: ["He wore a hat."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of wearing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ganhou",
-            traducoes: ["won"],
-            exemplos: ["Ela ganhou o jogo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de vencer algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "won",
-            traducoes: ["ganhou"],
-            exemplos: ["She won the game."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of winning something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "escreveu",
-            traducoes: ["wrote"],
-            exemplos: ["Ele escreveu um livro."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de escrever algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "wrote",
-            traducoes: ["escreveu"],
-            exemplos: ["He wrote a book."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of writing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "começou",
-            traducoes: ["began"],
-            exemplos: ["Ela começou a falar."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar o início de uma ação no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "began",
-            traducoes: ["começou"],
-            exemplos: ["She began to speak."],
-            classificacao: "verb",
-            descricao: "Used to indicate the start of an action in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "quebrou",
-            traducoes: ["broke"],
-            exemplos: ["Ele quebrou o copo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de quebrar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "broke",
-            traducoes: ["quebrou"],
-            exemplos: ["He broke the glass."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of breaking something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "escolheu",
-            traducoes: ["chose"],
-            exemplos: ["Ela escolheu um vestido."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de escolher algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "chose",
-            traducoes: ["escolheu"],
-            exemplos: ["She chose a dress."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of choosing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "desenhou",
-            traducoes: ["drew"],
-            exemplos: ["Ele desenhou uma imagem."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de desenhar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "drew",
-            traducoes: ["desenhou"],
-            exemplos: ["He drew a picture."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of drawing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sonhou",
-            traducoes: ["dreamt"],
-            exemplos: ["Ela sonhou com ele."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de sonhar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "dreamt",
-            traducoes: ["sonhou"],
-            exemplos: ["She dreamt about him."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of dreaming in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "lutou",
-            traducoes: ["fought"],
-            exemplos: ["Ele lutou bravamente."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de lutar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "fought",
-            traducoes: ["lutou"],
-            exemplos: ["He fought bravely."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of fighting in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "congelou",
-            traducoes: ["froze"],
-            exemplos: ["Ela congelou o gelo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de congelar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "froze",
-            traducoes: ["congelou"],
-            exemplos: ["She froze the ice."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of freezing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pendurou",
-            traducoes: ["hung"],
-            exemplos: ["Ele pendurou a imagem."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de pendurar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "hung",
-            traducoes: ["pendurou"],
-            exemplos: ["He hung the picture."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of hanging something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "saltou",
-            traducoes: ["leapt"],
-            exemplos: ["Ele saltou sobre a cerca."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de saltar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "leapt",
-            traducoes: ["saltou"],
-            exemplos: ["He leapt over the fence."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of leaping in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "acendeu",
-            traducoes: ["lit"],
-            exemplos: ["Ela acendeu a vela."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de acender algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "lit",
-            traducoes: ["acendeu"],
-            exemplos: ["She lit the candle."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of lighting something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "desistiu",
-            traducoes: ["quit"],
-            exemplos: ["Ele desistiu do trabalho."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de desistir de algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "quit",
-            traducoes: ["desistiu"],
-            exemplos: ["He quit his job."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of quitting something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tocou",
-            traducoes: ["rang"],
-            exemplos: ["Ela tocou a campainha."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de tocar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "rang",
-            traducoes: ["tocou"],
-            exemplos: ["She rang the bell."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of ringing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "montou",
-            traducoes: ["rode"],
-            exemplos: ["Ele montou um cavalo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de montar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "rode",
-            traducoes: ["montou"],
-            exemplos: ["He rode a horse."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of riding something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "colocou",
-            traducoes: ["set"],
-            exemplos: ["Ela colocou a mesa."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de colocar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "set",
-            traducoes: ["colocou"],
-            exemplos: ["She set the table."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of setting something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "deslizou",
-            traducoes: ["slid"],
-            exemplos: ["Ele deslizou no gelo."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de deslizar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "slid",
-            traducoes: ["deslizou"],
-            exemplos: ["He slid on the ice."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of sliding something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dividiu",
-            traducoes: ["split"],
-            exemplos: ["Ela dividiu a conta."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de dividir algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "split",
-            traducoes: ["dividiu"],
-            exemplos: ["She split the bill."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of splitting something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "espalhou",
-            traducoes: ["spread"],
-            exemplos: ["Ele espalhou a manteiga."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de espalhar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "spread",
-            traducoes: ["espalhou"],
-            exemplos: ["He spread the butter."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of spreading something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "picou",
-            traducoes: ["stung"],
-            exemplos: ["Ela foi picada por uma abelha."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de picar no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stung",
-            traducoes: ["picou"],
-            exemplos: ["She was stung by a bee."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of stinging in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "jurou",
-            traducoes: ["swore"],
-            exemplos: ["Ele jurou dizer a verdade."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de jurar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "swore",
-            traducoes: ["jurou"],
-            exemplos: ["He swore to tell the truth."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of swearing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "rasgou",
-            traducoes: ["tore"],
-            exemplos: ["Ela rasgou o papel."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de rasgar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "tore",
-            traducoes: ["rasgou"],
-            exemplos: ["She tore the paper."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of tearing something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pisou",
-            traducoes: ["trod"],
-            exemplos: ["Ele pisou cuidadosamente."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de pisar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "trod",
-            traducoes: ["pisou"],
-            exemplos: ["He trod carefully."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of treading something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "chorou",
-            traducoes: ["wept"],
-            exemplos: ["Ela chorou silenciosamente."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de chorar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "wept",
-            traducoes: ["chorou"],
-            exemplos: ["She wept silently."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of weeping something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "enrolou",
-            traducoes: ["wound"],
-            exemplos: ["Ele enrolou a corda."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de enrolar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "wound",
-            traducoes: ["enrolou"],
-            exemplos: ["He wound the string."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of winding something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "amarrado",
-            traducoes: ["bound"],
-            exemplos: ["Ele amarrou o livro."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de amarrar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "bound",
-            traducoes: ["amarrado"],
-            exemplos: ["He bound the book."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of binding something in the past.",
+            descricao: "Used to describe the action of using teeth to cut something.",
             audio: ""
         }
     },
@@ -3300,89 +1806,449 @@ const verbsPastSimple100 = [
         portugues: {
             palavra: "soprou",
             traducoes: ["blew"],
-            exemplos: ["Ela soprou as velas."],
+            exemplos: ["O vento soprou forte hoje."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de soprar algo no passado.",
+            descricao: "Usado para descrever a ação de mover o ar com força.",
             audio: ""
         },
         ingles: {
             palavra: "blew",
             traducoes: ["soprou"],
-            exemplos: ["She blew out the candles."],
+            exemplos: ["The wind blew hard today."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of blowing something in the past.",
+            descricao: "Used to describe the action of moving air with force.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "transmitiu",
-            traducoes: ["broadcast"],
-            exemplos: ["Ele transmitiu as notícias."],
+            palavra: "quebrou",
+            traducoes: ["broke"],
+            exemplos: ["Você quebrou o vaso acidentalmente."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de transmitir algo no passado.",
+            descricao: "Usado para descrever a ação de separar algo em partes.",
             audio: ""
         },
         ingles: {
-            palavra: "broadcast",
-            traducoes: ["transmitiu"],
-            exemplos: ["He broadcast the news."],
+            palavra: "broke",
+            traducoes: ["quebrou"],
+            exemplos: ["You broke the vase accidentally."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of broadcasting something in the past.",
+            descricao: "Used to describe the action of separating something into parts.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "rastejou",
-            traducoes: ["crept"],
-            exemplos: ["Ela rastejou silenciosamente."],
+            palavra: "trouxe",
+            traducoes: ["brought"],
+            exemplos: ["Você trouxe flores para a mãe."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de rastejar algo no passado.",
+            descricao: "Usado para descrever a ação de transportar algo ou alguém para um lugar.",
             audio: ""
         },
         ingles: {
-            palavra: "crept",
-            traducoes: ["rastejou"],
-            exemplos: ["She crept quietly."],
+            palavra: "brought",
+            traducoes: ["trouxe"],
+            exemplos: ["You brought flowers to your mother."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of creeping something in the past.",
+            descricao: "Used to describe the action of transporting something or someone to a place.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "negociou",
+            palavra: "construiu",
+            traducoes: ["built"],
+            exemplos: ["Você construiu uma casa nova."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de fazer algo combinando materiais e partes.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "built",
+            traducoes: ["construiu"],
+            exemplos: ["You built a new house."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of making something by combining materials and parts.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "comprou",
+            traducoes: ["bought"],
+            exemplos: ["Você comprou frutas no mercado."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de adquirir algo em troca de dinheiro.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bought",
+            traducoes: ["comprou"],
+            exemplos: ["You bought fruits at the market."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of acquiring something in exchange for money.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "pegou, apanhou",
+            traducoes: ["caught"],
+            exemplos: ["Você pegou o ônibus todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de capturar ou segurar algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "caught",
+            traducoes: ["pegou", "apanhou"],
+            exemplos: ["You caught the bus every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of capturing or holding something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "escolheu",
+            traducoes: ["chose"],
+            exemplos: ["Você escolheu um livro para ler."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de selecionar entre várias opções.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "chose",
+            traducoes: ["escolheu"],
+            exemplos: ["You chose a book to read."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of selecting from several options.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "veio",
+            traducoes: ["came"],
+            exemplos: ["Você veio para a festa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se em direção a algo ou alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "came",
+            traducoes: ["veio"],
+            exemplos: ["You came to the party."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving towards something or someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "custou",
+            traducoes: ["cost"],
+            exemplos: ["O carro custou muito dinheiro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever o preço ou valor de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "cost",
+            traducoes: ["custou"],
+            exemplos: ["The car cost a lot of money."],
+            classificacao: "verb",
+            descricao: "Used to describe the price or value of something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cortou",
+            traducoes: ["cut"],
+            exemplos: ["Você cortou o papel com a tesoura."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de dividir algo com um objeto afiado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "cut",
+            traducoes: ["cortou"],
+            exemplos: ["You cut the paper with scissors."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of dividing something with a sharp object.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "fez",
+            traducoes: ["did"],
+            exemplos: ["Você fez sua lição de casa todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a realização de uma ação ou tarefa.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "did",
+            traducoes: ["fez"],
+            exemplos: ["You did your homework every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the performance of an action or task.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "lidou, negociou",
             traducoes: ["dealt"],
-            exemplos: ["Ele distribuiu as cartas."],
+            exemplos: ["Você lidou com situações difíceis no trabalho."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de negociar algo no passado.",
+            descricao: "Usado para descrever a ação de gerenciar ou negociar com algo.",
             audio: ""
         },
         ingles: {
             palavra: "dealt",
-            traducoes: ["negociou"],
-            exemplos: ["He dealt the cards."],
+            traducoes: ["lidou", "negociou"],
+            exemplos: ["You dealt with difficult situations at work."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of dealing something in the past.",
+            descricao: "Used to describe the action of managing or negotiating with something.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "fugiu",
-            traducoes: ["fled"],
-            exemplos: ["Ela fugiu da cena."],
+            palavra: "cavou",
+            traducoes: ["dug"],
+            exemplos: ["O cachorro cavou um buraco no jardim."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de fugir algo no passado.",
+            descricao: "Usado para descrever a ação de mover terra ou outros materiais com uma ferramenta, mãos ou patas.",
             audio: ""
         },
         ingles: {
-            palavra: "fled",
-            traducoes: ["fugiu"],
-            exemplos: ["She fled the scene."],
+            palavra: "dug",
+            traducoes: ["cavou"],
+            exemplos: ["The dog dug a hole in the garden."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of fleeing something in the past.",
+            descricao: "Used to describe the action of moving soil or other materials with a tool, hands, or paws.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sonhou",
+            traducoes: ["dreamt"],
+            exemplos: ["Você sonhou todas as noites."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a experiência de imaginar enquanto dorme.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dreamt",
+            traducoes: ["sonhou"],
+            exemplos: ["You dreamt every night."],
+            classificacao: "verb",
+            descricao: "Used to describe the experience of imagining while sleeping.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "desenhou",
+            traducoes: ["drew"],
+            exemplos: ["Você desenhou um lindo retrato."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de criar uma imagem com uma ferramenta.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "drew",
+            traducoes: ["desenhou"],
+            exemplos: ["You drew a beautiful portrait."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of creating a picture with a tool.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "bebeu",
+            traducoes: ["drank"],
+            exemplos: ["Você bebeu água todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de consumir líquidos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "drank",
+            traducoes: ["bebeu"],
+            exemplos: ["You drank water every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of consuming liquids.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dirigiu",
+            traducoes: ["drove"],
+            exemplos: ["Você dirigiu para o trabalho todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de controlar um veículo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "drove",
+            traducoes: ["dirigiu"],
+            exemplos: ["You drove to work every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of controlling a vehicle.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "comeu",
+            traducoes: ["ate"],
+            exemplos: ["Você comeu frutas todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de consumir alimentos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "ate",
+            traducoes: ["comeu"],
+            exemplos: ["You ate fruits every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of consuming food.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "caiu",
+            traducoes: ["fell"],
+            exemplos: ["Você caiu da bicicleta."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se para baixo rapidamente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fell",
+            traducoes: ["caiu"],
+            exemplos: ["You fell off the bike."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving downwards quickly.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "alimentou",
+            traducoes: ["fed"],
+            exemplos: ["Você alimentou os pássaros todas as manhãs."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de dar comida a alguém ou algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fed",
+            traducoes: ["alimentou"],
+            exemplos: ["You fed the birds every morning."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of giving food to someone or something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sentiu",
+            traducoes: ["felt"],
+            exemplos: ["Você sentiu frio no inverno."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a experiência de sensações físicas ou emocionais.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "felt",
+            traducoes: ["sentiu"],
+            exemplos: ["You felt cold in the winter."],
+            classificacao: "verb",
+            descricao: "Used to describe the experience of physical or emotional sensations.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "lutou",
+            traducoes: ["fought"],
+            exemplos: ["Você lutou por seus direitos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de engajar-se em um conflito físico ou verbal.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fought",
+            traducoes: ["lutou"],
+            exemplos: ["You fought for your rights."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of engaging in physical or verbal conflict.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "encontrou",
+            traducoes: ["found"],
+            exemplos: ["Você encontrou as chaves na mesa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de descobrir algo que estava perdido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "found",
+            traducoes: ["encontrou"],
+            exemplos: ["You found the keys on the table."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of discovering something that was lost.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "voou",
+            traducoes: ["flew"],
+            exemplos: ["Os pássaros voaram alto no céu."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de se mover pelo ar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "flew",
+            traducoes: ["voou"],
+            exemplos: ["The birds flew high in the sky."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving through the air.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "esqueceu",
+            traducoes: ["forgot"],
+            exemplos: ["Você esqueceu o nome dele."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de não se lembrar de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forgot",
+            traducoes: ["esqueceu"],
+            exemplos: ["You forgot his name."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of not remembering something.",
             audio: ""
         }
     },
@@ -3390,71 +2256,575 @@ const verbsPastSimple100 = [
         portugues: {
             palavra: "perdoou",
             traducoes: ["forgave"],
-            exemplos: ["Ele a perdoou."],
+            exemplos: ["Você perdoou seu amigo."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de perdoar algo no passado.",
+            descricao: "Usado para descrever a ação de deixar de lado a mágoa ou ressentimento.",
             audio: ""
         },
         ingles: {
             palavra: "forgave",
             traducoes: ["perdoou"],
-            exemplos: ["He forgave her."],
+            exemplos: ["You forgave your friend."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of forgiving something in the past.",
+            descricao: "Used to describe the action of letting go of hurt or resentment.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "tricotou",
-            traducoes: ["knit"],
-            exemplos: ["Ela tricotou um suéter."],
+            palavra: "congelou",
+            traducoes: ["froze"],
+            exemplos: ["A água congelou a zero graus."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de tricotar algo no passado.",
+            descricao: "Usado para descrever a ação de tornar-se sólido devido à baixa temperatura.",
             audio: ""
         },
         ingles: {
-            palavra: "knit",
-            traducoes: ["tricotou"],
-            exemplos: ["She knit a sweater."],
+            palavra: "froze",
+            traducoes: ["congelou"],
+            exemplos: ["Water froze at zero degrees."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of knitting something in the past.",
+            descricao: "Used to describe the action of becoming solid due to low temperature.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "inclinou-se",
-            traducoes: ["leaned"],
-            exemplos: ["Ele inclinou-se para frente."],
+            palavra: "obteve, conseguiu",
+            traducoes: ["got"],
+            exemplos: ["Você conseguiu um emprego novo."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de inclinar algo no passado.",
+            descricao: "Usado para descrever a ação de adquirir ou receber algo.",
             audio: ""
         },
         ingles: {
-            palavra: "leaned",
-            traducoes: ["inclinou-se"],
-            exemplos: ["He leaned forward."],
+            palavra: "got",
+            traducoes: ["obteve", "conseguiu"],
+            exemplos: ["You got a new job."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of leaning something in the past.",
+            descricao: "Used to describe the action of acquiring or receiving something.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "costurou",
-            traducoes: ["sewed"],
-            exemplos: ["Ela costurou um vestido."],
+            palavra: "deu",
+            traducoes: ["gave"],
+            exemplos: ["Você deu um presente para ela."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de costurar algo no passado.",
+            descricao: "Usado para descrever a ação de entregar algo a alguém.",
             audio: ""
         },
         ingles: {
-            palavra: "sewed",
-            traducoes: ["costurou"],
-            exemplos: ["She sewed a dress."],
+            palavra: "gave",
+            traducoes: ["deu"],
+            exemplos: ["You gave her a gift."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of sewing something in the past.",
+            descricao: "Used to describe the action of handing something to someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "foi",
+            traducoes: ["went"],
+            exemplos: ["Você foi à escola todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de se mover ou viajar para um lugar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "went",
+            traducoes: ["foi"],
+            exemplos: ["You went to school every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving or traveling to a place.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cresceu",
+            traducoes: ["grew"],
+            exemplos: ["As plantas cresceram rápido na primavera."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de aumentar em tamanho ou desenvolvimento.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "grew",
+            traducoes: ["cresceu"],
+            exemplos: ["Plants grew quickly in the spring."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of increasing in size or development.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "pendurou",
+            traducoes: ["hung"],
+            exemplos: ["Você pendurou o quadro na parede."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de suspender algo de forma que fique fixo em um ponto e solto em outros.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hung",
+            traducoes: ["pendurou"],
+            exemplos: ["You hung the picture on the wall."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of suspending something so that it is fixed at one point and free at others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "teve",
+            traducoes: ["had"],
+            exemplos: ["Você teve um carro novo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a posse de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "had",
+            traducoes: ["teve"],
+            exemplos: ["You had a new car."],
+            classificacao: "verb",
+            descricao: "Used to describe the possession of something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ouviu",
+            traducoes: ["heard"],
+            exemplos: ["Você ouviu música todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de perceber sons.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "heard",
+            traducoes: ["ouviu"],
+            exemplos: ["You heard music every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of perceiving sounds.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "escondeu",
+            traducoes: ["hid"],
+            exemplos: ["Você escondeu o presente no armário."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de colocar algo fora de vista.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hid",
+            traducoes: ["escondeu"],
+            exemplos: ["You hid the present in the closet."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of putting something out of sight.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "bateu",
+            traducoes: ["hit"],
+            exemplos: ["Você bateu na bola com o taco."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de golpear algo com força.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hit",
+            traducoes: ["bateu"],
+            exemplos: ["You hit the ball with the bat."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of striking something with force.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "segurou",
+            traducoes: ["held"],
+            exemplos: ["Você segurou o bebê no colo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de manter algo ou alguém em suas mãos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "held",
+            traducoes: ["segurou"],
+            exemplos: ["You held the baby in your arms."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of keeping something or someone in your hands.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "machucou, feriu",
+            traducoes: ["hurt"],
+            exemplos: ["Você machucou seu dedo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de causar dor ou dano.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hurt",
+            traducoes: ["machucou", "feriu"],
+            exemplos: ["You hurt your finger."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of causing pain or injury.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "manteve, guardou",
+            traducoes: ["kept"],
+            exemplos: ["Você manteve seus documentos organizados."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de continuar a ter algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "kept",
+            traducoes: ["manteve", "guardou"],
+            exemplos: ["You kept your documents organized."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of continuing to have something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "soube, conheceu",
+            traducoes: ["knew"],
+            exemplos: ["Você soube a resposta."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a posse de conhecimento ou informação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "knew",
+            traducoes: ["soube", "conheceu"],
+            exemplos: ["You knew the answer."],
+            classificacao: "verb",
+            descricao: "Used to describe the possession of knowledge or information.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "liderou, conduziu",
+            traducoes: ["led"],
+            exemplos: ["Você liderou a equipe com confiança."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de guiar ou comandar um grupo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "led",
+            traducoes: ["liderou", "conduziu"],
+            exemplos: ["You led the team with confidence."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of guiding or commanding a group.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "partiu, deixou",
+            traducoes: ["left"],
+            exemplos: ["Você deixou o trabalho às 5 horas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de partir de um lugar ou permitir algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "left",
+            traducoes: ["partiu", "deixou"],
+            exemplos: ["You left work at 5 o'clock."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of departing from a place or allowing something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "emprestou",
+            traducoes: ["lent"],
+            exemplos: ["Você emprestou dinheiro ao seu amigo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de dar algo a alguém com a expectativa de retorno.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lent",
+            traducoes: ["emprestou"],
+            exemplos: ["You lent money to your friend."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of giving something to someone with the expectation of it being returned.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "deixou, permitiu",
+            traducoes: ["let"],
+            exemplos: ["Você deixou seu irmão usar seu computador."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de permitir que algo aconteça.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "let",
+            traducoes: ["deixou", "permitiu"],
+            exemplos: ["You let your brother use your computer."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of allowing something to happen.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "deitou, mentiu",
+            traducoes: ["lay"],
+            exemplos: ["Você deitou na cama à noite."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de se posicionar de forma horizontal ou de não dizer a verdade.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lay",
+            traducoes: ["deitou", "mentiu"],
+            exemplos: ["You lay in bed at night."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of positioning oneself horizontally or not telling the truth.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "perdeu",
+            traducoes: ["lost"],
+            exemplos: ["Você perdeu suas chaves com frequência."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de não conseguir manter a posse de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lost",
+            traducoes: ["perdeu"],
+            exemplos: ["You lost your keys frequently."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of failing to keep possession of something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "fez, criou",
+            traducoes: ["made"],
+            exemplos: ["Você fez um bolo para a festa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de criar ou produzir algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "made",
+            traducoes: ["fez", "criou"],
+            exemplos: ["You made a cake for the party."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of creating or producing something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "significou, quis dizer",
+            traducoes: ["meant"],
+            exemplos: ["O que você quis dizer com isso?"],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a intenção ou significado de algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "meant",
+            traducoes: ["significou", "quis dizer"],
+            exemplos: ["What did you mean by that?"],
+            classificacao: "verb",
+            descricao: "Used to describe the intention or significance of something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "encontrou, conheceu",
+            traducoes: ["met"],
+            exemplos: ["Você encontrou seus amigos no café."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de se reunir com alguém ou conhecer alguém pela primeira vez.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "met",
+            traducoes: ["encontrou", "conheceu"],
+            exemplos: ["You met your friends at the café."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of gathering with someone or meeting someone for the first time.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "desistiu, largou",
+            traducoes: ["quit"],
+            exemplos: ["Você desistiu de fumar."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de parar de fazer algo ou abandonar uma atividade.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "quit",
+            traducoes: ["desistiu", "largou"],
+            exemplos: ["You quit smoking."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of stopping doing something or abandoning an activity.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "leu",
+            traducoes: ["read"],
+            exemplos: ["Você leu um livro todos os meses."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de interpretar palavras escritas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "read",
+            traducoes: ["leu"],
+            exemplos: ["You read a book every month."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of interpreting written words.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "montou, andou de, cavalgou",
+            traducoes: ["rode"],
+            exemplos: ["Você andou de bicicleta todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de viajar em ou sobre um veículo ou animal.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "rode",
+            traducoes: ["montou", "andou de", "cavalgou"],
+            exemplos: ["You rode your bike every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of traveling on or in a vehicle or animal.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "tocou, soou",
+            traducoes: ["rang"],
+            exemplos: ["O telefone tocou."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de emitir um som, geralmente de um telefone ou campainha.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "rang",
+            traducoes: ["tocou", "soou"],
+            exemplos: ["The phone rang."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of emitting a sound, usually from a phone or bell.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "subiu, ergueu, levantou",
+            traducoes: ["rose"],
+            exemplos: ["O sol subiu todas as manhãs."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se para cima.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "rose",
+            traducoes: ["subiu", "ergueu", "levantou"],
+            exemplos: ["The sun rose every morning."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving upwards.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "correu",
+            traducoes: ["ran"],
+            exemplos: ["Você correu no parque todos os dias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se rapidamente usando as pernas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "ran",
+            traducoes: ["correu"],
+            exemplos: ["You ran in the park every day."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving quickly using your legs.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "disse",
+            traducoes: ["said"],
+            exemplos: ["Você disse a verdade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de falar algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "said",
+            traducoes: ["disse"],
+            exemplos: ["You said the truth."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of speaking something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "viu",
+            traducoes: ["saw"],
+            exemplos: ["Você viu as estrelas à noite."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de perceber algo com os olhos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "saw",
+            traducoes: ["viu"],
+            exemplos: ["You saw the stars at night."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of perceiving something with your eyes.",
             audio: ""
         }
     },
@@ -3462,53 +2832,413 @@ const verbsPastSimple100 = [
         portugues: {
             palavra: "procurou",
             traducoes: ["sought"],
-            exemplos: ["Ele procurou ajuda."],
+            exemplos: ["Você procurou novas oportunidades."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de procurar algo no passado.",
+            descricao: "Usado para descrever a ação de buscar ou tentar encontrar algo.",
             audio: ""
         },
         ingles: {
             palavra: "sought",
-            traducoes: ["procurou"],
-            exemplos: ["He sought help."],
+            traducoes: ["procurou", "buscou"],
+            exemplos: ["You sought new opportunities."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of seeking something in the past.",
+            descricao: "Used to describe the action of looking for or trying to find something.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "girou",
-            traducoes: ["spun"],
-            exemplos: ["Ela girou a roda."],
+            palavra: "vendeu",
+            traducoes: ["sold"],
+            exemplos: ["Você vendeu seu carro antigo."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de girar algo no passado.",
+            descricao: "Usado para descrever a ação de trocar algo por dinheiro.",
             audio: ""
         },
         ingles: {
-            palavra: "spun",
-            traducoes: ["girou"],
-            exemplos: ["She spun the wheel."],
+            palavra: "sold",
+            traducoes: ["vendeu"],
+            exemplos: ["You sold your old car."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of spinning something in the past.",
+            descricao: "Used to describe the action of exchanging something for money.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "atingiu",
-            traducoes: ["struck"],
-            exemplos: ["Ele atingiu a bola."],
+            palavra: "enviou",
+            traducoes: ["sent"],
+            exemplos: ["Você enviou uma carta para sua amiga."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de atingir algo no passado.",
+            descricao: "Usado para descrever a ação de fazer algo ir a um lugar ou para alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "sent",
+            traducoes: ["enviou"],
+            exemplos: ["You sent a letter to your friend."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of making something go to a place or to someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ajustou, definiu",
+            traducoes: ["set"],
+            exemplos: ["Você ajustou o alarme para 6 horas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de colocar algo em uma posição específica.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "set",
+            traducoes: ["ajustou", "definiu"],
+            exemplos: ["You set the alarm for 6 o'clock."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of putting something in a specific position.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sacudiu, chacoalhou",
+            traducoes: ["shook"],
+            exemplos: ["Você sacudiu a garrafa antes de abrir."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover algo rapidamente para frente e para trás.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "shook",
+            traducoes: ["sacudiu", "chacoalhou"],
+            exemplos: ["You shook the bottle before opening."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving something quickly back and forth.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "brilhou",
+            traducoes: ["shone"],
+            exemplos: ["O sol brilhou no céu."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de emitir luz.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "shone",
+            traducoes: ["brilhou"],
+            exemplos: ["The sun shone in the sky."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of emitting light.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "atirou, disparou",
+            traducoes: ["shot"],
+            exemplos: ["Você atirou a bola no gol."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de lançar algo rapidamente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "shot",
+            traducoes: ["atirou", "disparou"],
+            exemplos: ["You shot the ball into the goal."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of launching something quickly.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cantou",
+            traducoes: ["sang"],
+            exemplos: ["Você cantou no chuveiro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de produzir música com a voz.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "sang",
+            traducoes: ["cantou"],
+            exemplos: ["You sang in the shower."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of producing music with your voice.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "afundou",
+            traducoes: ["sank"],
+            exemplos: ["O barco afundou no lago."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de descer abaixo da superfície da água.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "sank",
+            traducoes: ["afundou"],
+            exemplos: ["The boat sank in the lake."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of going below the surface of water.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sentou",
+            traducoes: ["sat"],
+            exemplos: ["Você sentou na cadeira."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de estar em uma posição apoiada sobre suas nádegas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "sat",
+            traducoes: ["sentou"],
+            exemplos: ["You sat on the chair."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of being in a position supported by your buttocks.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dormiu",
+            traducoes: ["slept"],
+            exemplos: ["Você dormiu oito horas por noite."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de descansar o corpo e a mente fechando os olhos e ficando inconsciente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "slept",
+            traducoes: ["dormiu"],
+            exemplos: ["You slept eight hours a night."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of resting the body and mind by closing the eyes and becoming unconscious.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "deslizou, escorregou",
+            traducoes: ["slid"],
+            exemplos: ["Você deslizou no gelo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se suavemente sobre uma superfície.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "slid",
+            traducoes: ["deslizou", "escorregou"],
+            exemplos: ["You slid on the ice."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving smoothly over a surface.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "falou",
+            traducoes: ["spoke"],
+            exemplos: ["Você falou inglês e português."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de comunicar-se verbalmente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "spoke",
+            traducoes: ["falou"],
+            exemplos: ["You spoke English and Portuguese."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of communicating verbally.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "gastou, passou",
+            traducoes: ["spent"],
+            exemplos: ["Você gastou dinheiro com livros."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de usar tempo ou dinheiro.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "spent",
+            traducoes: ["gastou", "passou"],
+            exemplos: ["You spent money on books."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of using time or money.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "espalhou",
+            traducoes: ["spread"],
+            exemplos: ["Você espalhou manteiga no pão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de distribuir algo sobre uma superfície.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "spread",
+            traducoes: ["espalhou"],
+            exemplos: ["You spread butter on the bread."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of distributing something over a surface.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ficou de pé, levantou-se",
+            traducoes: ["stood"],
+            exemplos: ["Você ficou de pé no ônibus."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de estar ereto sobre os pés.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "stood",
+            traducoes: ["ficou de pé", "levantou-se", "ficou em pé"],
+            exemplos: ["You stood on the bus."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of being upright on your feet.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "roubou",
+            traducoes: ["stole"],
+            exemplos: ["Alguém roubou sua carteira."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de tomar algo de alguém sem permissão.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "stole",
+            traducoes: ["roubou"],
+            exemplos: ["Someone stole your wallet."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of taking something from someone without permission.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "colou, grudou",
+            traducoes: ["stuck"],
+            exemplos: ["Você colou o adesivo na parede."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de aderir algo a uma superfície.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "stuck",
+            traducoes: ["colou", "grudou"],
+            exemplos: ["You stuck the sticker on the wall."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of attaching something to a surface.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "golpeou, atingiu",
+            traducoes: ["struck"],
+            exemplos: ["Você golpeou a bola com força."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de bater em algo com força.",
             audio: ""
         },
         ingles: {
             palavra: "struck",
-            traducoes: ["atingiu"],
-            exemplos: ["He struck the ball."],
+            traducoes: ["golpeou", "atingiu"],
+            exemplos: ["You struck the ball hard."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of striking something in the past.",
+            descricao: "Used to describe the action of hitting something with force.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "jurou",
+            traducoes: ["swore"],
+            exemplos: ["Você jurou dizer a verdade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de fazer uma promessa solene.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "swore",
+            traducoes: ["jurou"],
+            exemplos: ["You swore to tell the truth."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of making a solemn promise.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "varreu",
+            traducoes: ["swept"],
+            exemplos: ["Você varreu o chão da cozinha."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de limpar uma superfície usando uma vassoura.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "swept",
+            traducoes: ["varreu"],
+            exemplos: ["You swept the kitchen floor."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of cleaning a surface using a broom.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "inchou",
+            traducoes: ["swelled"],
+            exemplos: ["Seu tornozelo inchou depois do acidente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de aumentar de tamanho devido a um acúmulo de líquido ou inflamação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "swelled",
+            traducoes: ["inchou"],
+            exemplos: ["Your ankle swelled after the accident."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of increasing in size due to an accumulation of fluid or inflammation.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "nadou",
+            traducoes: ["swam"],
+            exemplos: ["Você nadou no lago durante o verão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de mover-se através da água usando os braços e as pernas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "swam",
+            traducoes: ["nadou"],
+            exemplos: ["You swam in the lake during the summer."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of moving through water using your arms and legs.",
             audio: ""
         }
     },
@@ -3516,1789 +3246,183 @@ const verbsPastSimple100 = [
         portugues: {
             palavra: "balançou",
             traducoes: ["swung"],
-            exemplos: ["Ela balançou no balanço."],
+            exemplos: ["Você balançou no parque."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de balançar algo no passado.",
+            descricao: "Usado para descrever a ação de mover-se para frente e para trás em um arco.",
             audio: ""
         },
         ingles: {
             palavra: "swung",
             traducoes: ["balançou"],
-            exemplos: ["She swung on the swing."],
+            exemplos: ["You swung in the park."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of swinging something in the past.",
+            descricao: "Used to describe the action of moving back and forth in an arc.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "costurou",
-            traducoes: ["sewed"],
-            exemplos: ["Ela costurou um vestido."],
+            palavra: "pegou, levou",
+            traducoes: ["took"],
+            exemplos: ["Você levou seu cachorro para passear."],
             classificacao: "verbo",
-            descricao: "Usado para indicar a ação de costurar algo no passado.",
+            descricao: "Usado para descrever a ação de pegar ou transportar algo de um lugar para outro.",
             audio: ""
         },
         ingles: {
-            palavra: "sewed",
-            traducoes: ["costurou"],
-            exemplos: ["She sewed a dress."],
+            palavra: "took",
+            traducoes: ["pegou", "levou"],
+            exemplos: ["You took your dog for a walk."],
             classificacao: "verb",
-            descricao: "Used to indicate the action of sewing something in the past.",
+            descricao: "Used to describe the action of picking up or transporting something from one place to another.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "trocar",
-            traducoes: ["switched"],
-            exemplos: ["Ela trocou de lugar."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de trocar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "switched",
-            traducoes: ["trocou"],
-            exemplos: ["She switched places."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of switching something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "entendeu",
-            traducoes: ["understood"],
-            exemplos: ["Ela entendeu a lição."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de entender algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "understood",
-            traducoes: ["entendeu"],
-            exemplos: ["She understood the lesson."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of understanding something in the past.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "guardou",
-            traducoes: ["stored"],
-            exemplos: ["Ela guardou os documentos."],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a ação de guardar algo no passado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stored",
-            traducoes: ["guardou"],
-            exemplos: ["She stored the documents."],
-            classificacao: "verb",
-            descricao: "Used to indicate the action of storing something in the past.",
-            audio: ""
-        }
-    }
-];
-
-const verbsParticiple100 = [
-    {
-        portugues: {
-            palavra: "sido, estado",
-            traducoes: ["been"],
-            exemplos: ["Ele esteve em Paris"],
-            classificacao: "verbo",
-            descricao: "Usado para descrever o estado ou identidade de alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "been",
-            traducoes: ["sido", "estado"],
-            exemplos: ["He has been to Paris"],
-            classificacao: "verb",
-            descricao: "Used to describe the state or identity of someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tornado-se",
-            traducoes: ["become"],
-            exemplos: ["Ela se tornou uma grande artista"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar uma mudança de estado ou condição.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "become",
-            traducoes: ["tornado-se"],
-            exemplos: ["She has become a great artist"],
-            classificacao: "verb",
-            descricao: "Used to indicate a change of state or condition.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "começado",
-            traducoes: ["begun"],
-            exemplos: ["O show começou"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar o início de uma ação ou evento.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "begun",
-            traducoes: ["começado"],
-            exemplos: ["The show has begun"],
-            classificacao: "verb",
-            descricao: "Used to indicate the start of an action or event.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "quebrado",
-            traducoes: ["broken"],
-            exemplos: ["O vaso foi quebrado"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi danificado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "broken",
-            traducoes: ["quebrado"],
-            exemplos: ["The vase was broken"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been damaged.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "trazido",
-            traducoes: ["brought"],
-            exemplos: ["Ele trouxe um presente"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi transportado para um lugar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "brought",
-            traducoes: ["trazido"],
-            exemplos: ["He has brought a gift"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been transported to a place.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "construído",
-            traducoes: ["built"],
-            exemplos: ["Eles construíram uma casa"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi criado ou montado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "built",
-            traducoes: ["construído"],
-            exemplos: ["They have built a house"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been created or assembled.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "comprado",
-            traducoes: ["bought"],
-            exemplos: ["Ela comprou um carro novo"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi adquirido por dinheiro.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "bought",
-            traducoes: ["comprado"],
-            exemplos: ["She has bought a new car"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been acquired for money.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pego",
-            traducoes: ["caught"],
-            exemplos: ["Ele foi pego pela polícia"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que foi apreendido ou capturado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "caught",
-            traducoes: ["pego"],
-            exemplos: ["He was caught by the police"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has been apprehended or captured.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "escolhido",
-            traducoes: ["chosen"],
-            exemplos: ["Ela escolheu o vestido azul"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi selecionado entre várias opções.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "chosen",
-            traducoes: ["escolhido"],
-            exemplos: ["She has chosen the blue dress"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been selected among various options.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "vindo",
-            traducoes: ["come"],
-            exemplos: ["Ele veio para a festa"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que se deslocou de um lugar para outro.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "come",
-            traducoes: ["vindo"],
-            exemplos: ["He has come to the party"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has moved from one place to another.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "custado",
-            traducoes: ["cost"],
-            exemplos: ["O projeto custou muito dinheiro"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar o valor de algo em termos monetários.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "cost",
-            traducoes: ["custado"],
-            exemplos: ["The project has cost a lot of money"],
-            classificacao: "verb",
-            descricao: "Used to indicate the value of something in monetary terms.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "cortado",
-            traducoes: ["cut"],
-            exemplos: ["Ela cortou o cabelo"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi separado ou dividido com uma ferramenta afiada.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "cut",
-            traducoes: ["cortado"],
-            exemplos: ["She has cut her hair"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been separated or divided with a sharp tool.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "feito",
-            traducoes: ["done"],
-            exemplos: ["Ele fez a lição de casa"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi completado ou realizado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "done",
-            traducoes: ["feito"],
-            exemplos: ["He has done his homework"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been completed or accomplished.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "desenhado",
-            traducoes: ["drawn"],
-            exemplos: ["Ela desenhou uma bela imagem"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi criado com linhas e formas em uma superfície.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "drawn",
-            traducoes: ["desenhado"],
-            exemplos: ["She has drawn a beautiful picture"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been created with lines and shapes on a surface.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "bebido",
-            traducoes: ["drunk"],
-            exemplos: ["Ele bebeu todo o suco"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi consumido como líquido.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "drunk",
-            traducoes: ["bebido"],
-            exemplos: ["He has drunk all the juice"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been consumed as a liquid.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dirigido",
-            traducoes: ["driven"],
-            exemplos: ["Ela dirigiu para o trabalho"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que operou um veículo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "driven",
-            traducoes: ["dirigido"],
-            exemplos: ["She has driven to work"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has operated a vehicle.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "comido",
-            traducoes: ["eaten"],
-            exemplos: ["Ele comeu o café da manhã"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi consumido como alimento.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "eaten",
-            traducoes: ["comido"],
-            exemplos: ["He has eaten breakfast"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been consumed as food.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "caído",
-            traducoes: ["fallen"],
-            exemplos: ["As folhas caíram"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que desceu de uma posição mais alta para uma mais baixa.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "fallen",
-            traducoes: ["caído"],
-            exemplos: ["The leaves have fallen"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has descended from a higher position to a lower one.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sentido",
-            traducoes: ["felt"],
-            exemplos: ["Ela se sentiu melhor hoje"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar uma experiência sensorial ou emocional.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "felt",
-            traducoes: ["sentido"],
-            exemplos: ["She has felt better today"],
-            classificacao: "verb",
-            descricao: "Used to indicate a sensory or emotional experience.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "encontrado",
-            traducoes: ["found"],
-            exemplos: ["Ele encontrou suas chaves"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi descoberto ou recuperado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "found",
-            traducoes: ["encontrado"],
-            exemplos: ["He has found his keys"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been discovered or retrieved.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "voado",
-            traducoes: ["flown"],
-            exemplos: ["Eles voaram para Nova York"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que se deslocou pelo ar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "flown",
-            traducoes: ["voado"],
-            exemplos: ["They have flown to New York"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has traveled by air.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "esquecido",
-            traducoes: ["forgotten"],
-            exemplos: ["Ela esqueceu sua senha"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que não foi lembrado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "forgotten",
-            traducoes: ["esquecido"],
-            exemplos: ["She has forgotten her password"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has not been remembered.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "obtido",
-            traducoes: ["gotten"],
-            exemplos: ["Ele conseguiu uma promoção"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi recebido ou adquirido.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "gotten",
-            traducoes: ["obtido"],
-            exemplos: ["He has gotten a promotion"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been received or acquired.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dado",
-            traducoes: ["given"],
-            exemplos: ["Ela deu um presente"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi oferecido a alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "given",
-            traducoes: ["dado"],
-            exemplos: ["She has given a gift"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been offered to someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ido",
-            traducoes: ["gone"],
-            exemplos: ["Ele foi à loja"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que se deslocou para outro lugar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "gone",
-            traducoes: ["ido"],
-            exemplos: ["He has gone to the store"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has moved to another place.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "crescido",
-            traducoes: ["grown"],
-            exemplos: ["A planta cresceu alta"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que aumentou de tamanho.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "grown",
-            traducoes: ["crescido"],
-            exemplos: ["The plant has grown tall"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has increased in size.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tido",
-            traducoes: ["had"],
-            exemplos: ["Eles se divertiram"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar posse ou experiência.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "had",
-            traducoes: ["tido"],
-            exemplos: ["They have had a good time"],
-            classificacao: "verb",
-            descricao: "Used to indicate possession or experience.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ouvido",
-            traducoes: ["heard"],
-            exemplos: ["Ela ouviu as notícias"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi percebido pelo sentido da audição.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "heard",
-            traducoes: ["ouvido"],
-            exemplos: ["She has heard the news"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been perceived by the sense of hearing.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "escondido",
-            traducoes: ["hidden"],
-            exemplos: ["Ele escondeu o tesouro"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi colocado fora de vista.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "hidden",
-            traducoes: ["escondido"],
-            exemplos: ["He has hidden the treasure"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been placed out of sight.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "batido",
-            traducoes: ["hit"],
-            exemplos: ["Ela acertou o alvo"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi atingido com força.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "hit",
-            traducoes: ["batido"],
-            exemplos: ["She has hit the target"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been struck with force.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "segurado",
-            traducoes: ["held"],
-            exemplos: ["Ele segurou o bebê"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi mantido nas mãos ou braços.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "held",
-            traducoes: ["segurado"],
-            exemplos: ["He has held the baby"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been kept in the hands or arms.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "mantido",
-            traducoes: ["kept"],
-            exemplos: ["Ela manteve sua promessa"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi preservado ou continuado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "kept",
-            traducoes: ["mantido"],
-            exemplos: ["She has kept her promise"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been preserved or continued.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "conhecido/sabido",
-            traducoes: ["known"],
-            exemplos: ["Ele a conhece há anos"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi aprendido ou compreendido.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "known",
-            traducoes: ["conhecido", "sabido"],
-            exemplos: ["He has known her for years"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been learned or understood.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "deixado",
-            traducoes: ["left"],
-            exemplos: ["Ela deixou o escritório"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi abandonado ou saído.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "left",
-            traducoes: ["deixado"],
-            exemplos: ["She has left the office"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been abandoned or exited.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "perdido",
-            traducoes: ["lost"],
-            exemplos: ["Ele perdeu sua carteira"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi extraviado ou não encontrado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "lost",
-            traducoes: ["perdido"],
-            exemplos: ["He has lost his wallet"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been misplaced or not found.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "feito",
-            traducoes: ["made"],
-            exemplos: ["Ela fez um bolo"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi criado ou produzido.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "made",
-            traducoes: ["feito"],
-            exemplos: ["She has made a cake"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been created or produced.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "significado",
-            traducoes: ["meant"],
-            exemplos: ["Ele teve boas intenções"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar a intenção ou propósito de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "meant",
-            traducoes: ["significado"],
-            exemplos: ["He has meant well"],
-            classificacao: "verb",
-            descricao: "Used to indicate the intention or purpose of something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "encontrado",
-            traducoes: ["met"],
-            exemplos: ["Ela conheceu seu novo chefe"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi conhecido ou se reuniu com alguém.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "met",
-            traducoes: ["encontrado"],
-            exemplos: ["She has met her new boss"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been known or met with someone.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pago",
-            traducoes: ["paid"],
-            exemplos: ["Ele pagou a conta"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi liquidado ou quitado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "paid",
-            traducoes: ["pago"],
-            exemplos: ["He has paid the bill"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been settled or discharged.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "colocado",
-            traducoes: ["put"],
-            exemplos: ["Ela colocou o livro na prateleira"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi posicionado ou disposto em um lugar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "put",
-            traducoes: ["colocado"],
-            exemplos: ["She has put the book on the shelf"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been positioned or arranged in a place.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "lido",
-            traducoes: ["read"],
-            exemplos: ["Ele leu o livro"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi compreendido ao olhar para texto escrito.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "read",
-            traducoes: ["lido"],
-            exemplos: ["He has read the book"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been understood by looking at written text.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "andado (de bicicleta, cavalo, etc.)",
-            traducoes: ["ridden"],
-            exemplos: ["Ela andou a cavalo"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que se deslocou montado em algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "ridden",
-            traducoes: ["andado"],
-            exemplos: ["She has ridden a horse"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has traveled riding something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tocado (campainha, telefone)",
-            traducoes: ["rung"],
-            exemplos: ["Ele tocou a campainha"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que emitiu um som de alerta.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "rung",
-            traducoes: ["tocado"],
-            exemplos: ["He has rung the bell"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has emitted an alert sound.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "corrido",
-            traducoes: ["run"],
-            exemplos: ["Ela correu uma maratona"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que se deslocou rapidamente a pé.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "run",
-            traducoes: ["corrido"],
-            exemplos: ["She has run a marathon"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has moved quickly on foot.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dito",
-            traducoes: ["said"],
-            exemplos: ["Ele disse a verdade"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi falado ou expressado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "said",
-            traducoes: ["dito"],
-            exemplos: ["He has said the truth"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been spoken or expressed.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "visto",
-            traducoes: ["seen"],
-            exemplos: ["Ela viu aquele filme"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi percebido com os olhos.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "seen",
-            traducoes: ["visto"],
-            exemplos: ["She has seen that movie"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been perceived with the eyes.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "vendido",
-            traducoes: ["sold"],
-            exemplos: ["Ele vendeu seu carro"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi transferido a outra pessoa em troca de dinheiro.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sold",
-            traducoes: ["vendido"],
-            exemplos: ["He has sold his car"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been transferred to another person in exchange for money.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "enviado",
-            traducoes: ["sent"],
-            exemplos: ["Ela enviou um e-mail"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi despachado ou transmitido para outro lugar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sent",
-            traducoes: ["enviado"],
-            exemplos: ["She has sent an email"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been dispatched or transmitted to another place.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "mostrado",
-            traducoes: ["shown"],
-            exemplos: ["Ele mostrou o caminho"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi exibido ou apresentado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "shown",
-            traducoes: ["mostrado"],
-            exemplos: ["He has shown the way"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been displayed or presented.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "cantado",
-            traducoes: ["sung"],
-            exemplos: ["Ela cantou lindamente"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi executado com a voz em melodia.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sung",
-            traducoes: ["cantado"],
-            exemplos: ["She has sung beautifully"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been performed with the voice in melody.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sentado",
-            traducoes: ["sat"],
-            exemplos: ["Ele sentou na cadeira"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que se colocou em posição de descanso em um assento.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sat",
-            traducoes: ["sentado"],
-            exemplos: ["He has sat on the chair"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has placed themselves in a position of rest on a seat.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dormido",
-            traducoes: ["slept"],
-            exemplos: ["Ela dormiu bem"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que passou um período em repouso.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "slept",
-            traducoes: ["dormido"],
-            exemplos: ["She has slept well"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has spent a period in rest.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "falado",
-            traducoes: ["spoken"],
-            exemplos: ["Ele falou com o gerente"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que comunicou verbalmente.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "spoken",
-            traducoes: ["falado"],
-            exemplos: ["He has spoken to the manager"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has communicated verbally.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "gasto (dinheiro, tempo)",
-            traducoes: ["spent"],
-            exemplos: ["Ela gastou muito dinheiro"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi utilizado ou consumido.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "spent",
-            traducoes: ["gasto"],
-            exemplos: ["She has spent a lot of money"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been used or consumed.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ficado de pé",
-            traducoes: ["stood"],
-            exemplos: ["Ele ficou lá de pé por uma hora"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que se manteve ereto em uma posição.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stood",
-            traducoes: ["ficado de pé"],
-            exemplos: ["He has stood there for an hour"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has remained upright in a position.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "roubado",
-            traducoes: ["stolen"],
-            exemplos: ["Ela roubou um carro"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi tomado sem permissão.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stolen",
-            traducoes: ["roubado"],
-            exemplos: ["She has stolen a car"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been taken without permission.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "nadado",
-            traducoes: ["swum"],
-            exemplos: ["Ele nadou no oceano"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que se deslocou pela água.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "swum",
-            traducoes: ["nadado"],
-            exemplos: ["He has swum in the ocean"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has moved through the water.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "tomado/levado",
-            traducoes: ["taken"],
-            exemplos: ["Ela fez uma pausa"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi pego ou aceito.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "taken",
-            traducoes: ["tomado", "levado"],
-            exemplos: ["She has taken a break"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been taken or accepted.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "ensinado",
+            palavra: "ensinou",
             traducoes: ["taught"],
-            exemplos: ["Ele ensinou inglês"],
+            exemplos: ["Você ensinou matemática na escola."],
             classificacao: "verbo",
-            descricao: "Usado para indicar alguém que transmitiu conhecimento.",
+            descricao: "Usado para descrever a ação de transmitir conhecimento ou habilidades para alguém.",
             audio: ""
         },
         ingles: {
             palavra: "taught",
-            traducoes: ["ensinado"],
-            exemplos: ["He has taught English"],
+            traducoes: ["ensinou"],
+            exemplos: ["You taught math at school."],
             classificacao: "verb",
-            descricao: "Used to indicate someone who has imparted knowledge.",
+            descricao: "Used to describe the action of imparting knowledge or skills to someone.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "contado",
-            traducoes: ["told"],
-            exemplos: ["Ela contou uma história"],
+            palavra: "rasgou",
+            traducoes: ["tore"],
+            exemplos: ["Você rasgou o papel ao meio."],
             classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi narrado ou relatado.",
+            descricao: "Usado para descrever a ação de dividir algo em pedaços usando força.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "tore",
+            traducoes: ["rasgou"],
+            exemplos: ["You tore the paper in half."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of splitting something into pieces using force.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "contou, narrou",
+            traducoes: ["told"],
+            exemplos: ["Você contou uma história para sua irmã."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de comunicar algo a alguém.",
             audio: ""
         },
         ingles: {
             palavra: "told",
-            traducoes: ["contado"],
-            exemplos: ["She has told a story"],
+            traducoes: ["contou", "narrou"],
+            exemplos: ["You told a story to your sister."],
             classificacao: "verb",
-            descricao: "Used to indicate something that has been narrated or reported.",
+            descricao: "Used to describe the action of communicating something to someone.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "pensado",
+            palavra: "pensou",
             traducoes: ["thought"],
-            exemplos: ["Ele pensou sobre isso"],
+            exemplos: ["Você pensou que ia chover hoje."],
             classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi considerado ou refletido.",
+            descricao: "Usado para descrever a ação de usar a mente para considerar ou refletir sobre algo.",
             audio: ""
         },
         ingles: {
             palavra: "thought",
-            traducoes: ["pensado"],
-            exemplos: ["He has thought about it"],
+            traducoes: ["pensou"],
+            exemplos: ["You thought it would rain today."],
             classificacao: "verb",
-            descricao: "Used to indicate something that has been considered or reflected upon.",
+            descricao: "Used to describe the action of using your mind to consider or reflect on something.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "jogado",
-            traducoes: ["thrown"],
-            exemplos: ["Ela jogou a bola"],
+            palavra: "vestiu, usou",
+            traducoes: ["wore"],
+            exemplos: ["Você usou um casaco no inverno."],
             classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi arremessado com força.",
+            descricao: "Usado para descrever a ação de ter algo sobre o corpo, como roupas ou acessórios.",
             audio: ""
         },
         ingles: {
-            palavra: "thrown",
-            traducoes: ["jogado"],
-            exemplos: ["She has thrown the ball"],
+            palavra: "wore",
+            traducoes: ["vestiu", "usou"],
+            exemplos: ["You wore a coat in winter."],
             classificacao: "verb",
-            descricao: "Used to indicate something that has been propelled with force.",
+            descricao: "Used to describe the action of having something on your body, such as clothes or accessories.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "entendido",
-            traducoes: ["understood"],
-            exemplos: ["Ele entendeu a lição"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi compreendido ou assimilado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "understood",
-            traducoes: ["entendido"],
-            exemplos: ["He has understood the lesson"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been comprehended or assimilated.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "acordado",
-            traducoes: ["woken"],
-            exemplos: ["Ela acordou cedo"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que saiu do estado de sono.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "woken",
-            traducoes: ["acordado"],
-            exemplos: ["She has woken up early"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has come out of the state of sleep.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "usado (roupa)",
-            traducoes: ["worn"],
-            exemplos: ["Ele usou um terno"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi vestido.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "worn",
-            traducoes: ["usado"],
-            exemplos: ["He has worn a suit"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been worn.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "vencido",
-            traducoes: ["won"],
-            exemplos: ["Ela venceu o jogo"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi conquistado ou alcançado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "won",
-            traducoes: ["vencido"],
-            exemplos: ["She has won the game"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been achieved or attained.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "escrito",
-            traducoes: ["written"],
-            exemplos: ["Ele escreveu uma carta"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi registrado em texto.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "written",
-            traducoes: ["escrito"],
-            exemplos: ["He has written a letter"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been recorded in text.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "surgido",
-            traducoes: ["arisen"],
-            exemplos: ["Um problema surgiu"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que apareceu ou emergiu.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "arisen",
-            traducoes: ["surgido"],
-            exemplos: ["A problem has arisen"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has appeared or emerged.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "batido",
-            traducoes: ["beaten"],
-            exemplos: ["Ela quebrou o recorde"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi superado ou derrotado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "beaten",
-            traducoes: ["batido"],
-            exemplos: ["She has beaten the record"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been surpassed or defeated.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "dobrado",
-            traducoes: ["bent"],
-            exemplos: ["Ele dobrou as regras"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi curvado ou flexionado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "bent",
-            traducoes: ["dobrado"],
-            exemplos: ["He has bent the rules"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been curved or flexed.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "mordido",
-            traducoes: ["bitten"],
-            exemplos: ["O cachorro o mordeu"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi cravado com os dentes.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "bitten",
-            traducoes: ["mordido"],
-            exemplos: ["The dog has bitten him"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been seized with the teeth.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "soprado",
-            traducoes: ["blown"],
-            exemplos: ["O vento soprou as folhas"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi movido pelo ar.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "blown",
-            traducoes: ["soprado"],
-            exemplos: ["The wind has blown the leaves"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been moved by air.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "queimado",
-            traducoes: ["burnt", "burned"],
-            exemplos: ["Ela queimou a torrada"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi danificado pelo fogo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "burnt",
-            traducoes: ["queimado"],
-            exemplos: ["She has burnt the toast"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been damaged by fire.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "estourado",
-            traducoes: ["burst"],
-            exemplos: ["O balão estourou"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que se rompeu de repente.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "burst",
-            traducoes: ["estourado"],
-            exemplos: ["The balloon has burst"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has suddenly broken open.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "lidado",
-            traducoes: ["dealt"],
-            exemplos: ["Ele lidou com a situação"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que enfrentou ou tratou de algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "dealt",
-            traducoes: ["lidado"],
-            exemplos: ["He has dealt with the situation"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has faced or handled something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "cavado",
-            traducoes: ["dug"],
-            exemplos: ["Ela cavou um buraco"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi escavado ou removido da terra.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "dug",
-            traducoes: ["cavado"],
-            exemplos: ["She has dug a hole"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been excavated or removed from the ground.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sonhado",
-            traducoes: ["dreamt", "dreamed"],
-            exemplos: ["Ele sonhou em voar"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi imaginado durante o sono.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "dreamt",
-            traducoes: ["sonhado"],
-            exemplos: ["He has dreamt about flying"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been imagined during sleep.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "congelado",
-            traducoes: ["frozen"],
-            exemplos: ["O lago congelou"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi transformado em gelo devido ao frio.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "frozen",
-            traducoes: ["congelado"],
-            exemplos: ["The lake has frozen"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been turned into ice due to cold.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "pendurado",
-            traducoes: ["hung"],
-            exemplos: ["Ela pendurou o quadro"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi suspenso ou fixado em um ponto elevado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "hung",
-            traducoes: ["pendurado"],
-            exemplos: ["She has hung the picture"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been suspended or fixed at a high point.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "colocado",
-            traducoes: ["laid"],
-            exemplos: ["Ele colocou a mesa"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi disposto ou posicionado em uma superfície.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "laid",
-            traducoes: ["colocado"],
-            exemplos: ["He has laid the table"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been arranged or positioned on a surface.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "liderado",
-            traducoes: ["led"],
-            exemplos: ["Ela liderou a equipe"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar alguém que guiou ou dirigiu um grupo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "led",
-            traducoes: ["liderado"],
-            exemplos: ["She has led the team"],
-            classificacao: "verb",
-            descricao: "Used to indicate someone who has guided or directed a group.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "aceso",
-            traducoes: ["lit", "lighted"],
-            exemplos: ["Ele acendeu a vela"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi inflamado ou iluminado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "lit",
-            traducoes: ["aceso"],
-            exemplos: ["He has lit the candle"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been ignited or illuminated.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "subido",
-            traducoes: ["risen"],
-            exemplos: ["O sol subiu"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que se elevou ou se levantou.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "risen",
-            traducoes: ["subido"],
-            exemplos: ["The sun has risen"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has risen or ascended.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "sacudido",
-            traducoes: ["shaken"],
-            exemplos: ["Ele sacudiu a garrafa"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi agitado ou movimentado vigorosamente.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "shaken",
-            traducoes: ["sacudido"],
-            exemplos: ["He has shaken the bottle"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been agitated or moved vigorously.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "atirado",
-            traducoes: ["shot"],
-            exemplos: ["Ela atirou uma flecha"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi lançado ou disparado com força.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "shot",
-            traducoes: ["atirado"],
-            exemplos: ["She has shot an arrow"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been launched or fired with force.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "afundado",
-            traducoes: ["sunk"],
-            exemplos: ["O navio afundou"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi submerso na água.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "sunk",
-            traducoes: ["afundado"],
-            exemplos: ["The ship has sunk"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been submerged in water.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "deslizado",
-            traducoes: ["slid"],
-            exemplos: ["Ela deslizou no gelo"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que se movimentou suavemente sobre uma superfície.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "slid",
-            traducoes: ["deslizado"],
-            exemplos: ["She has slid on the ice"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has moved smoothly over a surface.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "colado",
-            traducoes: ["stuck"],
-            exemplos: ["Ele se manteve no plano"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que permaneceu fixo ou aderido a algo.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "stuck",
-            traducoes: ["colado"],
-            exemplos: ["He has stuck to his plan"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has remained fixed or adhered to something.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "atingido",
-            traducoes: ["struck"],
-            exemplos: ["Ela encontrou ouro"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi descoberto ou encontrado.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "struck",
-            traducoes: ["atingido"],
-            exemplos: ["She has struck gold"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been discovered or found.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "varrido",
-            traducoes: ["swept"],
-            exemplos: ["Ele varreu o chão"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi limpo ou removido com uma vassoura.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "swept",
-            traducoes: ["varrido"],
-            exemplos: ["He has swept the floor"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been cleaned or removed with a broom.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "balançado",
-            traducoes: ["swung"],
-            exemplos: ["Ela balançou no balanço"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que se movimentou para frente e para trás.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "swung",
-            traducoes: ["balançado"],
-            exemplos: ["She has swung on the swing"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has moved back and forth.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "rasgado",
-            traducoes: ["torn"],
-            exemplos: ["Ele rasgou o papel"],
-            classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi separado em pedaços por força.",
-            audio: ""
-        },
-        ingles: {
-            palavra: "torn",
-            traducoes: ["rasgado"],
-            exemplos: ["He has torn the paper"],
-            classificacao: "verb",
-            descricao: "Used to indicate something that has been separated into pieces by force.",
-            audio: ""
-        }
-    },
-    {
-        portugues: {
-            palavra: "chorado",
+            palavra: "lamentou, chorou",
             traducoes: ["wept"],
-            exemplos: ["Ela chorou por horas"],
+            exemplos: ["Você chorou de alegria."],
             classificacao: "verbo",
-            descricao: "Usado para indicar alguém que derramou lágrimas.",
+            descricao: "Usado para descrever a ação de derramar lágrimas.",
             audio: ""
         },
         ingles: {
             palavra: "wept",
-            traducoes: ["chorado"],
-            exemplos: ["She has wept for hours"],
+            traducoes: ["lamentou", "chorou"],
+            exemplos: ["You wept with joy."],
             classificacao: "verb",
-            descricao: "Used to indicate someone who has shed tears.",
+            descricao: "Used to describe the action of shedding tears.",
             audio: ""
         }
     },
     {
         portugues: {
-            palavra: "enrolado",
-            traducoes: ["wound"],
-            exemplos: ["Ele deu corda no relógio"],
+            palavra: "ganhou, venceu",
+            traducoes: ["won"],
+            exemplos: ["Você ganhou o jogo."],
             classificacao: "verbo",
-            descricao: "Usado para indicar algo que foi torcido ou girado em espiral.",
+            descricao: "Usado para descrever a ação de ser bem-sucedido em uma competição ou conseguir algo.",
             audio: ""
         },
         ingles: {
-            palavra: "wound",
-            traducoes: ["enrolado"],
-            exemplos: ["He has wound the clock"],
+            palavra: "won",
+            traducoes: ["ganhou", "venceu"],
+            exemplos: ["You won the game."],
             classificacao: "verb",
-            descricao: "Used to indicate something that has been twisted or turned in a spiral.",
+            descricao: "Used to describe the action of being successful in a competition or achieving something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "escreveu",
+            traducoes: ["wrote"],
+            exemplos: ["Você escreveu uma carta para seu amigo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de formar letras ou palavras em uma superfície.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "wrote",
+            traducoes: ["escreveu"],
+            exemplos: ["You wrote a letter to your friend."],
+            classificacao: "verb",
+            descricao: "Used to describe the action of forming letters or words on a surface.",
             audio: ""
         }
     }
 ];
-  
 
 let words = verbsPresentSimple100;
 let shuffledIndexes = [];
@@ -5602,6 +3726,9 @@ function toggleExamplesVisibility(forceState = null) {
 
 
 function loadWords(listName) {
+    //console.log(verbsPresentSimple100.length);
+    //console.log(verbsPastSimple100.length);
+
     switch (listName) {
         case 'lista1':
             words = verbsPresentSimple100;
