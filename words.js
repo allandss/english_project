@@ -7209,4 +7209,4039 @@ const verbsParticiple100 = [
         }
     }
 ];
-  
+
+const verbsPastParticiple = [
+    {
+        portugues: {
+            palavra: "tolerado",
+            traducoes: ["abided"],
+            exemplos: ["Eu tenho permanecido aqui por anos."],
+            classificacao: "verbo",
+            descricao: "Usado para indicar que algo permaneceu em um estado ou condição.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "abided",
+            traducoes: ["tolerado"],
+            exemplos: ["I have abided here for years."],
+            classificacao: "verb",
+            descricao: "Used to indicate that something has remained in a state or condition.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "descido, pousado",
+            traducoes: ["alighted", "alit"],
+            exemplos: ["Ele tem iluminado a sala com sua presença."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que desceu de um veículo ou uma luz que brilhou.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "alighted / alit",
+            traducoes: ["descido", "pousado"],
+            exemplos: ["He has alighted the room with his presence."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has descended from a vehicle or a light that has shone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "surgido",
+            traducoes: ["arisen"],
+            exemplos: ["Ela tem se erguido acima das dificuldades."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que se levantou ou se destacou.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "arisen",
+            traducoes: ["surgido"],
+            exemplos: ["She has arisen above the difficulties."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has risen or stood out.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "despertado, acordado",
+            traducoes: ["awakened", "awoken"],
+            exemplos: ["Eu tenho despertado cedo todas as manhãs."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que acordou de um sono.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "awakened / awoken",
+            traducoes: ["despertado", "acordado"],
+            exemplos: ["I have awakened early every morning."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has woken up from sleep.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "caluniado",
+            traducoes: ["backbitten"],
+            exemplos: ["Ele foi mordido por um cachorro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi mordido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "backbitten",
+            traducoes: ["caluniado"],
+            exemplos: ["He was backbitten by a dog."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been bitten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "retrocedido",
+            traducoes: ["backslidden", "backslid"],
+            exemplos: ["Ele tem retrocedido em seus hábitos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que retrocedeu em seus hábitos ou comportamentos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "backslidden / backslid",
+            traducoes: ["retrocedido"],
+            exemplos: ["He has backslidden in his habits."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has reverted in their habits or behaviors.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sido",
+            traducoes: ["been"],
+            exemplos: ["Ele tem sido um bom amigo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a existência ou estado contínuo de alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "been",
+            traducoes: ["sido"],
+            exemplos: ["He has been a good friend."],
+            classificacao: "verb",
+            descricao: "Used to describe the existence or ongoing state of someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "nascido",
+            traducoes: ["born", "borne"],
+            exemplos: ["Ela nasceu em 1990."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que nasceu.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "born / borne",
+            traducoes: ["nascido"],
+            exemplos: ["She was born in 1990."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who was born.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "batido",
+            traducoes: ["beaten", "beat"],
+            exemplos: ["Ele foi batido no jogo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi derrotado ou batido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "beaten / beat",
+            traducoes: ["batido"],
+            exemplos: ["He was beaten in the game."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who was defeated or beaten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "tornado",
+            traducoes: ["become"],
+            exemplos: ["Ela se tornou uma médica."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que se transformou em algo ou alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "become",
+            traducoes: ["tornado"],
+            exemplos: ["She has become a doctor."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has transformed into something or someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "acontecido",
+            traducoes: ["befallen"],
+            exemplos: ["Uma tragédia aconteceu com a família."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo negativo que aconteceu a alguém.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "befallen",
+            traducoes: ["acontecido"],
+            exemplos: ["A tragedy has befallen the family."],
+            classificacao: "verb",
+            descricao: "Used to describe something negative that has happened to someone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "gerado",
+            traducoes: ["begotten"],
+            exemplos: ["Ele gerou um filho."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que gerou um descendente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "begotten",
+            traducoes: ["gerado"],
+            exemplos: ["He has begotten a son."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has fathered an offspring.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "começado",
+            traducoes: ["begun"],
+            exemplos: ["Ela começou um novo projeto."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi iniciado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "begun",
+            traducoes: ["começado"],
+            exemplos: ["She has begun a new project."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been started.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "visto",
+            traducoes: ["beheld"],
+            exemplos: ["Ela viu a paisagem deslumbrante."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi visto ou observado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "beheld",
+            traducoes: ["visto"],
+            exemplos: ["She has beheld the breathtaking scenery."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been seen or observed.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dobrado",
+            traducoes: ["bent"],
+            exemplos: ["Ele dobrou o arame."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi dobrado ou curvado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bent",
+            traducoes: ["dobrado"],
+            exemplos: ["He has bent the wire."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been bent or curved.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "desolado, befallen",
+            traducoes: ["bereaved", "bereft"],
+            exemplos: ["Ela ficou desolada após a perda."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que sofreu uma perda.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bereaved / bereft",
+            traducoes: ["desolado", "befallen"],
+            exemplos: ["She has been bereaved after the loss."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has suffered a loss.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "suplicado",
+            traducoes: ["besought", "beseeched"],
+            exemplos: ["Ele suplicou por ajuda."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que implorou ou suplicou por algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "besought / beseeched",
+            traducoes: ["suplicado"],
+            exemplos: ["He has besought for help."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has pleaded or begged for something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cercado",
+            traducoes: ["beset"],
+            exemplos: ["Ela foi cercada de dificuldades."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi rodeado ou cercado por problemas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "beset",
+            traducoes: ["cercado"],
+            exemplos: ["She has been beset with difficulties."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been surrounded or besieged by problems.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "espalhado",
+            traducoes: ["bestrewn", "bestrewed"],
+            exemplos: ["O chão estava coberto de flores."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi espalhado ou coberto.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bestrewn / bestrewed",
+            traducoes: ["espalhado"],
+            exemplos: ["The ground was bestrewn with flowers."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been scattered or covered.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "apostado",
+            traducoes: ["bet", "betted"],
+            exemplos: ["Ele apostou todo seu dinheiro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que fez uma aposta.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bet / betted",
+            traducoes: ["apostado"],
+            exemplos: ["He has bet all his money."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has placed a bet.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "tomado",
+            traducoes: ["betaken"],
+            exemplos: ["Ele se retirou para seus aposentos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que se retirou ou se dirigiu a um lugar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "betaken",
+            traducoes: ["tomado"],
+            exemplos: ["He has betaken himself to his chambers."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has withdrawn or gone to a place.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "refletido",
+            traducoes: ["bethought"],
+            exemplos: ["Ele refletiu sobre suas ações."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que ponderou ou refletiu sobre algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bethought",
+            traducoes: ["refletido"],
+            exemplos: ["He has bethought himself of his actions."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has pondered or reflected on something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "oferecido",
+            traducoes: ["bidden"],
+            exemplos: ["Ela ofereceu ajuda a todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que ofereceu ou deu algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bidden",
+            traducoes: ["oferecido"],
+            exemplos: ["She has bidden help to everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has offered or given something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "oferecido",
+            traducoes: ["bid"],
+            exemplos: ["Ele ofereceu uma quantia pelo item."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que fez uma oferta ou proposta.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bid",
+            traducoes: ["oferecido"],
+            exemplos: ["He has bid an amount for the item."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has made an offer or proposal.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "vinculado",
+            traducoes: ["bound"],
+            exemplos: ["Ele foi vinculado por um contrato."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi amarrado ou vinculado por algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bound",
+            traducoes: ["vinculado"],
+            exemplos: ["He has been bound by a contract."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been tied or bound by something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mordido",
+            traducoes: ["bitten"],
+            exemplos: ["Ele foi mordido por um inseto."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi mordido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bitten",
+            traducoes: ["mordido"],
+            exemplos: ["He has been bitten by an insect."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been bitten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sangrado",
+            traducoes: ["bled"],
+            exemplos: ["Ele sangrou após o corte."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que perdeu sangue.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bled",
+            traducoes: ["sangrado"],
+            exemplos: ["He has bled after the cut."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has lost blood.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "soprado",
+            traducoes: ["blown"],
+            exemplos: ["O vento soprou forte ontem."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi soprado pelo vento.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "blown",
+            traducoes: ["soprado"],
+            exemplos: ["The wind has blown hard yesterday."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been blown by the wind.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "quebrado",
+            traducoes: ["broken"],
+            exemplos: ["Ele quebrou a janela."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi quebrado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "broken",
+            traducoes: ["quebrado"],
+            exemplos: ["He has broken the window."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been broken.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "criado",
+            traducoes: ["bred"],
+            exemplos: ["Eles criaram cavalos de raça."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever a ação de criar ou reproduzir animais.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bred",
+            traducoes: ["criado"],
+            exemplos: ["They have bred thoroughbred horses."],
+            classificacao: "verb",
+            descricao: "Used to describe the act of breeding or raising animals.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "trazido",
+            traducoes: ["brought"],
+            exemplos: ["Ela trouxe um presente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que trouxe algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "brought",
+            traducoes: ["trazido"],
+            exemplos: ["She has brought a gift."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has brought something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "transmitido",
+            traducoes: ["broadcast", "broadcasted"],
+            exemplos: ["O programa foi transmitido ao vivo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi transmitido via rádio ou TV.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "broadcast / broadcasted",
+            traducoes: ["transmitido"],
+            exemplos: ["The show has been broadcast live."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been broadcast via radio or TV.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "intimidado",
+            traducoes: ["browbeaten", "browbeat"],
+            exemplos: ["Ele foi intimidado por seus colegas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi intimidado ou pressionado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "browbeaten / browbeat",
+            traducoes: ["intimidado"],
+            exemplos: ["He has been browbeaten by his peers."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been intimidated or pressured.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "construído",
+            traducoes: ["built"],
+            exemplos: ["Eles construíram uma casa nova."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi construído.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "built",
+            traducoes: ["construído"],
+            exemplos: ["They have built a new house."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been built.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "queimado",
+            traducoes: ["burned", "burnt"],
+            exemplos: ["A madeira foi queimada no fogo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi queimado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "burned / burnt",
+            traducoes: ["queimado"],
+            exemplos: ["The wood has been burned in the fire."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been burned.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "explodido",
+            traducoes: ["burst"],
+            exemplos: ["A bolha estourou."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que explodiu ou estourou.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "burst",
+            traducoes: ["explodido"],
+            exemplos: ["The bubble has burst."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has exploded or burst.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "arrombado",
+            traducoes: ["busted", "bust"],
+            exemplos: ["Ele arrombou a porta."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi arrombado ou quebrado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "busted / bust",
+            traducoes: ["arrombado"],
+            exemplos: ["He has busted the door."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been busted or broken.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "comprado",
+            traducoes: ["bought"],
+            exemplos: ["Ela comprou um carro novo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi comprado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "bought",
+            traducoes: ["comprado"],
+            exemplos: ["She has bought a new car."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been bought.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "lançado, escalado",
+            traducoes: ["cast"],
+            exemplos: ["Ele lançou a rede ao mar."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi lançado ou arremessado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "cast",
+            traducoes: ["lançado", "escalado"],
+            exemplos: ["He has cast the net into the sea."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been cast or thrown.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "pego",
+            traducoes: ["caught"],
+            exemplos: ["Ele pegou a bola."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi pego ou capturado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "caught",
+            traducoes: ["pego"],
+            exemplos: ["He has caught the ball."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been caught or captured.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "repreendido",
+            traducoes: ["chided", "chidden"],
+            exemplos: ["Ela foi repreendida por seu comportamento."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi repreendido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "chided / chidden",
+            traducoes: ["repreendido"],
+            exemplos: ["She has been chided for her behavior."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been chided.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "escolhido",
+            traducoes: ["chosen"],
+            exemplos: ["Ela foi escolhida para a equipe."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo ou alguém que foi escolhido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "chosen",
+            traducoes: ["escolhido"],
+            exemplos: ["She has been chosen for the team."],
+            classificacao: "verb",
+            descricao: "Used to describe something or someone that has been chosen.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "aplaudido",
+            traducoes: ["clapped", "clapt"],
+            exemplos: ["A plateia aplaudiu a performance."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi aplaudido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "clapped / clapt",
+            traducoes: ["aplaudido"],
+            exemplos: ["The audience has clapped the performance."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been clapped.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "agarrado",
+            traducoes: ["clung"],
+            exemplos: ["Ela se agarrou ao corrimão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi agarrado firmemente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "clung",
+            traducoes: ["agarrado"],
+            exemplos: ["She has clung to the railing."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been held firmly.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "vestido",
+            traducoes: ["clothed", "clad"],
+            exemplos: ["Ela estava vestida com elegância."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que estava vestido de uma certa maneira.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "clothed / clad",
+            traducoes: ["vestido"],
+            exemplos: ["She has been clothed elegantly."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who was dressed in a certain way.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "colorido",
+            traducoes: ["colorbred"],
+            exemplos: ["O artista coloriu o desenho."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi colorido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "colorbred",
+            traducoes: ["colorido"],
+            exemplos: ["The artist has colorbred the drawing."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been colored.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "vindo",
+            traducoes: ["come"],
+            exemplos: ["Ela veio para a festa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que chegou a um lugar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "come",
+            traducoes: ["vindo"],
+            exemplos: ["She has come to the party."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has arrived at a place.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "custado",
+            traducoes: ["cost"],
+            exemplos: ["O projeto custou muito dinheiro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que teve um custo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "cost",
+            traducoes: ["custado"],
+            exemplos: ["The project has cost a lot of money."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has had a cost.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "rastejado",
+            traducoes: ["crept"],
+            exemplos: ["Ele rastejou pelo chão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que rastejou.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "crept",
+            traducoes: ["rastejado"],
+            exemplos: ["He has crept along the floor."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has crawled.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cruzado",
+            traducoes: ["crossbred"],
+            exemplos: ["Eles cruzaram duas raças de cães."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever o cruzamento de duas raças.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "crossbred",
+            traducoes: ["cruzado"],
+            exemplos: ["They have crossbred two breeds of dogs."],
+            classificacao: "verb",
+            descricao: "Used to describe the crossing of two breeds.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cortado",
+            traducoes: ["cut"],
+            exemplos: ["Ele cortou o papel."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi cortado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "cut",
+            traducoes: ["cortado"],
+            exemplos: ["He has cut the paper."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been cut.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ousado",
+            traducoes: ["dared", "durst"],
+            exemplos: ["Ela ousou falar a verdade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que ousou fazer algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dared / durst",
+            traducoes: ["ousado"],
+            exemplos: ["She has dared to speak the truth."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has dared to do something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sonhado acordado",
+            traducoes: ["daydreamed", "daydreamt"],
+            exemplos: ["Ele sonhou acordado durante a aula."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que teve devaneios ou sonhos acordado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "daydreamed / daydreamt",
+            traducoes: ["sonhado acordado"],
+            exemplos: ["He has daydreamed during class."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has had daydreams or fantasies.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "negociado",
+            traducoes: ["dealt"],
+            exemplos: ["Ele negociou um bom acordo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que negociou ou lidou com algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dealt",
+            traducoes: ["negociado"],
+            exemplos: ["He has dealt a good deal."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has negotiated or dealt with something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cavado",
+            traducoes: ["dug"],
+            exemplos: ["Ele cavou um buraco no jardim."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que cavou.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dug",
+            traducoes: ["cavado"],
+            exemplos: ["He has dug a hole in the garden."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has dug.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "preparado",
+            traducoes: ["dighted", "dight"],
+            exemplos: ["Ela preparou a mesa para o jantar."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que preparou ou arrumou algo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dighted / dight",
+            traducoes: ["preparado"],
+            exemplos: ["She has dighted the table for dinner."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has prepared or arranged something.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "desaprovado",
+            traducoes: ["disproved", "disproven"],
+            exemplos: ["Ele desaprovou a teoria."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi desaprovado ou refutado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "disproved / disproven",
+            traducoes: ["desaprovado"],
+            exemplos: ["He has disproved the theory."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been disproved or refuted.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mergulhado",
+            traducoes: ["dived"],
+            exemplos: ["Ele mergulhou na piscina."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que mergulhou.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dived",
+            traducoes: ["mergulhado"],
+            exemplos: ["He has dived into the pool."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has dived.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "feito",
+            traducoes: ["done"],
+            exemplos: ["Ele fez a lição de casa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi feito ou concluído.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "done",
+            traducoes: ["feito"],
+            exemplos: ["He has done his homework."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been done or completed.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "desenhado",
+            traducoes: ["drawn"],
+            exemplos: ["Ela desenhou uma bela imagem."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi desenhado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "drawn",
+            traducoes: ["desenhado"],
+            exemplos: ["She has drawn a beautiful picture."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been drawn.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sonhado",
+            traducoes: ["dreamed", "dreamt"],
+            exemplos: ["Ele sonhou com um futuro melhor."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi sonhado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dreamed / dreamt",
+            traducoes: ["sonhado"],
+            exemplos: ["He has dreamed of a better future."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been dreamed.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "bebido",
+            traducoes: ["drunk"],
+            exemplos: ["Ele bebeu toda a água."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi bebido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "drunk",
+            traducoes: ["bebido"],
+            exemplos: ["He has drunk all the water."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been drunk.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dirigido",
+            traducoes: ["driven"],
+            exemplos: ["Ela dirigiu o carro novo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi dirigido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "driven",
+            traducoes: ["dirigido"],
+            exemplos: ["She has driven the new car."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been driven.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "habitado",
+            traducoes: ["dwelt", "dwelled"],
+            exemplos: ["Ele habitou naquela casa por anos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi habitado ou ocupado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "dwelt / dwelled",
+            traducoes: ["habitado"],
+            exemplos: ["He has dwelt in that house for years."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been inhabited or occupied.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "comido",
+            traducoes: ["eaten"],
+            exemplos: ["Ela comeu todo o bolo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi comido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "eaten",
+            traducoes: ["comido"],
+            exemplos: ["She has eaten all the cake."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been eaten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "enrolado",
+            traducoes: ["enwound"],
+            exemplos: ["Ela enrolou o fio cuidadosamente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi enrolado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "enwound",
+            traducoes: ["enrolado"],
+            exemplos: ["She has enwound the wire carefully."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been wound or coiled.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "caído",
+            traducoes: ["fallen"],
+            exemplos: ["A árvore caiu durante a tempestade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que caiu.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fallen",
+            traducoes: ["caído"],
+            exemplos: ["The tree has fallen during the storm."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has fallen.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "alimentado",
+            traducoes: ["fed"],
+            exemplos: ["Ele alimentou o cachorro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi alimentado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fed",
+            traducoes: ["alimentado"],
+            exemplos: ["He has fed the dog."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been fed.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "sentido",
+            traducoes: ["felt"],
+            exemplos: ["Ela sentiu uma dor aguda."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi sentido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "felt",
+            traducoes: ["sentido"],
+            exemplos: ["She has felt a sharp pain."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been felt.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "lutado",
+            traducoes: ["fought"],
+            exemplos: ["Eles lutaram bravamente na batalha."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi lutado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fought",
+            traducoes: ["lutado"],
+            exemplos: ["They have fought bravely in the battle."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been fought.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "encontrado",
+            traducoes: ["found"],
+            exemplos: ["Ela encontrou suas chaves."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi encontrado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "found",
+            traducoes: ["encontrado"],
+            exemplos: ["She has found her keys."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been found.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ajustado",
+            traducoes: ["fitted", "fit"],
+            exemplos: ["Ele ajustou o terno perfeitamente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi ajustado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fitted / fit",
+            traducoes: ["ajustado"],
+            exemplos: ["He has fitted the suit perfectly."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been fitted.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "fugido",
+            traducoes: ["fled"],
+            exemplos: ["Eles fugiram da cidade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi fugido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fled",
+            traducoes: ["fugido"],
+            exemplos: ["They have fled the city."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been fled.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "atirado",
+            traducoes: ["flung"],
+            exemplos: ["Ela atirou o livro na mesa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi atirado ou lançado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "flung",
+            traducoes: ["atirado"],
+            exemplos: ["She has flung the book on the table."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been flung or thrown.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "voado",
+            traducoes: ["flown"],
+            exemplos: ["Eles voaram para Paris."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi voado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "flown",
+            traducoes: ["voado"],
+            exemplos: ["They have flown to Paris."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been flown.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "tolerado",
+            traducoes: ["forborne"],
+            exemplos: ["Ela tolerou muitas dificuldades."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi tolerado ou suportado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forborne",
+            traducoes: ["tolerado"],
+            exemplos: ["She has forborne many hardships."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been tolerated or endured.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "proibido",
+            traducoes: ["forbidden"],
+            exemplos: ["Ele foi proibido de entrar."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi proibido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forbidden",
+            traducoes: ["proibido"],
+            exemplos: ["He has been forbidden to enter."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been forbidden.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "terminado",
+            traducoes: ["fordone"],
+            exemplos: ["Ele terminou seu trabalho."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi concluído.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fordone",
+            traducoes: ["terminado"],
+            exemplos: ["He has fordone his work."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been finished.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "prever",
+            traducoes: ["forecast"],
+            exemplos: ["Eles preveram o tempo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi previsto.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forecast",
+            traducoes: ["prever"],
+            exemplos: ["They have forecast the weather."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been forecasted.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "antecipado",
+            traducoes: ["foregone"],
+            exemplos: ["Ele antecipou a decisão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi antecipado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "foregone",
+            traducoes: ["antecipado"],
+            exemplos: ["He has foregone the decision."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been anticipated.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "previsto",
+            traducoes: ["foreknown"],
+            exemplos: ["Ela previu os eventos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi previsto.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "foreknown",
+            traducoes: ["previsto"],
+            exemplos: ["She has foreknown the events."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been foreseen.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "antecedido",
+            traducoes: ["forerun"],
+            exemplos: ["O calor antecedeu a tempestade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que antecedeu outro evento.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forerun",
+            traducoes: ["antecedido"],
+            exemplos: ["The heat has forerun the storm."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has preceded another event.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "previsto",
+            traducoes: ["foreseen"],
+            exemplos: ["Ela previu os problemas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi previsto.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "foreseen",
+            traducoes: ["previsto"],
+            exemplos: ["She has foreseen the problems."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been foreseen.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mostrado",
+            traducoes: ["foreshown", "foreshowed"],
+            exemplos: ["Ele mostrou as evidências."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mostrado ou revelado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "foreshown / foreshowed",
+            traducoes: ["mostrado"],
+            exemplos: ["He has foreshown the evidence."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been shown or revealed.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "falado antes",
+            traducoes: ["forespoken"],
+            exemplos: ["Ela falou sobre o evento antes de acontecer."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi falado ou mencionado anteriormente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forespoken",
+            traducoes: ["falado antes"],
+            exemplos: ["She has forespoken about the event before it happened."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been spoken or mentioned beforehand.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "previsto",
+            traducoes: ["foretold"],
+            exemplos: ["Ele previu o futuro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi previsto ou profetizado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "foretold",
+            traducoes: ["previsto"],
+            exemplos: ["He has foretold the future."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been predicted or prophesied.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "esquecido",
+            traducoes: ["forgotten", "forgot"],
+            exemplos: ["Ela esqueceu a senha."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi esquecido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forgotten / forgot",
+            traducoes: ["esquecido"],
+            exemplos: ["She has forgotten the password."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been forgotten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "perdoado",
+            traducoes: ["forgiven"],
+            exemplos: ["Ele perdoou o erro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi perdoado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forgiven",
+            traducoes: ["perdoado"],
+            exemplos: ["He has forgiven the mistake."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been forgiven.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "abandonado",
+            traducoes: ["forsaken"],
+            exemplos: ["Ela abandonou seus planos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi abandonado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forsaken",
+            traducoes: ["abandonado"],
+            exemplos: ["She has forsaken her plans."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been forsaken.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "renunciado",
+            traducoes: ["forsworn"],
+            exemplos: ["Ele renunciou ao cargo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi renunciado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "forsworn",
+            traducoes: ["renunciado"],
+            exemplos: ["He has forsworn his position."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been renounced.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "carregado",
+            traducoes: ["fraught"],
+            exemplos: ["A viagem foi carregada de perigos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi carregado de perigos ou desafios.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "fraught",
+            traducoes: ["carregado"],
+            exemplos: ["The journey has been fraught with dangers."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been fraught with dangers or challenges.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "congelado",
+            traducoes: ["frozen"],
+            exemplos: ["A água foi congelada."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi congelado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "frozen",
+            traducoes: ["congelado"],
+            exemplos: ["The water has been frozen."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been frozen.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ferido pelo frio",
+            traducoes: ["frostbitten"],
+            exemplos: ["Ele foi ferido pelo frio nas montanhas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi ferido pelo frio.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "frostbitten",
+            traducoes: ["mordido pelo frio"],
+            exemplos: ["He has been frostbitten in the mountains."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been frostbitten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "contradito",
+            traducoes: ["gainsaid"],
+            exemplos: ["Ele contradisse o testemunho."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi contradito.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "gainsaid",
+            traducoes: ["contradito"],
+            exemplos: ["He has gainsaid the testimony."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been gainsaid.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "obtido",
+            traducoes: ["gotten", "got"],
+            exemplos: ["Ela obteve o prêmio."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi obtido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "gotten / got",
+            traducoes: ["obtido"],
+            exemplos: ["She has gotten the prize."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been gotten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dourado",
+            traducoes: ["gilded", "gilt"],
+            exemplos: ["Ele dourou a moldura."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi dourado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "gilded / gilt",
+            traducoes: ["dourado"],
+            exemplos: ["He has gilded the frame."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been gilded.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "dado",
+            traducoes: ["given"],
+            exemplos: ["Ela deu um presente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi dado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "given",
+            traducoes: ["dado"],
+            exemplos: ["She has given a gift."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been given.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ido",
+            traducoes: ["gone"],
+            exemplos: ["Ele foi para a escola."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "gone",
+            traducoes: ["ido"],
+            exemplos: ["He has gone to school."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has gone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "moído",
+            traducoes: ["ground"],
+            exemplos: ["Eles moeram o café."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi moído.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "ground",
+            traducoes: ["moído"],
+            exemplos: ["They have ground the coffee."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been ground.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "crescido",
+            traducoes: ["grown"],
+            exemplos: ["A planta cresceu rapidamente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que cresceu.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "grown",
+            traducoes: ["crescido"],
+            exemplos: ["The plant has grown quickly."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has grown.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "atormentado",
+            traducoes: ["hagridden"],
+            exemplos: ["Ele estava atormentado por pesadelos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi atormentado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hagridden",
+            traducoes: ["atormentado"],
+            exemplos: ["He has been hagridden by nightmares."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been tormented.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "quebrado pelo freio",
+            traducoes: ["halterbroken"],
+            exemplos: ["O cavalo foi quebrado pelo freio."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever um cavalo que foi treinado para o freio.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "halterbroken",
+            traducoes: ["quebrado pelo freio"],
+            exemplos: ["The horse has been halterbroken."],
+            classificacao: "verb",
+            descricao: "Used to describe a horse that has been trained to the halter.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "hamstrung",
+            traducoes: ["hamstrung"],
+            exemplos: ["Ele foi prejudicado pelas restrições."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi prejudicado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hamstrung",
+            traducoes: ["hamstrung"],
+            exemplos: ["He has been hamstrung by the restrictions."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been hindered.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "alimentado à mão",
+            traducoes: ["hand-fed"],
+            exemplos: ["Ela alimentou o bebê à mão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi alimentado à mão.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hand-fed",
+            traducoes: ["alimentado à mão"],
+            exemplos: ["She has hand-fed the baby."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been hand-fed.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "escrito à mão",
+            traducoes: ["handwritten"],
+            exemplos: ["Ela escreveu uma carta à mão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi escrito à mão.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "handwritten",
+            traducoes: ["escrito à mão"],
+            exemplos: ["She has handwritten a letter."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been handwritten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "pendurado",
+            traducoes: ["hung"],
+            exemplos: ["Ele pendurou o quadro na parede."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi pendurado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hung",
+            traducoes: ["pendurado"],
+            exemplos: ["He has hung the picture on the wall."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been hung.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "enforcado",
+            traducoes: ["hanged", "hung"],
+            exemplos: ["O criminoso foi enforcado."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi enforcado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hanged / hung",
+            traducoes: ["enforcado"],
+            exemplos: ["The criminal has been hanged."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been hanged.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "tido",
+            traducoes: ["had"],
+            exemplos: ["Ela teve um bom dia."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi tido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "had",
+            traducoes: ["tido"],
+            exemplos: ["She has had a good day."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been had.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ouvido",
+            traducoes: ["heard"],
+            exemplos: ["Ela ouviu um barulho estranho."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi ouvido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "heard",
+            traducoes: ["ouvido"],
+            exemplos: ["She has heard a strange noise."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been heard.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "erguido",
+            traducoes: ["heaved", "hove"],
+            exemplos: ["Eles ergueram a âncora."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi erguido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "heaved / hove",
+            traducoes: ["erguido"],
+            exemplos: ["They have heaved the anchor."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been heaved.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "talhado",
+            traducoes: ["hewn", "hewed"],
+            exemplos: ["Ele talhou a madeira."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi talhado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hewn / hewed",
+            traducoes: ["talhado"],
+            exemplos: ["He has hewn the wood."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been hewn.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "escondido",
+            traducoes: ["hidden"],
+            exemplos: ["Ela escondeu o presente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi escondido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hidden",
+            traducoes: ["escondido"],
+            exemplos: ["She has hidden the gift."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been hidden.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "batido",
+            traducoes: ["hit"],
+            exemplos: ["Ele bateu na bola."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi batido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hit",
+            traducoes: ["batido"],
+            exemplos: ["He has hit the ball."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been hit.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "segurado",
+            traducoes: ["held"],
+            exemplos: ["Ela segurou o bebê nos braços."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi segurado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "held",
+            traducoes: ["segurado"],
+            exemplos: ["She has held the baby in her arms."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been held.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ferido",
+            traducoes: ["hurt"],
+            exemplos: ["Ele se feriu na corrida."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi ferido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "hurt",
+            traducoes: ["ferido"],
+            exemplos: ["He has hurt himself in the race."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been hurt.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cruzado",
+            traducoes: ["inbred"],
+            exemplos: ["Os cães foram cruzados para manter a linhagem."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi cruzado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "inbred",
+            traducoes: ["cruzado"],
+            exemplos: ["The dogs have been inbred to maintain the lineage."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been inbred.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "inserido",
+            traducoes: ["inlaid"],
+            exemplos: ["Ela inseriu pedras preciosas no anel."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi inserido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "inlaid",
+            traducoes: ["inserido"],
+            exemplos: ["She has inlaid gems into the ring."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been inlaid.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "inserido",
+            traducoes: ["input", "inputted"],
+            exemplos: ["Ele inseriu os dados no sistema."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi inserido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "input / inputted",
+            traducoes: ["inserido"],
+            exemplos: ["He has input the data into the system."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been inputted.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "inserido",
+            traducoes: ["inset"],
+            exemplos: ["Ela inseriu um gráfico no relatório."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi inserido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "inset",
+            traducoes: ["inserido"],
+            exemplos: ["She has inset a graph into the report."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been inset.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cruzado",
+            traducoes: ["interbred"],
+            exemplos: ["Eles cruzaram espécies diferentes de peixes."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi cruzado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "interbred",
+            traducoes: ["cruzado"],
+            exemplos: ["They have interbred different species of fish."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been interbred.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cortado",
+            traducoes: ["intercut"],
+            exemplos: ["Ele cortou cenas do filme."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi cortado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "intercut",
+            traducoes: ["cortado"],
+            exemplos: ["He has intercut scenes from the movie."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been intercut.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "colocado",
+            traducoes: ["interlaid"],
+            exemplos: ["Ela colocou os documentos em ordem."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi colocado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "interlaid",
+            traducoes: ["colocado"],
+            exemplos: ["She has interlaid the documents in order."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been interlaid.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "entrelaçado",
+            traducoes: ["interwoven", "interweaved"],
+            exemplos: ["Eles entrelaçaram os fios."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi entrelaçado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "interwoven / interweaved",
+            traducoes: ["entrelaçado"],
+            exemplos: ["They have interwoven the threads."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been interwoven.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "enrolado",
+            traducoes: ["interwound"],
+            exemplos: ["Ela enrolou os fios."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi enrolado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "interwound",
+            traducoes: ["enrolado"],
+            exemplos: ["She has interwound the threads."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been interwound.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "entrelaçado",
+            traducoes: ["inwoven", "inweaved"],
+            exemplos: ["Eles entrelaçaram os fios."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi entrelaçado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "inwoven / inweaved",
+            traducoes: ["entrelaçado"],
+            exemplos: ["They have inwoven the threads."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been interwoven.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "construído de forma improvisada",
+            traducoes: ["jerry-built"],
+            exemplos: ["A casa foi construída de forma improvisada."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi construído de forma improvisada.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "jerry-built",
+            traducoes: ["construído de forma improvisada"],
+            exemplos: ["The house was jerry-built."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been built in a makeshift or shoddy manner.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mantido",
+            traducoes: ["kept"],
+            exemplos: ["Ela manteve o segredo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mantido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "kept",
+            traducoes: ["mantido"],
+            exemplos: ["She has kept the secret."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been kept.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "ajoelhado",
+            traducoes: ["knelt", "kneeled"],
+            exemplos: ["Ele se ajoelhou para rezar."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi ajoelhado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "knelt / kneeled",
+            traducoes: ["ajoelhado"],
+            exemplos: ["He has knelt to pray."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been knelt.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "tricotado",
+            traducoes: ["knitted", "knit"],
+            exemplos: ["Ela tricotou um suéter."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi tricotado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "knitted / knit",
+            traducoes: ["tricotado"],
+            exemplos: ["She has knitted a sweater."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been knitted.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "conhecido",
+            traducoes: ["known"],
+            exemplos: ["Ele é conhecido por sua inteligência."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que é conhecido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "known",
+            traducoes: ["conhecido"],
+            exemplos: ["He is known for his intelligence."],
+            classificacao: "verb",
+            descricao: "Used to describe something that is known.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "carregado",
+            traducoes: ["laden", "laded"],
+            exemplos: ["O navio estava carregado de mercadorias."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi carregado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "laden / laded",
+            traducoes: ["carregado"],
+            exemplos: ["The ship was laden with goods."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been loaded.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "deslizado",
+            traducoes: ["landslid"],
+            exemplos: ["A terra deslizou após a chuva."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que deslizou.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "landslid",
+            traducoes: ["deslizado"],
+            exemplos: ["The land has landslid after the rain."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has slid.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "colocado",
+            traducoes: ["laid"],
+            exemplos: ["Ela colocou a mesa para o jantar."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi colocado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "laid",
+            traducoes: ["colocado"],
+            exemplos: ["She has laid the table for dinner."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been laid.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "conduzido",
+            traducoes: ["led"],
+            exemplos: ["Ele conduziu a equipe à vitória."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi conduzido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "led",
+            traducoes: ["conduzido"],
+            exemplos: ["He has led the team to victory."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been led.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "inclinado",
+            traducoes: ["leaned", "leant"],
+            exemplos: ["Ela se inclinou para frente."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi inclinado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "leaned / leant",
+            traducoes: ["inclinado"],
+            exemplos: ["She has leaned forward."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been leaned.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "saltado",
+            traducoes: ["leaped", "leapt"],
+            exemplos: ["Ele saltou sobre a cerca."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi saltado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "leaped / leapt",
+            traducoes: ["saltado"],
+            exemplos: ["He has leaped over the fence."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been leaped.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "aprendido",
+            traducoes: ["learned", "learnt"],
+            exemplos: ["Ela aprendeu uma nova habilidade."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi aprendido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "learned / learnt",
+            traducoes: ["aprendido"],
+            exemplos: ["She has learned a new skill."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been learned.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "partido",
+            traducoes: ["left"],
+            exemplos: ["Eles partiram para a viagem."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi partido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "left",
+            traducoes: ["partido"],
+            exemplos: ["They have left for the trip."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been left.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "emprestado",
+            traducoes: ["lent"],
+            exemplos: ["Ela emprestou dinheiro ao amigo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi emprestado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lent",
+            traducoes: ["emprestado"],
+            exemplos: ["She has lent money to her friend."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been lent.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "permitido",
+            traducoes: ["let"],
+            exemplos: ["Ela permitiu que ele entrasse."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi permitido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "let",
+            traducoes: ["permitido"],
+            exemplos: ["She has let him in."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been let.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "deitado",
+            traducoes: ["lain"],
+            exemplos: ["Ela deitou na cama."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi deitado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lain",
+            traducoes: ["deitado"],
+            exemplos: ["She has lain on the bed."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been lain.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mentido",
+            traducoes: ["lied"],
+            exemplos: ["Ele mentiu sobre o que aconteceu."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mentido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lied",
+            traducoes: ["mentido"],
+            exemplos: ["He has lied about what happened."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been lied.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "acendido",
+            traducoes: ["lit", "lighted"],
+            exemplos: ["Ela acendeu a vela."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi acendido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lit / lighted",
+            traducoes: ["acendido"],
+            exemplos: ["She has lit the candle."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been lit.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "lido nos lábios",
+            traducoes: ["lip-read"],
+            exemplos: ["Ela leu os lábios dele durante a conversa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi lido nos lábios.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lip-read",
+            traducoes: ["lido nos lábios"],
+            exemplos: ["She has lip-read him during the conversation."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been lip-read.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "perdido",
+            traducoes: ["lost"],
+            exemplos: ["Ele perdeu suas chaves."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi perdido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "lost",
+            traducoes: ["perdido"],
+            exemplos: ["He has lost his keys."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been lost.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "feito",
+            traducoes: ["made"],
+            exemplos: ["Ela fez um bolo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi feito.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "made",
+            traducoes: ["feito"],
+            exemplos: ["She has made a cake."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been made.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "significado",
+            traducoes: ["meant"],
+            exemplos: ["Ela quis dizer algo importante."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi significado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "meant",
+            traducoes: ["significado"],
+            exemplos: ["She has meant something important."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been meant.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "encontrado",
+            traducoes: ["met"],
+            exemplos: ["Ela encontrou o novo colega."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi encontrado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "met",
+            traducoes: ["encontrado"],
+            exemplos: ["She has met the new colleague."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been met.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "tornado impróprio",
+            traducoes: ["misbecome"],
+            exemplos: ["O comportamento dela se tornou impróprio."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi tornado impróprio.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misbecome",
+            traducoes: ["tornado impróprio"],
+            exemplos: ["Her behavior has misbecome."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has become improper.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal escalado",
+            traducoes: ["miscast"],
+            exemplos: ["Ele foi mal escalado para o papel."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal escalado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "miscast",
+            traducoes: ["mal escalado"],
+            exemplos: ["He has been miscast for the role."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been miscast.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal cortado",
+            traducoes: ["miscut"],
+            exemplos: ["Ela mal cortou o tecido."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal cortado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "miscut",
+            traducoes: ["mal cortado"],
+            exemplos: ["She has miscut the fabric."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been miscut.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal negociado",
+            traducoes: ["misdealt"],
+            exemplos: ["Ele mal negociou o acordo."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal negociado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misdealt",
+            traducoes: ["mal negociado"],
+            exemplos: ["He has misdealt the deal."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misdealt.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "malfeito",
+            traducoes: ["misdone"],
+            exemplos: ["Ela malfez a tarefa."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi malfeito.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misdone",
+            traducoes: ["malfeito"],
+            exemplos: ["She has misdone the task."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misdone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal ouvido",
+            traducoes: ["misheard"],
+            exemplos: ["Ele mal ouviu as instruções."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal ouvido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misheard",
+            traducoes: ["mal ouvido"],
+            exemplos: ["He has misheard the instructions."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misheard.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal atingido",
+            traducoes: ["mishit"],
+            exemplos: ["Ele mal atingiu a bola."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal atingido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "mishit",
+            traducoes: ["mal atingido"],
+            exemplos: ["He has mishit the ball."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been mishit.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal colocado",
+            traducoes: ["mislaid"],
+            exemplos: ["Ela mal colocou o livro."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal colocado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "mislaid",
+            traducoes: ["mal colocado"],
+            exemplos: ["She has mislaid the book."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been mislaid.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "enganado",
+            traducoes: ["misled"],
+            exemplos: ["Ele foi enganado pela informação errada."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que foi enganado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misled",
+            traducoes: ["enganado"],
+            exemplos: ["He has been misled by the wrong information."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been misled.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "aprendido erroneamente",
+            traducoes: ["mislearned", "mislearnt"],
+            exemplos: ["Ela aprendeu a lição de forma errada."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi aprendido de forma errada.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "mislearned / mislearnt",
+            traducoes: ["aprendido erroneamente"],
+            exemplos: ["She has mislearned the lesson."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been mislearned.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal lido",
+            traducoes: ["misread"],
+            exemplos: ["Ele leu mal as instruções."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal lido.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misread",
+            traducoes: ["mal lido"],
+            exemplos: ["He has misread the instructions."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misread.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal dito",
+            traducoes: ["missaid"],
+            exemplos: ["Ele disse a palavra de forma errada."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal dito.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "missaid",
+            traducoes: ["mal dito"],
+            exemplos: ["He has missaid the word."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been missaid.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal enviado",
+            traducoes: ["missent"],
+            exemplos: ["O email foi mal enviado."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal enviado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "missent",
+            traducoes: ["mal enviado"],
+            exemplos: ["The email was missent."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been missent.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal ajustado",
+            traducoes: ["misset"],
+            exemplos: ["Ele ajustou mal o relógio."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal ajustado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misset",
+            traducoes: ["mal ajustado"],
+            exemplos: ["He has misset the clock."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misset.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal falado",
+            traducoes: ["misspoken"],
+            exemplos: ["Ela falou mal o nome dele."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal falado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misspoken",
+            traducoes: ["mal falado"],
+            exemplos: ["She has misspoken his name."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misspoken.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal escrito",
+            traducoes: ["misspelled", "misspelt"],
+            exemplos: ["Ele escreveu mal a palavra."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal escrito.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misspelled / misspelt",
+            traducoes: ["mal escrito"],
+            exemplos: ["He has misspelled the word."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misspelled.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal gasto",
+            traducoes: ["misspent"],
+            exemplos: ["Ele gastou mal seu tempo livre."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal gasto.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misspent",
+            traducoes: ["mal gasto"],
+            exemplos: ["He has misspent his free time."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misspent.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal usado",
+            traducoes: ["missworn"],
+            exemplos: ["Ela usou mal o uniforme."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal usado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "missworn",
+            traducoes: ["mal usado"],
+            exemplos: ["She has missworn the uniform."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been missworn.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "enganado",
+            traducoes: ["mistaken"],
+            exemplos: ["Ele estava enganado sobre os fatos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que estava enganado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "mistaken",
+            traducoes: ["enganado"],
+            exemplos: ["He has been mistaken about the facts."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been mistaken.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal ensinado",
+            traducoes: ["mistaught"],
+            exemplos: ["Ela ensinou a matéria de forma errada."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal ensinado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "mistaught",
+            traducoes: ["mal ensinado"],
+            exemplos: ["She has mistaught the subject."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been mistaught.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal contado",
+            traducoes: ["mistold"],
+            exemplos: ["Ele contou a história de forma errada."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal contado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "mistold",
+            traducoes: ["mal contado"],
+            exemplos: ["He has mistold the story."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been mistold.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal pensado",
+            traducoes: ["misthought"],
+            exemplos: ["Ela pensou de forma errada sobre a situação."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal pensado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misthought",
+            traducoes: ["mal pensado"],
+            exemplos: ["She has misthought about the situation."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misthought.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal interpretado",
+            traducoes: ["misunderstood"],
+            exemplos: ["Ele mal interpretou as instruções."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal interpretado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misunderstood",
+            traducoes: ["mal interpretado"],
+            exemplos: ["He has misunderstood the instructions."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misunderstood.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal usado",
+            traducoes: ["misworn"],
+            exemplos: ["Ela usou mal o uniforme."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal usado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "misworn",
+            traducoes: ["mal usado"],
+            exemplos: ["She has misworn the uniform."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been misworn.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal casado",
+            traducoes: ["miswed", "miswedded"],
+            exemplos: ["Ele se casou mal."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal casado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "miswed / miswedded",
+            traducoes: ["mal casado"],
+            exemplos: ["He has miswed."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has been miswed.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "mal escrito",
+            traducoes: ["miswritten"],
+            exemplos: ["Ela escreveu a carta de forma errada."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi mal escrito.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "miswritten",
+            traducoes: ["mal escrito"],
+            exemplos: ["She has miswritten the letter."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been miswritten.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cortado",
+            traducoes: ["mowed", "mown"],
+            exemplos: ["Ele cortou a grama."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi cortado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "mowed / mown",
+            traducoes: ["cortado"],
+            exemplos: ["He has mowed the lawn."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been mowed.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "compensado",
+            traducoes: ["offset"],
+            exemplos: ["Eles compensaram os custos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi compensado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "offset",
+            traducoes: ["compensado"],
+            exemplos: ["They have offset the costs."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been offset.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em oferta",
+            traducoes: ["outbid"],
+            exemplos: ["Ele superou todas as ofertas no leilão."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em oferta.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outbid",
+            traducoes: ["superado em oferta"],
+            exemplos: ["He has outbid everyone at the auction."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outbid others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "cruzado externamente",
+            traducoes: ["outbred"],
+            exemplos: ["Eles cruzaram raças diferentes."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi cruzado externamente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outbred",
+            traducoes: ["cruzado externamente"],
+            exemplos: ["They have outbred different breeds."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been outbred.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado",
+            traducoes: ["outdone"],
+            exemplos: ["Ela superou todas as expectativas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi superado.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outdone",
+            traducoes: ["superado"],
+            exemplos: ["She has outdone all expectations."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been outdone.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "desenhado externamente",
+            traducoes: ["outdrawn"],
+            exemplos: ["Ele desenhou melhor que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi desenhado externamente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outdrawn",
+            traducoes: ["desenhado externamente"],
+            exemplos: ["He has outdrawn everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been outdrawn.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em bebida",
+            traducoes: ["outdrunk"],
+            exemplos: ["Ele bebeu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em beber.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outdrunk",
+            traducoes: ["superado em bebida"],
+            exemplos: ["He has outdrunk everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outdrunk others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em direção",
+            traducoes: ["outdriven"],
+            exemplos: ["Ela dirigiu melhor que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em direção.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outdriven",
+            traducoes: ["superado em direção"],
+            exemplos: ["She has outdriven everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outdriven others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em luta",
+            traducoes: ["outfought"],
+            exemplos: ["Ele lutou melhor que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em luta.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outfought",
+            traducoes: ["superado em luta"],
+            exemplos: ["He has outfought everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outfought others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em voo",
+            traducoes: ["outflown"],
+            exemplos: ["Ele voou melhor que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em voo.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outflown",
+            traducoes: ["superado em voo"],
+            exemplos: ["He has outflown everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outflown others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "crescido além",
+            traducoes: ["outgrown"],
+            exemplos: ["Ela cresceu além de todos os outros."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que cresceu além.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outgrown",
+            traducoes: ["crescido além"],
+            exemplos: ["She has outgrown everyone else."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outgrown others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em colocação",
+            traducoes: ["outlaid"],
+            exemplos: ["Ela superou todos em suas realizações."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em colocação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outlaid",
+            traducoes: ["superado em colocação"],
+            exemplos: ["She has outlaid everyone in her achievements."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outlaid others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em salto",
+            traducoes: ["outleaped", "outleapt"],
+            exemplos: ["Ele superou todos em salto."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em salto.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outleaped / outleapt",
+            traducoes: ["superado em salto"],
+            exemplos: ["He has outleaped everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outleaped others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "produzido externamente",
+            traducoes: ["output", "outputted"],
+            exemplos: ["Eles produziram mais do que o esperado."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever algo que foi produzido externamente.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "output / outputted",
+            traducoes: ["produzido externamente"],
+            exemplos: ["They have outputted more than expected."],
+            classificacao: "verb",
+            descricao: "Used to describe something that has been outputted.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em montaria",
+            traducoes: ["outridden"],
+            exemplos: ["Ela superou todos em montaria."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em montaria.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outridden",
+            traducoes: ["superado em montaria"],
+            exemplos: ["She has outridden everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outridden others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em corrida",
+            traducoes: ["outrun"],
+            exemplos: ["Ele superou todos na corrida."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em corrida.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outrun",
+            traducoes: ["superado em corrida"],
+            exemplos: ["He has outrun everyone in the race."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outrun others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em visão",
+            traducoes: ["outseen"],
+            exemplos: ["Ela viu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em visão.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outseen",
+            traducoes: ["superado em visão"],
+            exemplos: ["She has outseen everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outseen others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em vendas",
+            traducoes: ["outsold"],
+            exemplos: ["Ele vendeu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em vendas.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outsold",
+            traducoes: ["superado em vendas"],
+            exemplos: ["He has outsold everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outsold others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em brilho",
+            traducoes: ["outshined", "outshone"],
+            exemplos: ["Ela brilhou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em brilho.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outshined / outshone",
+            traducoes: ["superado em brilho"],
+            exemplos: ["She has outshined everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outshined others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em tiro",
+            traducoes: ["outshot"],
+            exemplos: ["Ele atirou melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em tiro.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outshot",
+            traducoes: ["superado em tiro"],
+            exemplos: ["He has outshot everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outshot others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em canto",
+            traducoes: ["outsung"],
+            exemplos: ["Ela cantou melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em canto.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outsung",
+            traducoes: ["superado em canto"],
+            exemplos: ["She has outsung everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outsung others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em sentar",
+            traducoes: ["outsat"],
+            exemplos: ["Ele sentou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em sentar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outsat",
+            traducoes: ["superado em sentar"],
+            exemplos: ["He has outsat everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outsat others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em sono",
+            traducoes: ["outslept"],
+            exemplos: ["Ela dormiu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em sono.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outslept",
+            traducoes: ["superado em sono"],
+            exemplos: ["She has outslept everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outslept others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em olfato",
+            traducoes: ["outsmelled", "outsmelt"],
+            exemplos: ["Ele cheirou melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em olfato.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outsmelled / outsmelt",
+            traducoes: ["superado em olfato"],
+            exemplos: ["He has outsmelled everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outsmelled others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em velocidade",
+            traducoes: ["outsped"],
+            exemplos: ["Ela foi mais rápida do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em velocidade.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outsped",
+            traducoes: ["superado em velocidade"],
+            exemplos: ["She has outsped everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outsped others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em gastos",
+            traducoes: ["outspent"],
+            exemplos: ["Ele gastou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em gastos.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outspent",
+            traducoes: ["superado em gastos"],
+            exemplos: ["He has outspent everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outspent others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em girar",
+            traducoes: ["outspun"],
+            exemplos: ["Ela girou mais rápido do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em girar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outspun",
+            traducoes: ["superado em girar"],
+            exemplos: ["She has outspun everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outspun others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em salto",
+            traducoes: ["outsprung"],
+            exemplos: ["Ele saltou mais alto do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em salto.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outsprung",
+            traducoes: ["superado em salto"],
+            exemplos: ["He has outsprung everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outsprung others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em resistência",
+            traducoes: ["outstood"],
+            exemplos: ["Ela resistiu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em resistência.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outstood",
+            traducoes: ["superado em resistência"],
+            exemplos: ["She has outstood everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outstood others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em uso",
+            traducoes: ["outworn"],
+            exemplos: ["Ele usou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em uso.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outworn",
+            traducoes: ["superado em uso"],
+            exemplos: ["He has outworn everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outworn others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em natação",
+            traducoes: ["outswum"],
+            exemplos: ["Ela nadou melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em natação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outswum",
+            traducoes: ["superado em natação"],
+            exemplos: ["She has outswum everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outswum others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em contar",
+            traducoes: ["outtold"],
+            exemplos: ["Ele contou melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em contar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outtold",
+            traducoes: ["superado em contar"],
+            exemplos: ["He has outtold everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outtold others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em pensamento",
+            traducoes: ["outthought"],
+            exemplos: ["Ela pensou melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em pensamento.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outthought",
+            traducoes: ["superado em pensamento"],
+            exemplos: ["She has outthought everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outthought others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em lançar",
+            traducoes: ["outthrown"],
+            exemplos: ["Ele lançou melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em lançar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outthrown",
+            traducoes: ["superado em lançar"],
+            exemplos: ["He has outthrown everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outthrown others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em uso",
+            traducoes: ["outworn"],
+            exemplos: ["Ela usou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em uso.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outworn",
+            traducoes: ["superado em uso"],
+            exemplos: ["She has outworn everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outworn others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em desenrolar",
+            traducoes: ["outwound"],
+            exemplos: ["Ela desenrolou melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em desenrolar.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outwound",
+            traducoes: ["superado em desenrolar"],
+            exemplos: ["She has outwound everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outwound others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em escrita",
+            traducoes: ["outwritten"],
+            exemplos: ["Ele escreveu melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em escrita.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "outwritten",
+            traducoes: ["superado em escrita"],
+            exemplos: ["He has outwritten everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has outwritten others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em peso",
+            traducoes: ["overborne", "overborn"],
+            exemplos: ["Ela suportou mais peso do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em peso.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overborne / overborn",
+            traducoes: ["superado em peso"],
+            exemplos: ["She has overborne more weight than everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overborne others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em oferta",
+            traducoes: ["overbid"],
+            exemplos: ["Ele ofereceu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em oferta.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overbid",
+            traducoes: ["superado em oferta"],
+            exemplos: ["He has overbid everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overbid others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em criação",
+            traducoes: ["overbred"],
+            exemplos: ["Eles criaram mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em criação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overbred",
+            traducoes: ["superado em criação"],
+            exemplos: ["They have overbred more than everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overbred others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em construção",
+            traducoes: ["overbuilt"],
+            exemplos: ["Ele construiu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em construção.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overbuilt",
+            traducoes: ["superado em construção"],
+            exemplos: ["He has overbuilt everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overbuilt others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em compra",
+            traducoes: ["overbought"],
+            exemplos: ["Ela comprou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em compra.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overbought",
+            traducoes: ["superado em compra"],
+            exemplos: ["She has overbought everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overbought others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em previsão",
+            traducoes: ["overcast"],
+            exemplos: ["Ele previu melhor do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em previsão.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overcast",
+            traducoes: ["superado em previsão"],
+            exemplos: ["He has overcast everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overcast others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em superação",
+            traducoes: ["overcome"],
+            exemplos: ["Ela superou todos os obstáculos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em superação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overcome",
+            traducoes: ["superado em superação"],
+            exemplos: ["She has overcome all obstacles."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overcome others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em corte",
+            traducoes: ["overcut"],
+            exemplos: ["Ele cortou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em corte.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overcut",
+            traducoes: ["superado em corte"],
+            exemplos: ["He has overcut everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overcut others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em desempenho",
+            traducoes: ["overdone"],
+            exemplos: ["Ela superou todas as expectativas."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em desempenho.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overdone",
+            traducoes: ["superado em desempenho"],
+            exemplos: ["She has overdone all expectations."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overdone others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em retirada",
+            traducoes: ["overdrawn"],
+            exemplos: ["Ele retirou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em retirada.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overdrawn",
+            traducoes: ["superado em retirada"],
+            exemplos: ["He has overdrawn everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overdrawn others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em bebida",
+            traducoes: ["overdrunk"],
+            exemplos: ["Ela bebeu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em bebida.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overdrunk",
+            traducoes: ["superado em bebida"],
+            exemplos: ["She has overdrunk everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overdrunk others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em alimentação",
+            traducoes: ["overeaten"],
+            exemplos: ["Ele comeu mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em alimentação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overeaten",
+            traducoes: ["superado em alimentação"],
+            exemplos: ["He has overeaten everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overeaten others.",
+            audio: ""
+        }
+    },
+    {
+        portugues: {
+            palavra: "superado em alimentação",
+            traducoes: ["overfed"],
+            exemplos: ["Ela alimentou mais do que todos."],
+            classificacao: "verbo",
+            descricao: "Usado para descrever alguém que superou em alimentação.",
+            audio: ""
+        },
+        ingles: {
+            palavra: "overfed",
+            traducoes: ["superado em alimentação"],
+            exemplos: ["She has overfed everyone."],
+            classificacao: "verb",
+            descricao: "Used to describe someone who has overfed others.",
+            audio: ""
+        }
+    }
+    
+];
