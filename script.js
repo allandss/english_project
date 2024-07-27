@@ -8055,6 +8055,8 @@ function skipAnswer() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const repeatPronunciationBtn = document.getElementById('repeat-pronunciation-btn');
+    makeElementDraggable(repeatPronunciationBtn);
     initializeIndexes();
     displayRandomWord();
     updateStats();
@@ -8147,6 +8149,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
 function toggleSettingsDropdown() {
     const dropdown = document.getElementById('settings-dropdown');
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
@@ -8228,4 +8231,34 @@ const breadcrumbMap = {
 function updateBreadcrumb(listName) {
     const breadcrumbContainer = document.getElementById('breadcrumb');
     breadcrumbContainer.textContent = breadcrumbMap[listName] || '';
+}
+
+function makeElementDraggable(element) {
+    let isDragging = false;
+    let initialX, initialY, offsetX, offsetY;
+
+    element.addEventListener('mousedown', function(e) {
+        isDragging = true;
+        initialX = e.clientX;
+        initialY = e.clientY;
+        offsetX = initialX - element.getBoundingClientRect().left;
+        offsetY = initialY - element.getBoundingClientRect().top;
+        element.classList.add('draggable');
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        if (isDragging) {
+            const moveX = e.clientX - offsetX;
+            const moveY = e.clientY - offsetY;
+            element.style.left = `${moveX}px`;
+            element.style.top = `${moveY}px`;
+        }
+    });
+
+    document.addEventListener('mouseup', function() {
+        if (isDragging) {
+            isDragging = false;
+            element.classList.remove('draggable');
+        }
+    });
 }
