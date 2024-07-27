@@ -7701,10 +7701,12 @@ function checkAnswer() {
     } else {
         playSound(failureSound); // Usar a função playSound
         wrongAnswers++;
-        incorrectWords.push({
+        const incorrectWord = {
             wordData: currentWords[currentIndex].ingles, // Sempre armazenando a palavra em inglês
             userAnswer: userAnswer
-        });
+        };
+        saveIncorrectWordsToLocalStorage(incorrectWord); // Salvar no localStorage
+        incorrectWords.push(incorrectWord);
         addIncorrectWordToTable(currentWords[currentIndex].ingles, userAnswer);
     }
 
@@ -7722,6 +7724,49 @@ function checkAnswer() {
         toggleExamplesVisibility(false);
     }
 }
+
+function loadIncorrectWords() {
+    let storedIncorrectWords = JSON.parse(localStorage.getItem('incorrectWords')) || [];
+    if (storedIncorrectWords.length === 0) {
+        alert("Nenhuma palavra incorreta salva.");
+        return;
+    }
+
+    words = storedIncorrectWords.map(item => ({
+        portugues: {
+            palavra: item.wordData.traducoes.join(', '),
+            traducoes: [item.wordData.palavra],
+            exemplos: item.wordData.exemplos,
+            classificacao: item.wordData.classificacao,
+            descricao: item.wordData.descricao,
+            audio: item.wordData.audio
+        },
+        ingles: item.wordData
+    }));
+
+    currentWords = words;
+    answeredWords = [];
+    incorrectWords = [];
+    correctAnswers = 0;
+    wrongAnswers = 0;
+    initializeIndexes();
+    displayRandomWord();
+    updateStats();
+    updateIncorrectWordsTable();
+}
+
+function saveIncorrectWordsToLocalStorage(incorrectWord) {
+    let storedIncorrectWords = JSON.parse(localStorage.getItem('incorrectWords')) || [];
+
+    // Verificar se a palavra já existe na lista
+    const wordExists = storedIncorrectWords.some(word => word.wordData.palavra === incorrectWord.wordData.palavra);
+
+    if (!wordExists) {
+        storedIncorrectWords.push(incorrectWord);
+        localStorage.setItem('incorrectWords', JSON.stringify(storedIncorrectWords));
+    }
+}
+
 
 async function pronounceWord(word, audioPath) {
     try {
@@ -7936,21 +7981,28 @@ function updateIncorrectWordsTable() {
 
 function addIncorrectWordToTable(wordData, userAnswer) {
     const tableBody = document.getElementById('incorrect-words-table').getElementsByTagName('tbody')[0];
-    const dictionaryLink = `https://www.linguee.com.br/ingles-portugues/search?source=auto&query=${wordData.palavra}`;
-    const row = tableBody.insertRow(0); // Adiciona a linha no topo
-    row.innerHTML = `
-        <td><h5 class="incorrect-word"><p>${wordData.palavra}</p> <span onclick="pronounceWord('${wordData.palavra}', '${wordData.audio}')"><img src="./assets/brand_awareness.svg"></span> <a href="${dictionaryLink}" target="_blank"><img src="./assets/menu_book.svg" /></a> </h5></td>
-        <td>${wordData.traducoes.join(', ')}</td>
-        <td class="exemplos">${wordData.exemplos.join('<br>')}</td>
-        <td>${userAnswer}</td>
-    `;
 
-    // Mostrar a seção de palavras incorretas apenas se a opção estiver habilitada
-    const incorrectWordsSection = document.getElementById('incorrect-words-section');
-    if (document.getElementById('toggle-incorrect-answers-btn').textContent === 'Ocultar respostas incorretas') {
-        incorrectWordsSection.style.display = 'block';
+    // Verificar se a palavra já está na tabela
+    const wordExistsInTable = Array.from(tableBody.rows).some(row => row.cells[0].innerText.trim().toLowerCase() === wordData.palavra.toLowerCase());
+
+    if (!wordExistsInTable) {
+        const dictionaryLink = `https://www.linguee.com.br/ingles-portugues/search?source=auto&query=${wordData.palavra}`;
+        const row = tableBody.insertRow(0); // Adiciona a linha no topo
+        row.innerHTML = `
+            <td><h5 class="incorrect-word"><p>${wordData.palavra}</p> <span onclick="pronounceWord('${wordData.palavra}', '${wordData.audio}')"><img src="./assets/brand_awareness.svg"></span> <a href="${dictionaryLink}" target="_blank"><img src="./assets/menu_book.svg" /></a> </h5></td>
+            <td>${wordData.traducoes.join(', ')}</td>
+            <td class="exemplos">${wordData.exemplos.join('<br>')}</td>
+            <td>${userAnswer}</td>
+        `;
+
+        // Mostrar a seção de palavras incorretas apenas se a opção estiver habilitada
+        const incorrectWordsSection = document.getElementById('incorrect-words-section');
+        if (document.getElementById('toggle-incorrect-answers-btn').textContent === 'Ocultar respostas incorretas') {
+            incorrectWordsSection.style.display = 'block';
+        }
     }
 }
+
 
 function clearIncorrectWords() {
     incorrectWords = [];
@@ -8006,6 +8058,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (darkModePreference) {
         document.body.classList.add('dark-mode');
         document.getElementById('toggle-dark-mode-btn').textContent = '☀️';
+    }
+
+    const storedIncorrectWords = JSON.parse(localStorage.getItem('incorrectWords')) || [];
+    if (storedIncorrectWords.length > 0) {
+        incorrectWords = storedIncorrectWords;
+        updateIncorrectWordsTable();
     }
 
 });
@@ -8129,4 +8187,12 @@ function toggleDarkMode() {
     toggleDarkModeBtn.textContent = isDarkModeEnabled ? '☀️' : '🌙';
 
     localStorage.setItem('darkMode', isDarkModeEnabled);
+}
+
+function showIncorrectWordsTable() {
+    const incorrectWordsSection = document.getElementById('incorrect-words-section');
+    const toggleButton = document.getElementById('toggle-incorrect-answers-btn');
+
+    incorrectWordsSection.style.display = 'block';
+    toggleButton.textContent = 'Ocultar respostas incorretas';
 }
