@@ -7694,7 +7694,15 @@ function closeResult() {
 }
 
 function checkAnswer() {
-    const userAnswer = document.getElementById('answer-input').value.trim().toLowerCase();
+    const answerInput = document.getElementById('answer-input');
+    const userAnswer = answerInput.value.trim().toLowerCase();
+
+    if (userAnswer === '') {
+        alert('Por favor, insira uma resposta.');
+        answerInput.focus();
+        return;
+    }
+
     const wordData = currentWords[currentIndex][selectedLanguage];
     const correctTranslations = wordData.traducoes.map(translation => translation.toLowerCase());
     const isCorrect = correctTranslations.includes(userAnswer);
@@ -7722,8 +7730,8 @@ function checkAnswer() {
 
     displayRandomWord();
     updateStats();
-    document.getElementById('answer-input').value = '';
-    document.getElementById('answer-input').focus();
+    answerInput.value = '';
+    answerInput.focus();
 
     if (areExamplesVisible) {
         toggleExamplesVisibility(false);
@@ -7818,8 +7826,11 @@ async function pronounceWordWithAPI(word) {
 
 function repeatPronunciation() {
     const wordData = currentWords[currentIndex][selectedLanguage];
-    pronounceWord(wordData.palavra, wordData.audio);
+    pronounceWord(wordData.palavra, wordData.audio).then(() => {
+        document.getElementById('answer-input').focus();
+    });
 }
+
 
 function listenIncorrectWordPronunciation() {
     const englishWordData = incorrectWords[incorrectWords.length - 1].wordData; // Palavra em inglês
