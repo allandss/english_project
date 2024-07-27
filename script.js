@@ -7752,7 +7752,8 @@ function loadIncorrectWords() {
     initializeIndexes();
     displayRandomWord();
     updateStats();
-    updateIncorrectWordsTable();
+    updateIncorrectWordsTable(); // Atualiza a tabela ao carregar nova lista
+    updateBreadcrumb('incorrect'); // Atualizar breadcrumb
 }
 
 function saveIncorrectWordsToLocalStorage(incorrectWord) {
@@ -7923,11 +7924,8 @@ function toggleExamplesVisibility(forceState = null) {
 }
 
 
-function loadWords(listName) {
-    //console.log(verbsPresentSimple.length);
-    //console.log(verbsPastSimple.length);
-    //console.log(verbsPastParticiple.length);
 
+function loadWords(listName) {
     switch (listName) {
         case 'lista1':
             words = verbsPresentSimple;
@@ -7946,6 +7944,7 @@ function loadWords(listName) {
             break;
         case 'lista6':
             words = familyMembers;
+            break;
     }
     currentWords = words;
     answeredWords = [];
@@ -7956,6 +7955,7 @@ function loadWords(listName) {
     displayRandomWord();
     updateStats();
     updateIncorrectWordsTable(); // Atualiza a tabela ao carregar nova lista
+    updateBreadcrumb(listName); // Atualizar breadcrumb
 }
 
 function updateIncorrectWordsTable() {
@@ -8066,6 +8066,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateIncorrectWordsTable();
     }
 
+    loadWords('lista1');
 });
 
 
@@ -8195,4 +8196,19 @@ function showIncorrectWordsTable() {
 
     incorrectWordsSection.style.display = 'block';
     toggleButton.textContent = 'Ocultar respostas incorretas';
+}
+
+const breadcrumbMap = {
+    lista1: "Verbos mais comuns > Presente (Infinitivo)",
+    lista2: "Verbos mais comuns > Passado simples",
+    lista3: "Verbos mais comuns > Particípio",
+    lista4: "Adjetivos mais comuns",
+    lista5: "Posições",
+    lista6: "Familiares",
+    incorrect: "Palavras Incorretas"
+};
+
+function updateBreadcrumb(listName) {
+    const breadcrumbContainer = document.getElementById('breadcrumb');
+    breadcrumbContainer.textContent = breadcrumbMap[listName] || '';
 }

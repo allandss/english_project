@@ -337,6 +337,7 @@ button {
 .topo{
   display: flex;
   justify-content: space-between;
+  padding-top: 15px;
 }
 
 .content-answer{
@@ -552,6 +553,16 @@ input {
   border-radius: 15px;
 }
 
+#breadcrumb-container {
+  padding: 10px 20px 0px 20px;
+  font-size: 12px;
+  float: left;
+}
+
+#breadcrumb-container span {
+  color: #555;
+}
+
 /* Modo escuro */
 body.dark-mode {
   background-color: #121212;
@@ -639,4 +650,8 @@ body.dark-mode #word-container{
 body.dark-mode #toggle-dark-mode-btn{
   border-color: transparent;
   background: #165f91;
+}
+
+body.dark-mode #breadcrumb-container span {
+  color: #ccc;
 }
