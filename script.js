@@ -8262,3 +8262,9 @@ function makeElementDraggable(element) {
         }
     });
 }
+
+function resetPronunciationButtonPosition() {
+    const repeatPronunciationBtn = document.getElementById('repeat-pronunciation-btn');
+    repeatPronunciationBtn.style.top = '18px';
+    repeatPronunciationBtn.style.left = 'auto';
+}
