@@ -59,7 +59,7 @@ body {
 
 .header{
   background: #f5f7fc;
-  height: 57px;
+  height: 53px;
   display: flex;
   justify-content: space-between;
 }
@@ -487,9 +487,10 @@ input {
 }
 
 .settings-dropdown-link{
-  margin-top: 15px;
+  margin-top: 0;
   display: block;
   line-height: 25px;
+  padding: 18px 10px;
 }
 
 .settings-dropdown-link img{
@@ -537,4 +538,105 @@ input {
   font-size: 28px;
   font-style: italic;
   color: #ddd;
+}
+
+#toggle-dark-mode-btn{
+  background: transparent;
+  border: 1px solid #ddd;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  padding-bottom: 2px;
+  margin-top: 14px;
+  border-radius: 15px;
+}
+
+/* Modo escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .sidebar {
+  background-color: #333333;
+}
+
+body.dark-mode .sidebar .sidebar-menu .menu-item,
+body.dark-mode .sidebar .sidebar-menu .dropdown-btn {
+  border-bottom: 1px solid #444444;
+}
+
+body.dark-mode .sidebar .sidebar-menu .menu-item:hover,
+body.dark-mode .sidebar .sidebar-menu .dropdown-btn:hover {
+  background-color: #555555;
+}
+
+body.dark-mode .sidebar .sidebar-menu .dropdown-menu {
+  background-color: #444444;
+}
+
+body.dark-mode .main-content {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .header {
+  background: #333333;
+}
+
+body.dark-mode .header .open-btn img {
+  filter: invert(1);
+}
+
+body.dark-mode #result.correct {
+  background-color: #388e3c;
+}
+
+body.dark-mode #result.incorrect {
+  background-color: #d32f2f;
+}
+
+body.dark-mode .settings-dropdown {
+  background-color: #333333;
+}
+
+body.dark-mode .settings-dropdown a {
+  color: #fff;
+}
+
+body.dark-mode .settings-dropdown a:hover {
+  background-color: #444444;
+}
+
+body.dark-mode .progress-container {
+  background-color: #333333;
+}
+
+body.dark-mode .progress-bar {
+  background-color: #0a4997;
+}
+
+body.dark-mode #word-container.hidden-word {
+  color: #555555;
+}
+
+body.dark-mode .content-answer input{
+  background: #121212;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark-mode #repeat-pronunciation-btn{
+  background: #333;
+  width: 33px;
+  height: 33px;
+}
+
+body.dark-mode #word-container{
+  color: #fff;
+}
+
+body.dark-mode #toggle-dark-mode-btn{
+  border-color: transparent;
+  background: #165f91;
 }

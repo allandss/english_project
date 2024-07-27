@@ -32,14 +32,18 @@
             <li class="dropdown">
                 <a href="#" class="menu-item" onclick="loadWords('lista5')">Posições <span class="dropdown-arrow"></a>
             </li>
+            <li class="dropdown">
+                <a href="#" class="menu-item" onclick="loadWords('lista6')">Familiares <span class="dropdown-arrow"></a>
+            </li>
         </ul>
     </div>
     <div class="main-content">
         <div class="header">
             <button class="open-btn" id="open-btn"><img src="./assets/menu.svg" alt=""></button>
             <div class="right">
+                <button id="toggle-dark-mode-btn" onclick="toggleDarkMode()">🌙</button>
                 <div class="settings">
-                    <span class="settings-dropdown-link" onclick="toggleSettingsDropdown()">Configurações <img src="./assets/arrow_drop_down.svg" /></span>
+                    <span class="settings-dropdown-link" id="settings-dropdown-toggle">Configurações <img src="./assets/arrow_drop_down.svg" /></span>
                     <div class="settings-dropdown" id="settings-dropdown">
                         <a href="#" id="toggle-language-btn" onclick="toggleLanguage()"><span class="language"><img src="./assets/estados-unidos.png" class="flag"> Inglês <img src="./assets/swap_horiz.svg" class="icon"> Português <img src="./assets/brasil.png" class="flag"></span></a>
                         <a href="#" id="toggle-word-visibility-btn" onclick="toggleWordVisibility()">Ocultar palavra</a>
@@ -51,8 +55,7 @@
         </div>
         <div class="progress-container">
             <div class="progress-bar" id="progress-bar"></div>
-        </div>                      
-        
+        </div>
         <div class="content">
             <div id="stats"></div>
             <div class="topo">
@@ -81,7 +84,6 @@
                 <span class="close-btn" onclick="closeResult()">×</span>
                 <div id="result-message"></div>
             </div>
-            
             <div id="incorrect-words-section" style="display: none;">
                 <h3>Respostas incorretas <button onclick="clearIncorrectWords()" class="clear-incorrect-word">Limpar</button></h3>
                 <table id="incorrect-words-table">

@@ -6706,6 +6706,621 @@ const adjectivesList = [
     }
 ];
 
+const familyMembers = [
+    {
+        ingles: {
+            palavra: "parents",
+            traducoes: ["pais"],
+            exemplos: ["My parents are coming to visit."],
+            classificacao: "noun",
+            descricao: "Refers to a person's mother and father.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "pais",
+            traducoes: ["parents"],
+            exemplos: ["Meus pais estão vindo visitar."],
+            classificacao: "substantivo",
+            descricao: "Refere-se à mãe e ao pai de uma pessoa.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "mother",
+            traducoes: ["mãe"],
+            exemplos: ["My mother is a teacher."],
+            classificacao: "noun",
+            descricao: "Refers to a female parent.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "mãe",
+            traducoes: ["mother"],
+            exemplos: ["Minha mãe é professora."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um dos pais, do sexo feminino.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "father",
+            traducoes: ["pai"],
+            exemplos: ["My father works in a bank."],
+            classificacao: "noun",
+            descricao: "Refers to a male parent.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "pai",
+            traducoes: ["father"],
+            exemplos: ["Meu pai trabalha em um banco."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um dos pais, do sexo masculino.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "stepmother",
+            traducoes: ["madrasta"],
+            exemplos: ["My stepmother is very kind."],
+            classificacao: "noun",
+            descricao: "Refers to the wife of one's parent after the death or divorce of the other parent.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "madrasta",
+            traducoes: ["stepmother"],
+            exemplos: ["Minha madrasta é muito gentil."],
+            classificacao: "substantivo",
+            descricao: "Refere-se à esposa de um dos pais após a morte ou divórcio do outro pai.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "stepfather",
+            traducoes: ["padrasto"],
+            exemplos: ["My stepfather is a great cook."],
+            classificacao: "noun",
+            descricao: "Refers to the husband of one's parent after the death or divorce of the other parent.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "padrasto",
+            traducoes: ["stepfather"],
+            exemplos: ["Meu padrasto é um ótimo cozinheiro."],
+            classificacao: "substantivo",
+            descricao: "Refere-se ao marido de um dos pais após a morte ou divórcio do outro pai.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "son",
+            traducoes: ["filho"],
+            exemplos: ["My son loves playing soccer."],
+            classificacao: "noun",
+            descricao: "Refers to a person's male child.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "filho",
+            traducoes: ["son"],
+            exemplos: ["Meu filho adora jogar futebol."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um filho do sexo masculino.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "daughter",
+            traducoes: ["filha"],
+            exemplos: ["My daughter is learning to play the piano."],
+            classificacao: "noun",
+            descricao: "Refers to a person's female child.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "filha",
+            traducoes: ["daughter"],
+            exemplos: ["Minha filha está aprendendo a tocar piano."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a uma filha do sexo feminino.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "brother",
+            traducoes: ["irmão"],
+            exemplos: ["My brother is two years younger than me."],
+            classificacao: "noun",
+            descricao: "Refers to a male sibling.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "irmão",
+            traducoes: ["brother"],
+            exemplos: ["Meu irmão é dois anos mais novo que eu."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um irmão do sexo masculino.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "sister",
+            traducoes: ["irmã"],
+            exemplos: ["My sister is very talented."],
+            classificacao: "noun",
+            descricao: "Refers to a female sibling.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "irmã",
+            traducoes: ["sister"],
+            exemplos: ["Minha irmã é muito talentosa."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a uma irmã do sexo feminino.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "sibling",
+            traducoes: ["irmão", "irmã"],
+            exemplos: ["I have three siblings: two brothers and one sister."],
+            classificacao: "noun",
+            descricao: "Refers to a brother or sister.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "irmão, irmã",
+            traducoes: ["sibling"],
+            exemplos: ["Eu tenho três irmãos: dois irmãos e uma irmã."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um irmão ou irmã.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "twins",
+            traducoes: ["gêmeos"],
+            exemplos: ["They are twins and look exactly alike."],
+            classificacao: "noun",
+            descricao: "Refers to two offspring born at the same birth.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "gêmeos",
+            traducoes: ["twins"],
+            exemplos: ["Eles são gêmeos e são exatamente iguais."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a dois filhos nascidos no mesmo parto.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "half-brother",
+            traducoes: ["meio-irmão"],
+            exemplos: ["My half-brother is visiting us this weekend."],
+            classificacao: "noun",
+            descricao: "Refers to a brother with whom one has one parent in common.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "meio-irmão",
+            traducoes: ["half-brother"],
+            exemplos: ["Meu meio-irmão está nos visitando neste fim de semana."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um irmão com quem se tem um dos pais em comum.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "half-sister",
+            traducoes: ["meia-irmã"],
+            exemplos: ["My half-sister lives in another city."],
+            classificacao: "noun",
+            descricao: "Refers to a sister with whom one has one parent in common.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "meia-irmã",
+            traducoes: ["half-sister"],
+            exemplos: ["Minha meia-irmã mora em outra cidade."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a uma irmã com quem se tem um dos pais em comum.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "stepdaughter",
+            traducoes: ["enteada"],
+            exemplos: ["My stepdaughter is very creative."],
+            classificacao: "noun",
+            descricao: "Refers to the daughter of one's spouse from a previous marriage or relationship.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "enteada",
+            traducoes: ["stepdaughter"],
+            exemplos: ["Minha enteada é muito criativa."],
+            classificacao: "substantivo",
+            descricao: "Refere-se à filha do cônjuge de um relacionamento ou casamento anterior.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "stepson",
+            traducoes: ["enteado"],
+            exemplos: ["My stepson enjoys playing video games."],
+            classificacao: "noun",
+            descricao: "Refers to the son of one's spouse from a previous marriage or relationship.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "enteado",
+            traducoes: ["stepson"],
+            exemplos: ["Meu enteado gosta de jogar videogames."],
+            classificacao: "substantivo",
+            descricao: "Refere-se ao filho do cônjuge de um relacionamento ou casamento anterior.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "wife",
+            traducoes: ["esposa"],
+            exemplos: ["My wife is an excellent cook."],
+            classificacao: "noun",
+            descricao: "Refers to a married woman considered in relation to her spouse.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "esposa",
+            traducoes: ["wife"],
+            exemplos: ["Minha esposa é uma excelente cozinheira."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a uma mulher casada em relação ao seu cônjuge.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "husband",
+            traducoes: ["marido"],
+            exemplos: ["My husband is a doctor."],
+            classificacao: "noun",
+            descricao: "Refers to a married man considered in relation to his spouse.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "marido",
+            traducoes: ["husband"],
+            exemplos: ["Meu marido é médico."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um homem casado em relação ao seu cônjuge.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "child",
+            traducoes: ["criança"],
+            exemplos: ["Every child deserves a good education."],
+            classificacao: "noun",
+            descricao: "Refers to a young human being below the age of puberty or below the legal age of majority.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "criança",
+            traducoes: ["child"],
+            exemplos: ["Toda criança merece uma boa educação."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um jovem ser humano abaixo da idade da puberdade ou abaixo da idade legal da maioria.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "uncle",
+            traducoes: ["tio"],
+            exemplos: ["My uncle is visiting us from Brazil."],
+            classificacao: "noun",
+            descricao: "Refers to the brother of one's father or mother or the husband of one's aunt.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "tio",
+            traducoes: ["uncle"],
+            exemplos: ["Meu tio está nos visitando do Brasil."],
+            classificacao: "substantivo",
+            descricao: "Refere-se ao irmão do pai ou da mãe de alguém ou ao marido da tia de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "aunt",
+            traducoes: ["tia"],
+            exemplos: ["My aunt is a very good singer."],
+            classificacao: "noun",
+            descricao: "Refers to the sister of one's father or mother or the wife of one's uncle.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "tia",
+            traducoes: ["aunt"],
+            exemplos: ["Minha tia é uma cantora muito boa."],
+            classificacao: "substantivo",
+            descricao: "Refere-se à irmã do pai ou da mãe de alguém ou à esposa do tio de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "cousin",
+            traducoes: ["primo", "prima"],
+            exemplos: ["My cousin and I are the same age."],
+            classificacao: "noun",
+            descricao: "Refers to a child of one's uncle or aunt.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "primo, prima",
+            traducoes: ["cousin"],
+            exemplos: ["Meu primo e eu temos a mesma idade."],
+            classificacao: "substantivo",
+            descricao: "Refere-se ao filho do tio ou da tia de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "nephew",
+            traducoes: ["sobrinho"],
+            exemplos: ["My nephew is learning to ride a bike."],
+            classificacao: "noun",
+            descricao: "Refers to a son of one's brother or sister.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "sobrinho",
+            traducoes: ["nephew"],
+            exemplos: ["Meu sobrinho está aprendendo a andar de bicicleta."],
+            classificacao: "substantivo",
+            descricao: "Refere-se ao filho do irmão ou da irmã de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "niece",
+            traducoes: ["sobrinha"],
+            exemplos: ["My niece loves to draw."],
+            classificacao: "noun",
+            descricao: "Refers to a daughter of one's brother or sister.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "sobrinha",
+            traducoes: ["niece"],
+            exemplos: ["Minha sobrinha adora desenhar."],
+            classificacao: "substantivo",
+            descricao: "Refere-se à filha do irmão ou da irmã de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "grandparents",
+            traducoes: ["avós"],
+            exemplos: ["My grandparents live in the countryside."],
+            classificacao: "noun",
+            descricao: "Refers to the parents of one's father or mother.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "avós",
+            traducoes: ["grandparents"],
+            exemplos: ["Meus avós vivem no campo."],
+            classificacao: "substantivo",
+            descricao: "Refere-se aos pais do pai ou da mãe de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "grandfather",
+            traducoes: ["avô"],
+            exemplos: ["My grandfather tells the best stories."],
+            classificacao: "noun",
+            descricao: "Refers to the father of one's father or mother.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "avô",
+            traducoes: ["grandfather"],
+            exemplos: ["Meu avô conta as melhores histórias."],
+            classificacao: "substantivo",
+            descricao: "Refere-se ao pai do pai ou da mãe de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "grandmother",
+            traducoes: ["avó"],
+            exemplos: ["My grandmother makes delicious cookies."],
+            classificacao: "noun",
+            descricao: "Refers to the mother of one's father or mother.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "avó",
+            traducoes: ["grandmother"],
+            exemplos: ["Minha avó faz biscoitos deliciosos."],
+            classificacao: "substantivo",
+            descricao: "Refere-se à mãe do pai ou da mãe de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "grandson",
+            traducoes: ["neto"],
+            exemplos: ["My grandson is very energetic."],
+            classificacao: "noun",
+            descricao: "Refers to the son of one's son or daughter.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "neto",
+            traducoes: ["grandson"],
+            exemplos: ["Meu neto é muito enérgico."],
+            classificacao: "substantivo",
+            descricao: "Refere-se ao filho do filho ou da filha de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "granddaughter",
+            traducoes: ["neta"],
+            exemplos: ["My granddaughter loves reading books."],
+            classificacao: "noun",
+            descricao: "Refers to the daughter of one's son or daughter.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "neta",
+            traducoes: ["granddaughter"],
+            exemplos: ["Minha neta adora ler livros."],
+            classificacao: "substantivo",
+            descricao: "Refere-se à filha do filho ou da filha de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "stepbrother",
+            traducoes: ["irmão-drasto"],
+            exemplos: ["My stepbrother and I get along well."],
+            classificacao: "noun",
+            descricao: "Refers to the son of one's stepmother or stepfather.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "irmão-drasto",
+            traducoes: ["stepbrother"],
+            exemplos: ["Meu irmão-drasto e eu nos damos bem."],
+            classificacao: "substantivo",
+            descricao: "Refere-se ao filho da madrasta ou do padrasto de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "stepsister",
+            traducoes: ["irmã-drasta"],
+            exemplos: ["My stepsister is very kind."],
+            classificacao: "noun",
+            descricao: "Refers to the daughter of one's stepmother or stepfather.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "irmã-drasta",
+            traducoes: ["stepsister"],
+            exemplos: ["Minha irmã-drasta é muito gentil."],
+            classificacao: "substantivo",
+            descricao: "Refere-se à filha da madrasta ou do padrasto de alguém.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "boyfriend",
+            traducoes: ["namorado"],
+            exemplos: ["Her boyfriend is very supportive."],
+            classificacao: "noun",
+            descricao: "Refers to a male partner in a romantic relationship.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "namorado",
+            traducoes: ["boyfriend"],
+            exemplos: ["O namorado dela é muito solidário."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um parceiro masculino em um relacionamento romântico.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "girlfriend",
+            traducoes: ["namorada"],
+            exemplos: ["His girlfriend is very talented."],
+            classificacao: "noun",
+            descricao: "Refers to a female partner in a romantic relationship.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "namorada",
+            traducoes: ["girlfriend"],
+            exemplos: ["A namorada dele é muito talentosa."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a uma parceira feminina em um relacionamento romântico.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "fiancé",
+            traducoes: ["noivo"],
+            exemplos: ["Her fiancé is planning a surprise for her."],
+            classificacao: "noun",
+            descricao: "Refers to a man who is engaged to be married.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "noivo",
+            traducoes: ["fiancé"],
+            exemplos: ["O noivo dela está planejando uma surpresa para ela."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a um homem que está noivo para se casar.",
+            audio: ""
+        }
+    },
+    {
+        ingles: {
+            palavra: "fiancée",
+            traducoes: ["noiva"],
+            exemplos: ["His fiancée is very excited about the wedding."],
+            classificacao: "noun",
+            descricao: "Refers to a woman who is engaged to be married.",
+            audio: ""
+        },
+        portugues: {
+            palavra: "noiva",
+            traducoes: ["fiancée"],
+            exemplos: ["A noiva dele está muito animada com o casamento."],
+            classificacao: "substantivo",
+            descricao: "Refere-se a uma mulher que está noiva para se casar.",
+            audio: ""
+        }
+    }
+];
+
 
 const positionsList = [
     {
@@ -7283,6 +7898,9 @@ function loadWords(listName) {
             break;
         case 'lista5':
             words = positionsList;
+            break;
+        case 'lista6':
+            words = familyMembers;
     }
     currentWords = words;
     answeredWords = [];
@@ -7383,6 +8001,13 @@ document.addEventListener('DOMContentLoaded', () => {
             checkAnswer();
         }
     });
+
+    const darkModePreference = localStorage.getItem('darkMode') === 'true';
+    if (darkModePreference) {
+        document.body.classList.add('dark-mode');
+        document.getElementById('toggle-dark-mode-btn').textContent = '☀️';
+    }
+
 });
 
 
@@ -7392,6 +8017,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.getElementById('close-btn');
     const dropdownButtons = document.querySelectorAll('.dropdown-btn');
     const dropdownItems = document.querySelectorAll('.menu-item');
+    const settingsDropdownToggle = document.getElementById('settings-dropdown-toggle');
 
     function checkWindowSize() {
         if (window.innerWidth > 768) {
@@ -7440,6 +8066,9 @@ document.addEventListener('DOMContentLoaded', function() {
             closeSidebarOnSmallScreens();
         });
     });
+
+    settingsDropdownToggle.addEventListener('click', toggleSettingsDropdown);
+
 });
 
 function toggleSettingsDropdown() {
@@ -7447,9 +8076,8 @@ function toggleSettingsDropdown() {
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 }
 
-// Fechar o dropdown se o usuário clicar fora dele
 window.onclick = function(event) {
-    if (!event.target.matches('.settings .settings-dropdown-link')) {
+    if (!event.target.matches('.settings-dropdown-link') && !event.target.matches('.settings-dropdown-link img')) {
         const dropdowns = document.getElementsByClassName('settings-dropdown');
         for (let i = 0; i < dropdowns.length; i++) {
             const openDropdown = dropdowns[i];
@@ -7459,7 +8087,6 @@ window.onclick = function(event) {
         }
     }
 }
-
 function toggleIncorrectAnswersVisibility() {
     const incorrectWordsSection = document.getElementById('incorrect-words-section');
     const toggleButton = document.getElementById('toggle-incorrect-answers-btn');
@@ -7491,4 +8118,15 @@ function playSound(sound) {
     if (isSoundEnabled) {
         sound.play();
     }
+}
+
+function toggleDarkMode() {
+    const body = document.body;
+    const toggleDarkModeBtn = document.getElementById('toggle-dark-mode-btn');
+
+    body.classList.toggle('dark-mode');
+    const isDarkModeEnabled = body.classList.contains('dark-mode');
+    toggleDarkModeBtn.textContent = isDarkModeEnabled ? '☀️' : '🌙';
+
+    localStorage.setItem('darkMode', isDarkModeEnabled);
 }
