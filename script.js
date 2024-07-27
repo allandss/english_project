@@ -7589,6 +7589,7 @@ let isWordVisible = true;
 let areExamplesVisible = true;
 let selectedLanguage = 'ingles';
 let isSoundEnabled = true;
+let currentListName = 'lista1';
 
 const successSound = new Audio('assets/sounds/success.mp3');
 const failureSound = new Audio('assets/sounds/failure.mp3');
@@ -7653,6 +7654,9 @@ function displayRandomWord() {
     showDictionaryLink(wordData.palavra);
     displayWordDetails(wordData);
 
+    // Atualizar a breadcrumb com a lista de origem da palavra atual
+    const listOrigin = currentWords[currentIndex].listOrigin || currentListName;
+    updateBreadcrumb(listOrigin);
     updateProgressBar(); // Atualizar barra de progresso
 }
 
@@ -7703,7 +7707,8 @@ function checkAnswer() {
         wrongAnswers++;
         const incorrectWord = {
             wordData: currentWords[currentIndex].ingles, // Sempre armazenando a palavra em inglês
-            userAnswer: userAnswer
+            userAnswer: userAnswer,
+            listOrigin: currentListName // Adiciona a origem da lista
         };
         saveIncorrectWordsToLocalStorage(incorrectWord); // Salvar no localStorage
         incorrectWords.push(incorrectWord);
@@ -7741,7 +7746,8 @@ function loadIncorrectWords() {
             descricao: item.wordData.descricao,
             audio: item.wordData.audio
         },
-        ingles: item.wordData
+        ingles: item.wordData,
+        listOrigin: item.listOrigin // Adiciona a origem da lista
     }));
 
     currentWords = words;
@@ -7753,7 +7759,6 @@ function loadIncorrectWords() {
     displayRandomWord();
     updateStats();
     updateIncorrectWordsTable(); // Atualiza a tabela ao carregar nova lista
-    updateBreadcrumb('incorrect'); // Atualizar breadcrumb
 }
 
 function saveIncorrectWordsToLocalStorage(incorrectWord) {
@@ -7926,6 +7931,7 @@ function toggleExamplesVisibility(forceState = null) {
 
 
 function loadWords(listName) {
+    currentListName = listName;
     switch (listName) {
         case 'lista1':
             words = verbsPresentSimple;
