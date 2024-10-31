@@ -661,3 +661,15 @@ body.dark-mode #toggle-dark-mode-btn{
 body.dark-mode #breadcrumb-container span {
   color: #ccc;
 }
+
+.correct-input{
+  border-color: #4CAF50;
+  background-color: #e8f5e9;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .correct-input{
+  border-color: #4CAF50 !important;
+  color: #4CAF50 !important;
+  transition: all 0.3s ease;
+}

@@ -7590,6 +7590,7 @@ let areExamplesVisible = true;
 let selectedLanguage = 'ingles';
 let isSoundEnabled = true;
 let currentListName = 'lista1';
+let isAutoCorrectEnabled = true;
 
 const successSound = new Audio('assets/sounds/success.mp3');
 const failureSound = new Audio('assets/sounds/failure.mp3');
@@ -7781,6 +7782,11 @@ function saveIncorrectWordsToLocalStorage(incorrectWord) {
     }
 }
 
+function toggleAutoCorrect() {
+    isAutoCorrectEnabled = !isAutoCorrectEnabled;
+    const toggleButton = document.getElementById('toggle-auto-correct-btn');
+    toggleButton.textContent = isAutoCorrectEnabled ? 'Desabilitar correção automática' : 'Habilitar correção automática';
+}
 
 async function pronounceWord(word, audioPath) {
     try {
@@ -8070,6 +8076,26 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.key === 'Enter') {
             event.preventDefault();
             checkAnswer();
+        }
+    });
+
+    document.getElementById('answer-input').addEventListener('input', function () {
+        if (!isAutoCorrectEnabled) return;
+
+        const userAnswer = this.value.trim().toLowerCase();
+        const wordData = currentWords[currentIndex][selectedLanguage];
+        const correctTranslations = wordData.traducoes.map(translation => translation.toLowerCase());
+
+        if (correctTranslations.includes(userAnswer)) {
+            const inputField = this;
+            inputField.disabled = true;
+            inputField.classList.add('correct-input');
+
+            setTimeout(() => {
+                inputField.disabled = false;
+                inputField.classList.remove('correct-input');
+                checkAnswer();
+            }, 600);
         }
     });
 
