@@ -673,12 +673,3 @@ body.dark-mode .correct-input{
   color: #4CAF50 !important;
   transition: all 0.3s ease;
 }
-
-
-#toggle-microphone-btn{
-  float: left;
-  margin-left: -45px;
-  width: 45px;
-  margin-top: 12px;
-  cursor: pointer;
-}

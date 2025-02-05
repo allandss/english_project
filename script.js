@@ -7590,61 +7590,7 @@ let areExamplesVisible = true;
 let selectedLanguage = 'ingles';
 let isSoundEnabled = true;
 let currentListName = 'lista1';
-let isAutoCorrectEnabled = true;
-
-//Voice response
-const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-recognition.lang = selectedLanguage === 'ingles' ? 'pt-BR' : 'en-US';
-recognition.continuous = true;
-recognition.interimResults = false;
-
-recognition.onresult = (event) => {
-    const transcript = event.results[0][0].transcript;
-    console.log(event.results);
-    const answerInput = document.getElementById('answer-input');
-    answerInput.value = '';
-
-    if (isListening) {
-        recognition.stop();
-        isListening = false;
-    }
-
-    answerInput.value = transcript;
-    checkAutoCorrect();
-
-    setTimeout(() => {
-        if (!isListening) {
-            recognition.start();
-            isListening = true;
-        }
-    }, 600);
-};
-
-let isListening = false;
-
-function toggleMicrophone() {
-    const microphoneIcon = document.getElementById('toggle-microphone-btn').querySelector('img');
-    if (isListening) {
-        recognition.stop();
-        isListening = false;
-        microphoneIcon.src = 'assets/mic-off.svg';
-    } else {
-        recognition.start();
-        isListening = true;
-        microphoneIcon.src = 'assets/mic.svg';
-    }
-}
-
-recognition.onend = () => {
-    if (isListening) {
-        try {
-            recognition.start();
-        } catch (error) {
-            console.error("Erro ao reiniciar reconhecimento:", error);
-        }
-    }
-};
-//end voice response
+let isAutoCorrectEnabled = false;
 
 const successSound = new Audio('assets/sounds/success.mp3');
 const failureSound = new Audio('assets/sounds/failure.mp3');
@@ -7904,7 +7850,6 @@ function listenAnswerInEnglish() {
 
 function toggleLanguage() {
     selectedLanguage = selectedLanguage === 'portugues' ? 'ingles' : 'portugues';
-    recognition.lang = selectedLanguage === 'ingles' ? 'pt-BR' : 'en-US';
     changeLanguage();
     updateLanguageButton();
 }
@@ -8134,7 +8079,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    document.getElementById('answer-input').addEventListener('input', checkAutoCorrect);
+    document.getElementById('answer-input').addEventListener('input', function () {
+        if (!isAutoCorrectEnabled) return;
+
+        const userAnswer = this.value.trim().toLowerCase();
+        const wordData = currentWords[currentIndex][selectedLanguage];
+        const correctTranslations = wordData.traducoes.map(translation => translation.toLowerCase());
+
+        if (correctTranslations.includes(userAnswer)) {
+            const inputField = this;
+            inputField.disabled = true;
+            inputField.classList.add('correct-input');
+
+            setTimeout(() => {
+                inputField.disabled = false;
+                inputField.classList.remove('correct-input');
+                checkAnswer();
+            }, 600);
+        }
+    });
 
     const darkModePreference = localStorage.getItem('darkMode') === 'true';
     if (darkModePreference) {
@@ -8330,32 +8293,4 @@ function resetPronunciationButtonPosition() {
     const repeatPronunciationBtn = document.getElementById('repeat-pronunciation-btn');
     repeatPronunciationBtn.style.top = '18px';
     repeatPronunciationBtn.style.left = 'auto';
-}
-
-function checkAutoCorrect() {
-    if (!isAutoCorrectEnabled) return;
-
-    const answerInput = document.getElementById('answer-input');
-    const userAnswer = answerInput.value.trim().toLowerCase();
-    const wordData = currentWords[currentIndex][selectedLanguage];
-    const correctTranslations = wordData.traducoes.map(translation => translation.toLowerCase());
-
-    if (correctTranslations.includes(userAnswer)) {
-        if (isListening) {
-            recognition.stop();
-            isListening = false;
-        }
-
-        answerInput.classList.add('correct-input');
-
-        setTimeout(() => {
-            answerInput.classList.remove('correct-input');
-            checkAnswer();
-
-            if (!isListening) {
-                recognition.start();
-                isListening = true;
-            }
-        }, 600);
-    }
 }
